@@ -4,12 +4,15 @@ date: "2016-11-22"
 categories: 
   - "scala"
   - "spark"
+description: "Clean up unit test output by removing the SLF4J refernence from all dependencies and then adding them back selectively."
 featured_image: '/images/archive/sbt-after.png'
 ---
 
 ![](/images/archive/sbt-after.png)
 
-If you've written any Spark code using Scala and SBT there's a good chance you've come across this warning about SLF4J:
+## Implied Header
+
+If you've written any Spark code using Scala and SBT there's a good chance you've come across this warning about SLF4J.
 
     SLF4J: Class path contains multiple SLF4J bindings.
     SLF4J: Found binding in \[jar:file:/C:/Users/RHorvick/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class\]
