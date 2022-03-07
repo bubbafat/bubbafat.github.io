@@ -4,7 +4,7 @@ date: "2016-11-22"
 categories: 
   - "scala"
   - "spark"
-coverImage: "sbt-after.png"
+featured_image: "/images/archive/sbt-after.png"
 ---
 
 If you've written any Spark code using Scala and SBT there s a good chance you've come across this warning about SLF4J:
