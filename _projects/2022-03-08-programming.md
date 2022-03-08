@@ -19,7 +19,7 @@ featured_image: '/images/archive/screenshot1.jpg'
 
     <h3 class="category-head">{{ subcategory }}</h3>
     <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] | sort: 'post.date' %}
+    {% for post in site.categories[category_name] %}
     <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a> ({{post.date | split: " " | slice: 0}})</h4>
     </article>
