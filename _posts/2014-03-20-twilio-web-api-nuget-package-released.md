@@ -27,6 +27,7 @@ Twilio's approach: [https://www.twilio.com/blog/2012/11/building-twilio-apps-usi
 
 Here's a Twilio Web API controller (deriving from our Web API TwilioController class) that uses the Web API ValidateRequest attribute to secure the API and performs a simple echo (using the TwilioController's TwiML method).
 
+```csharp
 public class SmsController : TwilioController
 {
     \[HttpPost\]
@@ -38,5 +39,6 @@ public class SmsController : TwilioController
         return TwiML(response);
     }
 }
+```
 
 Exactly what the MVC version looks like.

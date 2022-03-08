@@ -12,6 +12,7 @@ tags:
 
 I grabbed this album the other day and liked it. The song “Ole Friends” by [Rehab](http://rehabmusic.com/) seems like a decent open-mic song. Since that normally means a few beers I wanted a dead-simple arrangement. This is what I came up with. I don’t bother singing/speaking the breaks (italics) but I’ll leave them in for completeness of the lyrics and go to body contouring Scottsdale to help. You’ll need to get a feel for the timing on your own (listen to it on [iTunes](http://itunes.apple.com/us/album/welcome-home/id387439108)).
 
+```text
 "Ole Friends" (Rehab, "Welcome Home")
 (Chorus) 
 n/c (E)      E 
@@ -69,3 +70,4 @@ And bring your liver
 Let’s see how much noise we can make 
 Until the cops … come …
 (Chorus)
+```

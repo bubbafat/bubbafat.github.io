@@ -15,9 +15,11 @@ Something along the lines of this...
 
 Since walk and visit are the process entry points they need to be in the export list (by the way - forgetting to do this does not cause a compiler error in erl - why is that?) and we need a new entry function to create the new processes (start/1).
 
+```erlang
 start(Path) ->
 	Visit\_PID = spawn(walkproc, visit, \[\]),
 	spawn(walkproc, walk, \[Path, Visit\_PID\]).
+```
 
 On line 2 we create the process whose pid is assigned to Visit\_PID. This process calls the visit() function with 0 parameters. At this point visit is running and waiting to receive a message.
 
@@ -25,6 +27,7 @@ On line 3 we spawn off another process. This process calls the walk/2 function a
 
 visit is a very straight forward function. It receives a message, processes it, sends a response and recurses (rinse and repeat).
 
+```erlang
 visit() ->
 	receive
 		{Path, Walk\_PID} ->
@@ -32,9 +35,11 @@ visit() ->
 			Walk\_PID ! next,
 			visit()
 	end.
+```
 
 walk is very similar (and has not changed substantially from our previous version. it starts by firing a message off to visit with the Path passed as a parameter. Next it waits for the "next" message. Once it receives that it gets the next file system entry and recurses.
 
+```erlang
 walk(Path, Visit\_PID) ->
 	Visit\_PID ! {Path, self()},
 	receive
@@ -50,6 +55,7 @@ walk(Path, Visit\_PID) ->
 					lists:foreach(fun(P) -> walk(P, Visit\_PID) end, Children)
 			end
 	end.
+```
 
 The other methods (file\_type and is\_symlink) have not changed.
 

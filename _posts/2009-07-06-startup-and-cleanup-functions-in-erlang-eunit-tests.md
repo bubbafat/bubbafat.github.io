@@ -12,11 +12,13 @@ I've got the basic grasp on Erlang but before I can do anything meaningful I nee
 
 I started by writing a very simple dictionary that lived in it's own process.  The interface is:
 
+```erlang
 start() -> ok
 stop() -> ok
 write(Key, Element) -> ok
 delete(Key) -> ok
 read(Key) -> {ok, Value} | not\_found
+```
 
 Calling start() spawns and registers the process the dictionary lives in.  Calling stop ends the process.  The rest do what you expect.
 
@@ -26,6 +28,7 @@ It took about 15 minutes of reading to realize that I needed to create a test ge
 
 Conceptually it was easy to understand but getting the syntax right was a royal pain.  Basically you do this (I'm not sure if giving the function arity is the preferred method but it saved some keystrokes so I went with it):
 
+```erlang
 my\_db\_test\_() ->
   {spawn,
     {setup,
@@ -41,6 +44,7 @@ my\_db\_test\_() ->
       \]
     }
   }.
+```
 
 The test methods are exactly what you'd expect so I won't repeat them.  The syntax feels a little foreign and uncomfortable but it's very easy to understand and I totally get why it's written this way.  I'm just so used to [MSTest](http://en.wikipedia.org/wiki/MSTest) attributes and [RSpec](http://rspec.info/) that this new way is going to take a night or two to feel like an old friend.
 

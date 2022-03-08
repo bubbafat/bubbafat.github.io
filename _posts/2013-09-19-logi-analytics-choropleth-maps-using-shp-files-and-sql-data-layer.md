@@ -69,8 +69,10 @@ select geography.STAsText() from States
 
 There are two types of results:
 
+```sql
 POLYGON ((-81.044288 39.536612, -81.044384999999991 39.536546, ...
 MULTIPOLYGON (((-82.987476940188031 24.625430064137529, -82.987477 24.625379, ...
+```
 
 This is not the appropriate format and, key point, there are two types of data here.
 
@@ -81,11 +83,13 @@ This is not the appropriate format and, key point, there are two types of data h
 
 To get the data in a form that makes Logi happy, let's state by creating a new SQL table named StateCache. It has the following definition:
 
+```sql
 create table StateCache (
     id int identity(1,1) not null constraint PK\_StateCache primary key,
     state\_id int not null constraint FK\_StateCache\_States references states(id),
     rdCoordinates nvarchar(max)
 )
+```
 
 Please notice the FK to the States table and that I named the column rdCoordinates.
 
@@ -101,6 +105,7 @@ Make sure you set Language to "C# Statements" (which is not the default!)
 
 The C# code is this:
 
+```csharp
 var allStates = from s in States select s.ID;
 var cachedStates = from s in StateCaches select s.State\_id;
 var toProcessStates = allStates.Except(cachedStates);
@@ -137,6 +142,7 @@ foreach(var id in toProcessStates)
     }
   }
 }
+```
 
 Basically it is finding all the states that are in the States table that are not already in the StateCache table and then, one by one, converting them to the Logi compatible format.
 

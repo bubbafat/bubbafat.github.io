@@ -27,7 +27,7 @@ Found them yet?  No?  Maybe it's in some header file.  Feel free to check ...
 
 Ready for this?  There isn't one.  You don't need to define a tree or node type - it's just a tuple that gets passed around and interpreted at runtime.  Not quite clear?  OK - if we were going to define it, it would look something like this:
 
-`{Size, {Key, Value, Smaller, Bigger}}`
+    {Size, {Key, Value, Smaller, Bigger}}
 
 - **Size** is the number of nodes in the tree (which is used for balancing).
 - **Key** is the key of the current node.
@@ -37,6 +37,7 @@ Ready for this?  There isn't one.  You don't need to define a tree or node typ
 
 These functions really helped make it much clearer:
 
+```erlang
 %%-spec(empty/0 :: () -> gb\_tree()).
 
 empty() ->
@@ -53,9 +54,11 @@ is\_empty(\_) ->
 
 size({Size, \_}) when is\_integer(Size), Size >= 0 ->
     Size.
+```
 
 "size" says so much it's wonderful.  Besides the obvious of getting the size of the tree it also validates that the size is greater-than-or-equal-to zero otherwise there will be an exception.  This is a great example of Erlang failing fast.  Try it out:
 
+```erlang
 2> gb\_trees:size({-1, {\[\]}}).
 \*\* exception error: no function clause matching gb\_trees:size({-1,{\[\]}})
 
@@ -72,6 +75,7 @@ int size(Tree \*tree) {
     
     return tree->size;
 }
+```
 
 ![I'm Loving It](/images/archive/lovinit-300x290.jpg "I'm lovin it!")
 
@@ -79,6 +83,7 @@ int size(Tree \*tree) {
 
 I think gb\_trees:update is the most approachable example of this.  Besides being crazy small it is a very clear example of how the tree is walked to search for the key and how error handling is meant to be done.
 
+```erlang
 %%-spec(update/3 :: (\_, \_, gb\_tree()) -> gb\_tree()).
 
 update(Key,  Val, {S, T}) ->
@@ -93,6 +98,7 @@ update\_1(Key, Value, {Key1, V, Smaller, Bigger}) when Key > Key1 ->
     {Key1, V, Smaller, update\_1(Key, Value, Bigger)};
 update\_1(Key, Value, {\_, \_, Smaller, Bigger}) ->
     {Key, Value, Smaller, Bigger}.
+```
 
 Notice first that since update is never changing the size it does not bother to pass it to update\_1 - only the "node" portion of the tuple is passed.
 
@@ -105,7 +111,9 @@ Once passed there are four possible options - three of which need to be codified
 
 In the case where the node is not found update\_1 ends up being called like:
 
+```erlang
 update\_1(Key, Value, nil)
+```
 
 Since the match on #1-3 require a non-nil tuple this turns into a missing function clause error.
 
@@ -113,7 +121,10 @@ Since the match on #1-3 require a non-nil tuple this turns into a missing functi
 
 No.  No they can't.  I was having a little trouble groking this until I ran through some samples in erl.  This is what made it clear for me:
 
-`1> Tree = gb_trees:empty(). {0,nil} 2> Tree2 = gb_trees:insert("Foo", "Bar", Tree). {1,{"Foo","Bar",nil,nil}} 3> Tree3 = gb_trees:update("Foo", "NewBar", Tree2). {1,{"Foo","NewBar",nil,nil}} 4> Tree4 = gb_trees:update("Missing", "value", Tree3). ** exception error: no function clause matching gb_trees:update_1("Missing","value",nil) in function gb_trees:update_1/3 in call from gb_trees:update/3`
+    1> Tree = gb_trees:empty(). {0,nil} 
+    2> Tree2 = gb_trees:insert("Foo", "Bar", Tree). {1,{"Foo","Bar",nil,nil}} 
+    3> Tree3 = gb_trees:update("Foo", "NewBar", Tree2). {1,{"Foo","NewBar",nil,nil}} 
+    4> Tree4 = gb_trees:update("Missing", "value", Tree3). ** exception error: no function clause matching gb_trees:update_1("Missing","value",nil) in function gb_trees:update_1/3 in call from gb_trees:update/3
 
 Each time anything was done a new tree was created - the old tree was still valid and could be used but it was not the new tree.  It's the old tree.  This boggled me for a few minutes until [Justin Sheehy](https://twitter.com/justinsheehy) confirmed what the code was saying.
 
@@ -123,6 +134,7 @@ So no - multiple processes could not possibly share the tree because the tree is
 
 Want proof?  Go back to erl and run gb\_trees:get on the key "Foo" on Tree, Tree2 and Tree3.  Tree will error (it's an empty tree).  Tree2 will find "Bar" and Tree3 will find "NewBar".
 
-`14> gb_trees:get("Foo", Tree). ** exception error: no function clause matching gb_trees:get_1("Foo",nil) 15> gb_trees:get("Foo", Tree2). "Bar" 16> gb_trees:get("Foo", Tree3). "NewBar"`
+    14> gb_trees:get("Foo", Tree). ** exception error: no function clause matching gb_trees:get_1("Foo",nil) 
+    15> gb_trees:get("Foo", Tree2). "Bar" 16> gb_trees:get("Foo", Tree3). "NewBar"`
 
 **Aha!**

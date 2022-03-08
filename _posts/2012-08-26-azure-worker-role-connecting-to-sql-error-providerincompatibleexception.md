@@ -14,16 +14,20 @@ I discovered two things.
 
 I had:
 
+```xml
 <connectionStrings>  
    <add name="DefaultConnection" connectionString="…" providerName="System.Data.SqlClient" />  
 </connectionStrings>
+```
 
 I needed
 
+```xml
 <connectionStrings>  
     <add name="DefaultConnection" connectionString="…" providerName="System.Data.SqlClient" />  
     <add name="Fully.Qualified.ContextDb.Class" connectionString="…" providerName="System.Data.SqlClient" />  
     <add name="Fully.Qualified.ContextDb.Class\_DatabasePublish" connectionString="…" providerName="System.Data.SqlClient" />  
 </connectionStrings>  
+```
 
 With that change to my app.config the next publish worked out just grand.

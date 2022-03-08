@@ -17,14 +17,14 @@ In the temp folder I found a file that had been created at the same time as the 
 
 I open it up, scroll to the bottom and find this gem:
 
-\[CamtasiaStudio\] ...
-First chance EXCEPTION\_ACCESS\_VIOLATION at 5D1FD578
-\*\*\* Crash \*\*\*
-Exception: C0000005 at 5D1FD578 
-in C:\\Program Files (x86)\\Citrix\\GoToMeeting\\969\\G2M.dll
-ACCESS\_VIOLATION while reading 00000038
-Loaded dbghelp.dll ver. 6.01.7601.17514
-EBP walk -> 5D1FD578; ...
+    \[CamtasiaStudio\] ...
+    First chance EXCEPTION\_ACCESS\_VIOLATION at 5D1FD578
+    \*\*\* Crash \*\*\*
+    Exception: C0000005 at 5D1FD578 
+    in C:\\Program Files (x86)\\Citrix\\GoToMeeting\\969\\G2M.dll
+    ACCESS\_VIOLATION while reading 00000038
+    Loaded dbghelp.dll ver. 6.01.7601.17514
+    EBP walk -> 5D1FD578; ...
 
 Now I may just be a small town [country chicken](http://www.youtube.com/watch?v=gQpaoLpKrMg) trying to make it in this crazy mixed up world, but I know a smoking gun when I see one.
 

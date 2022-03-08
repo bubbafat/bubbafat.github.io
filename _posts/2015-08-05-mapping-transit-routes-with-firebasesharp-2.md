@@ -111,5 +111,4 @@ private UIElement CreateMarker(IDataSnapshot snap)
     return element;
 } 
 ```
-
 _Note: the video is speed up by 2500% - buses only move that fast when [Sandra Bullock](http://www.imdb.com/title/tt0111257/) is behind the wheel_

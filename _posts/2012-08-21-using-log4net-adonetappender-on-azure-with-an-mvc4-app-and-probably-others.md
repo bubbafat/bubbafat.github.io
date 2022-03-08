@@ -36,10 +36,13 @@ Add these to your web.config or app.config
 
 Add the config section entry:
 
+```xml
 <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
+```
 
 And then this section
 
+```xml
 <log4net>  
   <appender name="ADONetAppender" type="log4net.Appender.ADONetAppender">  
     <bufferSize value="1" />  
@@ -80,6 +83,7 @@ And then this section
     <appender-ref ref="ADONetAppender"/>  
   </root>  
 </log4net> 
+```
 
 Notice that the buffer size is set to 1 – this will flush after every log.  Maybe change that to something larger when you go to scale.
 
@@ -87,12 +91,18 @@ Notice that the buffer size is set to 1 – this will flush after every log.  M
 
 First initialize the logger.  You can add this to whatever startup code you want (Global.asax.cs, OnStart, etc) …
 
+```csharp
 log4net.Config.XmlConfigurator.Configure();
+```
 
 You can now add a logger to your code like this:
 
-private static readonly log4net.ILog \_log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+```csharp
+private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+```
 
 And use it like this:
 
-\_log.Debug(“message…”);
+```csharp
+log.Debug(“message…”);
+```

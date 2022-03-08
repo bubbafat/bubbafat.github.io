@@ -13,7 +13,13 @@ Stalled.
 
 So I hit F12 to look at the console errors and saw these:
 
-`GET https://apis.google.com/js/plusone.js ads2:621 GET http://connect.facebook.net/en_US/all.js ads2:639 GET http://platform.linkedin.com/in.js ads2:646 Uncaught ReferenceError: fyre is not defined ads2:944 GET http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js ads2:925 GET http://widget.uservoice.com/MgRuFTmArYOqweeXBEbikg.js ads2:918 GET http://a.adroll.com/j/roundtrip.js ads2:980`
+    GET https://apis.google.com/js/plusone.js ads2:621 
+    GET http://connect.facebook.net/en_US/all.js ads2:639 
+    GET http://platform.linkedin.com/in.js ads2:646 
+    Uncaught ReferenceError: fyre is not defined ads2:944 
+    GET http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js ads2:925 
+    GET http://widget.uservoice.com/MgRuFTmArYOqweeXBEbikg.js ads2:918 
+    GET http://a.adroll.com/j/roundtrip.js ads2:980
 
 The uncaught ref grabbed my attention - the only time I see this is when some Chrome extension is mucking up the works.
 

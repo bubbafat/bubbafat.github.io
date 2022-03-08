@@ -1,4 +1,4 @@
----
+||---
 title: "Disney's Twilight Zone Tower of Terror 10-Miler Training Plan"
 date: "2012-03-12"
 categories: 
@@ -18,36 +18,36 @@ The speed days are really more for me – I like doing them. I decided to work o
 
 I would love any feedback on my plan – and if you’re running the 10-miler let me know!
 
-Week Sun Mon  Tues Wed   Thur Fri   Sat
-1    4   off  2    2     2    off   2
-2    4   2    off  2     2    off   2
-3    5   2    2    off   2    off   2
-4    5   off  2    2     2    off   2
-5    5   off  3    3     3    off   2
-6    6   off  3    3     3    off   2
-7    6   off  3    3     3    off   2
-8    6   off  3    3     3    off   2
-9    7   off  3    F 60  3    off   2
-10   7   off  4    T 60  4    off   3
-11   7   off  4    F 60  4    off   3
-12   8   off  4    T 60  4    off   3
-13   8   off  4    F 60  4    off   3
-14   8   off  4    T 60  4    off   3
-15   9   off  4    F 60  4    off   3
-16   9   off  4    T 60  4    off   3
-17   9   off  4    F 60  4    off   3
-18   10  off  4    T 60  4    off   3
-19   10  off  4    F 60  4    off   3
-20   11  off  4    T 60  4    off   3
-21   11  off  4    F 60  4    off   3
-22   12  off  4    T 60  4    off   3
-23   12  off  4    F 60  4    off   3
-24   13  off  4    T 60  4    off   3
-25   13  off  4    F 60  4    off   3
-26   12  off  4    T 60  4    off   3
-27   11  off  4    T 45  4    off   3
-28   8   off  3    T 30  3    off   2
-29   5   off  2    off   2    2     RACE!!! 
+| Week | Sun | Mon  | Tues | Wed | Thur | Fri  | Sat|
+|------|-----|------|------|-----|------|------|----|
+| 1    |4    |off   |2    |2     |2     |off   |2|
+| 2    |4    |2     |off  |2     |2     |off   |2|
+| 3    |5    |2     |2    |off   |2     |off   |2|
+| 4    |5    |off   |2    |2     |2     |off   |2|
+| 5    |5    |off   |3    |3     |3     |off   |2|
+| 6    |6    |off   |3    |3     |3     |off   |2|
+| 7    |6    |off   |3    |3     |3     |off   |2|
+| 8    |6    |off   |3    |3     |3     |off   |2|
+| 9    |7    |off   |3    |F 60  |3     |off   |2|
+| 10   |7    |off   |4    |T 60  |4     |off   |3|
+| 11   |7    |off   |4    |F 60  |4     |off   |3|
+| 12   |8    |off   |4    |T 60  |4     |off   |3|
+| 13   |8    |off   |4    |F 60  |4     |off   |3|
+| 14   |8    |off   |4    |T 60  |4     |off   |3|
+| 15   |9    |off   |4    |F 60  |4     |off   |3|
+| 16   | 9   |off   |4    |T 60  |4     |off   |3|
+| 17   | 9   |off   |4    |F 60  |4     |off   |3|
+| 18   | 10  |off   |4    |T 60  |4     |off   |3|
+| 19   | 10  |off   |4    |F 60  |4     |off   |3|
+| 20   | 11  |off   |4    |T 60  |4     |off   |3|
+| 21   | 11  |off   |4    |F 60  |4     |off   |3|
+| 22   | 12  |off   |4    |T 60  |4     |off   |3|
+| 23   | 12  |off   |4    |F 60  |4     |off   |3|
+| 24   | 13  |off   |4    |T 60  |4     |off   |3|
+| 25   | 13  |off   |4    |F 60  |4     |off   |3|
+| 26   | 12  |off   |4    |T 60  |4     |off   |3|
+| 27   | 11  |off   |4    |T 45  |4     |off   |3|
+| 28   | 8   |off   |3    |T 30  |3     |off   |2|
+| 29   | 5   |off   |2    |off   |2     |2     |RACE!!! |
 
-F = Fartlek minutes
-T = Tempo minutes
+F = Fartlek minutes, T = Tempo minutes

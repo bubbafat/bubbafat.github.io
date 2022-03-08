@@ -23,6 +23,7 @@ Then it was just a few changes.
 
 #### Updating how items are saved
 
+```js
 todomvc.factory('todoStorage', function () {
     var STORAGE\_ID = 'todos-angularjs';
 
@@ -43,6 +44,7 @@ todomvc.factory('todoStorage', function () {
         }
     };
 });
+```
 
 These are the important points:
 
@@ -56,6 +58,7 @@ These are the important points:
 
 Since the getter returns a promise, not the actual array, I needed to respect that promise on the calling side.
 
+```js
 todomvc.controller('TodoCtrl', function TodoCtrl($scope, $location, todoStorage, filterFilter) {
     var todos
 
@@ -63,7 +66,8 @@ todomvc.controller('TodoCtrl', function TodoCtrl($scope, $location, todoStorage,
     promise.done(function(loaded) {
         todos = $scope.todos = loaded;
     });
-	
+```
+
 /\* ... nothing else changed ... \*/
 
 The only change here is using the done method to get the results. Yeah, I'm being optimistic about it and not checking for failure.

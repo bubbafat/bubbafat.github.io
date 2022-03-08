@@ -44,7 +44,21 @@ Now we’re getting somewhere.
 
 So let’s define some values:
 
-`Order - Card 1234 - Ace 1243 - 2 1324 - 3 1342 - 4 1423 - 5 1432 - 6 2134 - 7 2143 - 8 2314 - 9 2341 - 10 2413 - Jack 2431 - Queen 3124 - King`
+| Order | Card
+| -------------
+| 1234 | Ace |
+| 1243 | 2 |
+| 1324 | 3 |
+| 1342 | 4 |
+| 1423 | 5 |
+| 1432 | 6 |
+| 2134 | 7 |
+| 2143 | 8 |
+| 2314 | 9 |
+| 2341 | 10 |
+| 2413 | Jack |
+| 2431 | Queen |
+| 3124 | King |
 
 Now we’ve encoded the value. But what about the suit? We don’t have enough permutations left to add in suit.
 

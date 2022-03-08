@@ -34,6 +34,7 @@ It came down to a few things.
 
 My changes (minus the rename) to [localstorage adapter](https://github.com/rpflorence/ember-localstorage-adapter "Read this code.  It is better.").
 
+```js
   \_getNamespace: function() {
     return this.namespace || 'HoodieAdaptor';
   },
@@ -76,11 +77,13 @@ My changes (minus the rename) to [localstorage adapter](https://github.com/rpflo
   \_saveData: function() {
     return hoodie.store.update(this.\_getNamespace(), this.\_getInstanceId(), this.\_data).promise();
   },
+```
 
 The login code can be seen here: [https://github.com/bubbafat/hoodietodoemberjs/blob/master/index.html#L12](https://github.com/bubbafat/hoodietodoemberjs/blob/master/index.html#L12 "There is no point in showing this in the blog post.")
 
 I also added this code to the [Todos controller](https://github.com/bubbafat/hoodietodoemberjs/blob/master/js/controllers/todos_controller.js#L60 "This was not really a good idea.") to try and force a refresh when logging in/out. I'm not saying this was a good idea but it got me about 50% of the way to what I wanted.
 
+```js
 init: function() {
   var self = this;
 
@@ -98,6 +101,7 @@ init: function() {
     location.reload();
   });
 },
+````
 
 ### Conclusions?
 

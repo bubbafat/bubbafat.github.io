@@ -22,12 +22,13 @@ _"Dunn was over Unger and I was over Dunn."_ ([Capt. Oveur](http://www.imdb.com/
 
 The output would be:
 
-`Dunn: 2 I: 1 Unger: 1 and: 1 over: 2 was: 2`
+    Dunn: 2 I: 1 Unger: 1 and: 1 over: 2 was: 2
 
 Word frequencies have some practical uses (fuzzy text matching, building tag clouds, etc).  So while it's a bit contrived it is the basis for something useful.
 
 The code doesn't need a lot of explanation - so here you go ...
 
+```erlang
 \-module(wordlist).
 
 -export(\[print\_word\_counts/1\]).
@@ -89,5 +90,6 @@ print\_word\_counts(Filename) ->
 		{error, Reason} ->
 			io:format("~s~n", \[Reason\])
 	end.
+```
 
 As usual - I'm just getting started with Erlang.  What is the good, bad and ugly with this code?

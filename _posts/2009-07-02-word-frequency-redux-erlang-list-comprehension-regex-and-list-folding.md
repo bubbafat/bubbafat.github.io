@@ -11,18 +11,22 @@ tags:
 
 Based on his feedback I made three changes. First - the regular expression code has changed from this:
 
+```erlang
 matches(H,{match,M}) -> matches(H,M,\[\]).
 matches(\_,\[\],Acc) -> Acc;
 matches(H,\[{I,L}|T\],Acc) ->
     matches(H,T,\[lists:sublist(H,I,L)|Acc\]).
  
 words(String) -> matches(String,regexp:matches(String, "\[A-Za-z0-1\]+")).
+```
 
 to this:
 
+```erlang
 words(String) ->
   {match, Captures} = re:run(String, "\\\\b\\\\w+\\\\b", \[global,{capture,first,list}\]),
   \[hd(C) || C<-Captures\].
+```
 
 That last line took me a bit to grok. It's a [list comprehension](http://wiki.trapexit.org/List_Comprehension) (if you are reading Joe Armstrong's [thesis](http://www.sics.se/~joe/thesis/armstrong_thesis_2003.pdf) it is section 3.3.13. In Erlang Programming it is chapter 9.3). Basically it's saying "for each list in the list of matches take the head of the list" - a-gigga-wah?
 
@@ -38,13 +42,17 @@ so I fired up "erl -man lists" to learn what foldX meant (actually "foldl" "fold
 
 In a nut shell folding is iterates over a list calling a fun that takes the current value and an accumulator and which returns the new accumulator. An example from the man page is:
 
-`> lists:foldl(fun(X, Sum) -> X + Sum end, 0, [1,2,3,4,5]). 15`
+```erlang
+lists:foldl(fun(X, Sum) -> X + Sum end, 0, [1,2,3,4,5]). 15
+```
 
 I spent some time thinking and after some trial and error came up with this:
 
+```erlang
 lists:foldl(fun(W, Dict) -> 
     dict:update(W, fun(C) -> C + 1 end, 1, Dict) end, dict:new(), 
     \["foo", "foo", "bar"\]).  %% sample input
+```
 
 In a nutshell - for every word in the list update the dictionary by calling the fun which increments the count value, setting the initial count to 1 if the value does not already exist in the dictionary (and starting with an empty dictionary).
 
@@ -54,6 +62,7 @@ After these three changes the new program is about half the size of the previous
 
 The new code ...
 
+```erlang
 \-module(wordlist).
 
 -export(\[print\_word\_counts/1\]).
@@ -92,3 +101,4 @@ print\_word\_counts(Filename) ->
             Dict = process\_each\_line(IoDevice, dict:new()),
             print\_dict(Dict);
     end.
+```

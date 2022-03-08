@@ -17,13 +17,17 @@ I get redirected to
 
 To do this I first created a little shell script that would take the address and spawn firefox with the appropriate url. (insert caveat about this being the first bash script I've written in 10 years here ...).
 
+```bash
 #!/bin/bash
 ERLANG\_TOPIC=\`echo $1 | sed 's/erlang:\\/\\///'\`
 exec firefox http://www.erlang.org/doc/man/$ERLANG\_TOPIC.html
+```
 
 Next I marked it as executable:
 
+```bash
 chmod +x erlang.protocol
+```
 
 Finally I followed [these directions](http://kb.mozillazine.org/Register_protocol) and added the following config settings in firefox:
 

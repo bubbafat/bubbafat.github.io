@@ -12,6 +12,7 @@ One last iteration through my learning exercise of building a word frequency lis
 
 No point in getting too deep into this - here's the code:
 
+```erlang
 \-module(wordets).
 
 -export(\[print\_word\_counts/1\]).
@@ -55,6 +56,7 @@ print\_word\_counts(Filename) ->
   {ok, IoDevice} = file:open(Filename, read),
   Words = process\_each\_line(IoDevice, ets:new(words, \[\])),
   print\_words(Words).
+```
 
 The ets implementation feels a bit forced (which it was - the point was to learn another module). I don't think I'd have gone this way in practice unless I wanted to persist the frequency data to a file or if the word data were more complex (for example if I were storing information about where in the file the word was, word neighbors, etc).
 
