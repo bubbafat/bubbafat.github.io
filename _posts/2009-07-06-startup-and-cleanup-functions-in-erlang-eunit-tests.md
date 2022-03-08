@@ -2,10 +2,7 @@
 title: "Startup and Cleanup functions in Erlang EUnit tests"
 date: "2009-07-06"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
-  - "eunit"
+  - "Programming#Erlang"
 ---
 
 I've got the basic grasp on Erlang but before I can do anything meaningful I need to learn how to test my code  EUnit is the de-facto test framework.  There are a ton of great sites that talk about testing with EUnit - I have linked to several at the end of this post.  I'm going to focus on the problem I ran into - needing to run some startup and cleanup code around the test suite.

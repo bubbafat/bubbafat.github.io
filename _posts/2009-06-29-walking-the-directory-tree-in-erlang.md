@@ -2,9 +2,7 @@
 title: "Walking the directory tree in Erlang"
 date: "2009-06-29"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
+  - "Programming#Erlang"
 ---
 
 I'm learning Erlang.  I'll get into "why" in some other post - the purpose here is to share my first sample program and solicit feedback.  The purpose of the program is to start print the contents of a file system from the indicated point downwards (ignoring symlinks).

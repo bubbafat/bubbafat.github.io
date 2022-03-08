@@ -2,8 +2,7 @@
 title: "Using Firebase rules to approximate REST API atomic updates"
 date: "2015-07-30"
 categories: 
-  - "firebase"
-  - "programming"
+  - "Programming#Firebase"
 featured_image: '/images/archive/nuke.png'
 ---
 

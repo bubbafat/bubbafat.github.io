@@ -2,8 +2,7 @@
 title: "FirebaseSharp 2.0 - A look at DataSnapshots (and paths)"
 date: "2015-07-22"
 categories: 
-  - "firebase"
-  - "programming"
+  - "Programming#Firebase"
 featured_image: '/images/archive/camera.gif'
 ---
 

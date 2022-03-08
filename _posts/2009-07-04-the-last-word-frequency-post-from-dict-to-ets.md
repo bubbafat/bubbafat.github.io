@@ -2,10 +2,7 @@
 title: "The last word frequency post - from dict to ets"
 date: "2009-07-04"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
-  - "ets"
+  - "Programming#Erlang"
 ---
 
 One last iteration through my learning exercise of building a word frequency list. In this last post I'm moving away from a dict and to an ets table. I was pleasantly surprised how easy the conversion was. For example printing the output was just converting from dict:fold to ets:foldl. The one parity fail was that dict:update can take an initial value when the key is missing but ets:update\_counter (nor any other ets function) has this benefit. This required that I write a little wrapper function to call from the list:foldl (instead of having a multi-line inlined fun).

@@ -2,8 +2,7 @@
 title: "Mapping Transit Routes with FirebaseSharp 2"
 date: "2015-08-05"
 categories: 
-  - "firebase"
-  - "programming"
+  - "Programming#Firebase"
 featured_image: '/images/archive/FirebaseSharp-2.0-Transit-Demo.jpeg'
 ---
 

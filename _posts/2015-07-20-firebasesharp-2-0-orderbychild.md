@@ -2,8 +2,7 @@
 title: "FirebaseSharp 2.0 - orderByChild"
 date: "2015-07-20"
 categories: 
-  - "firebase"
-  - "programming"
+  - "Programming#Firebase"
 featured_image: '/images/archive/dino.png'
 ---
 

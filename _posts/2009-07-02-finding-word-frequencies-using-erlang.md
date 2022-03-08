@@ -2,9 +2,7 @@
 title: "Finding word frequencies using Erlang"
 date: "2009-07-02"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
+  - "Programming#Erlang"
 ---
 
 [Here's a follow-up post that provides a better implementation.](http://www.roberthorvick.com/2009/07/02/word-frequency-redux-erlang-list-comprehension-regex-and-list-folding/)

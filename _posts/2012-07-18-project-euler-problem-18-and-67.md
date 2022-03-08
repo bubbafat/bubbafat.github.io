@@ -2,7 +2,7 @@
 title: "Project Euler Problem 18 and 67"
 date: "2012-07-18"
 categories: 
-  - "programming"
+  - "Programming#Misc"
 ---
 
 I’m in the early stages of learning Python – and by early I mean 3 days (about 5 hours total) in. My previous experience with Python was hearing people complain about (or mock) indent based scoping. To learn Python I’ve choose to work through some of the [Project Euler](http://projecteuler.net) problems. This post is specifically about [Problem 18](http://projecteuler.net) (Find the maximum sum travelling from the top of the triangle to the base. [Problem 67](http://projecteuler.net/problem=67) is the same except that it’s dataset is significantly larger so a brute force solution will not work.

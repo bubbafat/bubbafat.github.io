@@ -2,7 +2,7 @@
 title: "Project Euler Problem 33 Explained"
 date: "2012-07-20"
 categories: 
-  - "programming"
+  - "Programming#Misc"
 ---
 
 I haven’t been blogging about each answer but I wanted to say something about problem 33 because the wording of the problem is very confusing.

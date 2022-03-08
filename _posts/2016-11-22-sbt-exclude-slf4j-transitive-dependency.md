@@ -2,8 +2,7 @@
 title: "Excluding Spark SLF4J transitive dependencies in sbt"
 date: "2016-11-22"
 categories: 
-  - "scala"
-  - "spark"
+  - "Programming#Scala"
 description: "Clean up unit test output by removing the SLF4J refernence from all dependencies and then adding them back selectively."
 featured_image: '/images/archive/sbt-after.png'
 ---

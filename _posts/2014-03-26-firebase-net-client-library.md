@@ -2,6 +2,8 @@
 title: "Firebase .NET client library"
 date: "2014-03-26"
 featured_image: '/images/archive/Demo-of-Firebase-and-WPF-playing-together-using-the-FirebaseSharp-library.jpg'
+categories: 
+  - "Programming#Firebase"
 ---
 
 * * *

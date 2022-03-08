@@ -2,9 +2,7 @@
 title: "Aha Moments - gb_trees:update and thinking in Erlang"
 date: "2009-07-01"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
+  - "Programming#Erlang"
 ---
 
 The first episode of The [X-Files](http://en.wikipedia.org/wiki/The_X-Files) I ever saw was the [Home](http://en.wikipedia.org/wiki/Home_%28The_X-Files%29).  I was hooked immediately - and at the same time somewhat disappointed.  This was before on-demand TV, hulu or DVD compilations on NetFlix.  I had missed more than 3 seasons of a what was clearly going to be one of my favorite shows and there the only way to catch up was the hope that the next rerun would be one I hadn't seen.  Then it got all weird and aliens were showing up too often, Mulder basically disappeared and The Lone Gunman got their own spinoff ...

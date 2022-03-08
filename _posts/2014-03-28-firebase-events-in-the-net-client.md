@@ -1,6 +1,8 @@
 ---
 title: "Adding Firebase events to the .NET client"
 date: "2014-03-28"
+categories: 
+  - "Programming#Firebase"
 ---
 
 Version 1.0.0.2 of the Firebase .NET client library [FirebaseSharp](https://www.nuget.org/packages/FirebaseSharp/) has been released and includes a significant improvement - actual events when monitoring a location.

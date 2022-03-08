@@ -2,8 +2,7 @@
 title: "FirebaseSharp 2.0 - Preview"
 date: "2015-07-17"
 categories: 
-  - "firebase"
-  - "programming"
+  - "Programming#Firebase"
 ---
 
 I've been working on a complete rewrite of the FirebaseSharp API for a while now - plugging away here and there as time permitted - and I think I've finally hit a point where I should share some of the progress.

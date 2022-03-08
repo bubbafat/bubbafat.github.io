@@ -2,8 +2,7 @@
 title: "FirebaseSharp 2 goes alpha"
 date: "2015-07-27"
 categories: 
-  - "firebase"
-  - "programming"
+  - "Programming#Firebase"
 featured_image: '/images/archive/alpha.jpeg'
 ---
 

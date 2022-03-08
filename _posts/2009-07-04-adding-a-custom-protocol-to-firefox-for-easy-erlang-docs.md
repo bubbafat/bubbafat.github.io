@@ -2,9 +2,7 @@
 title: "Adding a custom protocol to Firefox for easy Erlang docs"
 date: "2009-07-04"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
+  - "Programming#Erlang"
 ---
 
 To make getting to the Erlang docs a bit quicker I added a custom protocol handler to firefox so when I go to:

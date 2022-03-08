@@ -18,7 +18,7 @@ menu_settings:
       url: '/contact'
 
 footer_settings:
-  footer_tagline: Hey, I'm Robert. This is what I've been working on.
+  footer_tagline: "Find a mistake? Please submit a PR on <a href='https://github.com/bubbafat/bubbafat.github.io'>github</a>"
 
 hero_settings:
   overlay_opacity: 0.8

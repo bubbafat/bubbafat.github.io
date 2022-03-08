@@ -2,8 +2,7 @@
 title: "FirebaseSharp 2.0 - StartAt"
 date: "2015-07-21"
 categories: 
-  - "firebase"
-  - "programming"
+  - "Programming#Firebase"
 featured_image: '/images/archive/thistallblack.png'
 ---
 

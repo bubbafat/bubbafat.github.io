@@ -2,8 +2,7 @@
 title: "FirebaseSharp 2.0 - orderByPriority"
 date: "2015-07-21"
 categories: 
-  - "firebase"
-  - "programming"
+  - "Programming#Firebase"
 ---
 
 Using Firebase you can provide a priority for a data item. The JSON would look like this:

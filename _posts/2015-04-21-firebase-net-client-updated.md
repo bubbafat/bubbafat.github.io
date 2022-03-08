@@ -2,9 +2,7 @@
 title: "Firebase .NET client updated"
 date: "2015-04-21"
 categories: 
-  - "programming"
-tags: 
-  - "firebase"
+  - "Programming#Firebase"
 ---
 
 I updated the [.NET client for Firebase](https://www.nuget.org/packages/FirebaseSharp/) to fix a bug related to async calls and synchronization contexts.

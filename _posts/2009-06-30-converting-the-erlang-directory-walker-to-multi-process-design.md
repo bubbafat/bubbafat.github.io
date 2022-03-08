@@ -2,9 +2,7 @@
 title: "Converting the Erlang directory walker to multi-process design"
 date: "2009-06-30"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
+  - "Programming#Erlang"
 ---
 
 In my [previous post](http://www.roberthorvick.com/2009/06/29/walking-the-directory-tree-in-erlang/) I wrote a simple file system walker using Erlang for the purposes of getting my head around the syntax.  To start thinking more in an Erlang mindset (though in a _very_ contrived manner) in this post I convert the file system walker to use two processes.  The first process ("walk") performs the file system walking and the second ("visit") processes each found item (i.e. prints the full item path name).

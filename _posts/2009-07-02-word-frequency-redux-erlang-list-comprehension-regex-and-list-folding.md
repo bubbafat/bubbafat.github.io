@@ -2,9 +2,7 @@
 title: "Word frequency redux - Erlang list comprehension, regex and list folding"
 date: "2009-07-02"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
+  - "Programming#Erlang"
 ---
 
 [Sean Cribbs](http://seancribbs.com/) was nice enough to [point out](http://www.roberthorvick.com/2009/07/02/finding-word-frequencies-using-erlang/#comments) a pair of changes I could make to my [word frequency counter](http://www.roberthorvick.com/2009/07/02/finding-word-frequencies-using-erlang/) from last time.

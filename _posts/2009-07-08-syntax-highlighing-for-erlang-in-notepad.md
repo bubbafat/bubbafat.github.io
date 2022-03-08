@@ -2,10 +2,7 @@
 title: "Syntax Highlighing for Erlang in NotePad++"
 date: "2009-07-08"
 categories: 
-  - "erlang"
-tags: 
-  - "erlang"
-  - "windows"
+  - "Programming#Erlang"
 ---
 
 _Update: The definition has been updated to include support for atoms, variables and function names as well as additional file extensions. Screen shot and downloadable content have been updated._
