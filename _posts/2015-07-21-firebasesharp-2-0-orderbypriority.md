@@ -8,6 +8,7 @@ categories:
 
 Using Firebase you can provide a priority for a data item. The JSON would look like this:
 
+```json
 {
     'item1': {
         'data': 'foo',
@@ -22,6 +23,7 @@ Using Firebase you can provide a priority for a data item. The JSON would look l
         '.priority': 2
     },
 }
+```
 
 Notice how the priority is embedded in the JSON. _If you are using the JavaScript API the priority is not returned in the data snapshot JSON object, but you can get it from the snapshot. FirebaseSharp 2.0 (at least for now) does include it in the returned snapshot._ I plan to fix that but not yet.
 
@@ -29,12 +31,14 @@ With this JSON example, if we used ref.orderByPriority we should get the items b
 
 This is actually pretty powerful. You could drain a priority queue like this:
 
+```csharp
 var root = app.Child("/");
 var query = root.OrderByPriority().LimitToFirst(1).On("value", 
     (snap, child, context) => {
         // this is the highest priority item
         // remove it when processed and you'll get the next one
     });
+```
 
 Note: I haven't tried this in the C# library because I'm pretty sure it would not work right now. I think the subscription events need to fire from a background thread to avoid re-entrancy issues in the On handler. Think about it ... when On("value") fires, if you then called root.Delete(snap.Path) to remove node you just processed, that would end up calling On with the new high-priority value ... but it would be a recursive call. Given a sufficiently large queue you'd blow your stack space. In Node we'd just schedule the event with nextTick, setTimeout or setImmediate (I'd need to think about it more) - but in C# I'll need to think about other options. Probably a blocking queue and a long-running task.
 

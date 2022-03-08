@@ -15,6 +15,7 @@ Here are some of the latest changes...
 
 Using the Firebase [crypto currencies data set](https://www.firebase.com/docs/open-data/cryptocurrencies.html) we could model a class in C#:
 
+```csharp
 struct currency
 {
     public float last;
@@ -23,9 +24,11 @@ struct currency
     public string \_credits;
     public string \_updated;
 }
+```
 
 And now we can get an instance of that directly from our snapshot - for example here we'll use the child\_changed event off the crypto root to get changed events for the three support currencies - bitcoin, litecoin and dogecoin.
 
+```csharp
 using (var app = new FirebaseApp(new Uri("https://publicdata-cryptocurrency.firebaseio.com/")))
 {
     var currencyRef = app.Child("/");
@@ -40,6 +43,7 @@ using (var app = new FirebaseApp(new Uri("https://publicdata-cryptocurrency.fire
 
     Console.ReadKey();
 } 
+```
 
 Notice the call to snap.Value() - it will perform the conversion for you.
 
@@ -49,6 +53,7 @@ Let's flip that example a bit - what if I wanted to add something that was a str
 
 No problem! Let's define some types...
 
+```csharp
 struct Name
 {
     public string first;
@@ -60,9 +65,11 @@ struct Person
     public Name name;
     public int age;
 }
+```
 
 And now use them.
 
+```csharp
 using (var app = new FirebaseApp(new Uri("https://yourfirebase.url/")))
 {
     var people = app.Child("people");
@@ -80,6 +87,7 @@ using (var app = new FirebaseApp(new Uri("https://yourfirebase.url/")))
 
     Thread.Sleep(TimeSpan.FromSeconds(10));
 }
+```
 
 And what did that push? Exactly what you'd expect:
 
@@ -91,17 +99,20 @@ The syntax here is still being worked out - but basically you can now use the [s
 
 Let's extend our Person example to include the server timestamp that the record was created. We'll start by modifying our Person struct to include a timestamp member:
 
+```csharp
 struct Person
 {
     public Name name;
     public int age;
     public ServerValue.ServerTimestamp created;
 }
+```
 
 I'm not thrilled with how this looks - but let's roll with it for now.
 
 And now we modify our creation to initialize the member:
 
+```csharp
 var robert = new Person
 {
     name = new Name
@@ -112,9 +123,11 @@ var robert = new Person
     age = 38,
     created = new ServerValue.ServerTimestamp(),
 };
+```
 
 What happens now is that we send up a JSON object that looks like this:
 
+```json
 {  
   "-JvFOCRHPFLy34gG4Fof":{  
     "age":38,
@@ -125,6 +138,7 @@ What happens now is that we send up a JSON object that looks like this:
     }
   }
 }
+```
 
 And when the server sees the timestamp placeholder is replaces it with the exact server time.
 
@@ -132,9 +146,11 @@ And when the server sees the timestamp placeholder is replaces it with the exact
 
 All callbacks (including the initial On and Once callbacks) are now called from background threads. This means that you can now do things like:
 
+```csharp
 query.On("value", (snap, child, context) => {
     snap.Ref().Remove();
 });
+```
 
 Before this _could_ have ended up causing problems because (a) the callback might be fired under a locked context causing a deadlock if you did anything async in the callback and, (b) On/Once might not return in a timely manner (or at all) if the callback (either it's - or one in front of it) was blocking or threw an exception.
 

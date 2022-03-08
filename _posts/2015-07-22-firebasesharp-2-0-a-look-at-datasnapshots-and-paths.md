@@ -15,6 +15,7 @@ The [Firebase docs](https://www.firebase.com/docs/web/api/datasnapshot/) for dat
 
 I'll repeat and example they give in the docs - we start with this JSON:
 
+```json
 {
   "messages": {
     "-JqpIO567aKezufthrn8" {
@@ -27,9 +28,11 @@ I'll repeat and example they give in the docs - we start with this JSON:
     }
   }
 }
+```
 
 Then using the Node API you could use once to get the initial snapshot and then loop over all the children, extracting the key and children values for uid and text.
 
+```csharp
 var messagesRef = new Firebase("https://docs-examples.firebaseio.com/samplechat/messages");
 messagesRef.once("value", function(allMessagesSnapshot) {
   allMessagesSnapshot.forEach(function(messageSnapshot) {
@@ -39,9 +42,11 @@ messagesRef.once("value", function(allMessagesSnapshot) {
     var text = messageSnapshot.child("text").val();  // e.g. "Welcome to Bedrock City!"
   });
 });
+```
 
 So what does this look like in the C# library?
 
+```csharp
 var query = app.Child("messages");
 query.Once("value", (snap, child, context) => {
     foreach(var msg in snap.Children()) {
@@ -50,6 +55,7 @@ query.Once("value", (snap, child, context) => {
         var text = msg.Child("text").Value();
     }
 });
+```
 
 The snapshot usage is basically the same. Instead of using .forEach you would a traditional (foreach) enumeration over .Children() - but otherwise things should look and feel pretty similar.
 
@@ -59,8 +65,10 @@ I also wanted to briefly talk about paths. When I say "path" I mean the full pat
 
 In this example:
 
+```csharp
 FirebaseApp app = new FirebaseApp(new Uri("http://example.com"));
 var query = app.Child("foo/bar/baz");
+```
 
 The "path" of the query is "/foo/bar/baz". The "key" of the query is "baz" The "parent" of the query has the path "/foo/bar" and the key "bar" The root of the FirebaseApp has a path of "/" and a null key.
 
@@ -70,10 +78,9 @@ It's important to remember a few things.
 2. Paths always use the "/" (forward slash) as their separator
 3. Paths start with a forward slash (though the path parsing logic is loose about that)
 4. Keys never contain a forward slash
-
-6. Path parts (between the forward slashes) must confirm to JSON property name rules
-7. Whitespace at the slash boundaries is trimmed (e.g., " /foo / bar " becomes "/foo/bar")
-8. Double slashes are ignored (e.g., "//foo//bar" becomes "/foo/bar")
+5. Path parts (between the forward slashes) must confirm to JSON property name rules
+6. Whitespace at the slash boundaries is trimmed (e.g., " /foo / bar " becomes "/foo/bar")
+7. Double slashes are ignored (e.g., "//foo//bar" becomes "/foo/bar")
 
 Internally the library never stores paths (directly) as strings - rather it uses a specialized path object that can enforce these rules and perform normalization. This was a recent change and has helped with a handful of bugs where path, key and "child name" (e.g., snap.Child("foo")) were being used incorrectly. It would manifest in weird little bugs where everything seemed to work but a snapshot might have a key of "foo/bar" or a path of "//foo/bar".
 

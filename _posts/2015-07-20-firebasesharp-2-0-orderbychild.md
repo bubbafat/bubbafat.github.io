@@ -18,22 +18,25 @@ Firebase [orderByChild](https://www.firebase.com/docs/web/api/query/orderbychild
 
 Their node example is:
 
+```csharp
 var ref = new Firebase("https://dinosaur-facts.firebaseio.com/dinosaurs");
 ref.orderByChild("height").on("child\_added", function(snapshot) {
   console.log(snapshot.key() + " was " + snapshot.val().height + " meters tall");
 });
+```
 
 Producing the output:
 
-linhenykus was 0.6 meters tall
-pterodactyl was 0.6 meters tall
-lambeosaurus was 2.1 meters tall
-triceratops was 3 meters tall
-stegosaurus was 4 meters tall
-bruhathkayosaurus was 25 meters tall
+    linhenykus was 0.6 meters tall
+    pterodactyl was 0.6 meters tall
+    lambeosaurus was 2.1 meters tall
+    triceratops was 3 meters tall
+    stegosaurus was 4 meters tall
+    bruhathkayosaurus was 25 meters tall
 
 How does this translate to FirebaseSharp 2.0? Pretty closely.
 
+```csharp
 FirebaseApp app = new FirebaseApp(new Uri("https://dinosaur-facts.firebaseio.com/"));
 
 var scoresRef = app.Child("dinosaurs").OrderByChild("height").On("child\_added",
@@ -41,6 +44,7 @@ var scoresRef = app.Child("dinosaurs").OrderByChild("height").On("child\_added",
         Console.WriteLine("{0} was {1} meters tall", 
             snapshot.Key, snapshot\["height"\].Value());
     }); 
+```
 
 The main thing to notice is that reading the "height" property uses a string indexer to get the child snapshot and then converts the child to a float. I'm still thinking through the best way to do this but for now this works.
 

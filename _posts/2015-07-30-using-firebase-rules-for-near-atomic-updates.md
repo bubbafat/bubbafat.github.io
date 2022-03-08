@@ -11,14 +11,17 @@ The Firebase REST API has many limitations - one of which is that it has no supp
 
 Well - a simple way is to add a monotonically incrementing "Version" to your object like this:
 
+```csharp
 public class TrxItem
 {
     public string Data;
     public int Version;
 }
+```
 
 And then add a Firebase validate rule that says that the if the object already exists that the Version value must be 1 greater than the current version. For example:
 
+```json
 {
   "rules": {
     "trx": {
@@ -28,9 +31,11 @@ And then add a Firebase validate rule that says that the if the object already e
     }
   }
 }
+```
 
 Now let's create a new object and save it to Firebase:
 
+```csharp
 // in production this requires a using block
 var app = new FirebaseApp(/\* your connection details \*/);
 
@@ -43,9 +48,11 @@ var item1 = new TrxItem {
 };
 
 item1Ref.Set(item1);
+```
 
 Now in Firebase we have data like this:
 
+```json
 {
   "trx": {
     "item1": {
@@ -54,14 +61,17 @@ Now in Firebase we have data like this:
     }
   }
 }
+```
 
 So what would happen if we tried to change the Data value but leave Version at 0? Well- let's go to the Firebase simulator and find out:
 
+```csharp
 Attempt to write Success({"Data":"Updated data","Version":0}) to /trx/item1 with auth=Success(null)
 	/:.write: "true"
 		=> true
 	/trx/item1:.validate: "!data.exists() || (newData.child('Version').val() === data.child('Version').val() + 1)"
 		=> false
+```
 
 Validation failed.
 Write was denied.
@@ -72,11 +82,13 @@ Because data.child('Version').val() was equal to 0 (this is the value currently 
 
 We can observe this error like so:
 
+```csharp
 item1Ref.Set(item1, error => {
     if (error != null) {
         // handle error using error.Code
     }
 });
+```
 
 Specifically the error code is Unauthorized access (HTTP 401).
 
@@ -84,6 +96,7 @@ _Note: the current FirebaseSharp 2.0 implementation will update the local cache 
 
 To update our value we simply need to bump the version number before saving it. In this example we read the value with Once and then update it in the callback:
 
+```csharp
 item1Ref.Once("value", (snap, child, context) => {
     var newItem1 = snap.Value();
 
@@ -95,9 +108,11 @@ item1Ref.Once("value", (snap, child, context) => {
         // ensure it worked
     });
 }); 
+```
 
 That query will succeed (assuming no one else already updated the version) and the Firebase database will now look like:
 
+```json
 {
   "trx": {
     "item1": {
@@ -106,5 +121,6 @@ That query will succeed (assuming no one else already updated the version) and t
     }
   }
 }
+```
 
 But if you really need transactional behaviors then you should probably perform those updates using one of the official libraries that support transactions natively.

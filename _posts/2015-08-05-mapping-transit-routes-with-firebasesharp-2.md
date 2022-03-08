@@ -13,6 +13,7 @@ I wanted to create a simple application that would watch the SF Muni system and 
 
 The whole thing is about 40 lines of code. Here's the form load event handler:
 
+```csharp
 private void MainWindow\_OnLoaded(object sender, RoutedEventArgs e)
 {
     MainMap.MapProvider = GMapProviders.OpenStreetMap;
@@ -30,11 +31,13 @@ private void MainWindow\_OnLoaded(object sender, RoutedEventArgs e)
         RemoveMarker(snap);
     });
 }
+```
 
 Notice that we're setting up to use the OpenStreetMap provider (easiest option) and created the FirebaseApp instance at the "sf-muni/vehicles" root (since I don't care about routes or other locations, this is minimize the amount of data we need to cache).
 
 Then I subscribe to the child changed and removed events calling the appropriate method to update or remove the marker (passing the snapshot along). That's all the Firebase setup that was needed.
 
+```csharp
 private void UpdateMarker(IDataSnapshot snap)
 {
     Dispatcher.Invoke(() =>
@@ -60,9 +63,11 @@ private void UpdateMarker(IDataSnapshot snap)
         }
     });
 } 
+```
 
 In UpdateMarker I simply check to see if we already have the marker for this bus (based on the snapshot key) - and if we don't I create it. Otherwise I update the position. Since the Markers collection is an observable collection this is all it takes to update the marker locations (and colors - green means moving, red means stopped).
 
+```csharp
 private void RemoveMarker(IDataSnapshot snap)
 {
     Dispatcher.Invoke(() =>
@@ -75,11 +80,13 @@ private void RemoveMarker(IDataSnapshot snap)
         }
     });
 }
+```
 
 RemoveMarker simply finds the marker and removes it if it exists. Buses come and go more often than you'd think (any time they cross one of the bridges they are coming or going).
 
 The rest is just creating a rect for the marker and adding a click handler as an example of how to do that.
 
+```csharp
 Brush SpeedBrush(int speed)
 {
     return speed > 0
@@ -103,5 +110,6 @@ private UIElement CreateMarker(IDataSnapshot snap)
 
     return element;
 } 
+```
 
 _Note: the video is speed up by 2500% - buses only move that fast when [Sandra Bullock](http://www.imdb.com/title/tt0111257/) is behind the wheel_

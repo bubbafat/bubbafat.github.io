@@ -14,15 +14,18 @@ Ultimately the API should be very unsurprising to anyone who has used the Node A
 
 Here's an example that works today. The Node code is:
 
+```csharp
 var scoresRef = new Firebase("https://dinosaur-facts.firebaseio.com/scores");
 scoresRef.orderByValue().limitToLast(3).on("value", function(snapshot) {
   snapshot.forEach(function(data) {
     console.log("The " + data.key() + " dinosaur's score is " + data.val());
   });
 });
+```
 
 And the comparable FirebaseSharp code is
 
+```csharp
 FirebaseApp app = new FirebaseApp(new Uri("https://dinosaur-facts.firebaseio.com/"));
 
 var scoresRef = app.Child("scores");
@@ -32,12 +35,13 @@ scoresRef.OrderByValue().LimitToLast(3).On("value", (snapshot, child, context) =
                         data.Key, data.Value());
    }
 }); 
+```
 
 In both cases the output is the same:
 
-The bruhathkayosaurus dinosaur's score is 55
-The linhenykus dinosaur's score is 80
-The pterodactyl dinosaur's score is 93
+    The bruhathkayosaurus dinosaur's score is 55
+    The linhenykus dinosaur's score is 80
+    The pterodactyl dinosaur's score is 93
 
 The code is pretty similar. Create the ref, make the query ordering by value, limiting to the last 3 and then listening for the value update (which fires as soon as the cache is initially populated).
 
