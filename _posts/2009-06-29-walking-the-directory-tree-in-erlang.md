@@ -13,6 +13,7 @@ The application has a single module, walker, which exports walk/1. The argument 
 
 This method prints the path name, determines the type of the current path (file, directory or symlink), and then IFF the path is a directory it calls filelib:wildcard to get the children of the path and repeats the process on them.
 
+```erlang
 \-module(walker).
 
 -include\_lib("kernel/include/file.hrl").
@@ -54,6 +55,7 @@ walk(Path) ->
 			Children = filelib:wildcard(Path ++ "/\*"),
 			lists:foreach(fun(P) -> walk(P) end, Children)
 	end.
+```
 
 My questions about this module are:
 

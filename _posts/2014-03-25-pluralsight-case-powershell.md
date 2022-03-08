@@ -4,7 +4,7 @@ date: "2014-03-25"
 categories: 
   - "pluralsight"
   - "training-tuesday"
-coverImage: "powershell.png"
+featured_image: '/images/archive/powershell.png'
 ---
 
 [The Case for PowerShell](http://pluralsight.com/training/Courses/TableOfContents/case-for-powershell) is a new Pluralsight course by [Mark Minasi](http://pluralsight.com/training/Authors/Details/mark-minasi) where he, not surprisingly, makes a case for PowerShell.

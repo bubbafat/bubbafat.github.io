@@ -4,7 +4,7 @@ date: "2015-07-30"
 categories: 
   - "firebase"
   - "programming"
-coverImage: "nuke.png"
+featured_image: '/images/archive/nuke.png'
 ---
 
 The Firebase REST API has many limitations - one of which is that it has no support for transactions. But what if I'm (exclusively) using the REST API and want to make sure that if two clients try to change the same object concurrently that only one will win?

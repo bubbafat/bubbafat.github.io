@@ -5,7 +5,7 @@ categories:
   - "programming"
 tags: 
   - "encoding"
-coverImage: "cards.jpg"
+featured_image: '/images/archive/cards.jpg'
 ---
 
 When I was in 8th grade we had a school talent show – it wasn’t everyone-up-on-stage, but rather classrooms dedicated to certain talents. Music. Karate. Acting. Magic.

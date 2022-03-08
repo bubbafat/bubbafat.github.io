@@ -44,11 +44,11 @@ Dan harped on this a bit. I think he's a smart guy. I mean - I think he's a real
 
 When I wrote this, there were 898 jobs posted on Indeed for Force.com developers.
 
-[![Force.com for .NET Developers - 898 jobs available](images/force-all-e1394296817632.png)](http://www.indeed.com/jobs?q=Force.Com+Developer)
+[![Force.com for .NET Developers - 898 jobs available](/images/archive/force-all-e1394296817632.png)](http://www.indeed.com/jobs?q=Force.Com+Developer)
 
 This surprised me a bit. But what really surprised me was that almost 10% of them were for $130,000 and up.
 
-[![Force.com developer jobs over $130k](images/force-130-e1394296931286.png)](http://www.indeed.com/jobs?q=Force.Com+Developer+%24130%2C000&l=&rs=1)
+[![Force.com developer jobs over $130k](/images/archive/force-130-e1394296931286.png)](http://www.indeed.com/jobs?q=Force.Com+Developer+%24130%2C000&l=&rs=1)
 
 When Dan said "Follow the money" - he wasn't kidding.
 

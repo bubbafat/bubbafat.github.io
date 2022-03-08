@@ -4,7 +4,7 @@ date: "2015-07-22"
 categories: 
   - "firebase"
   - "programming"
-coverImage: "camera.gif"
+featured_image: '/images/archive/camera.gif'
 ---
 
 ## Data Snapshots

@@ -4,7 +4,7 @@ date: "2015-08-05"
 categories: 
   - "firebase"
   - "programming"
-coverImage: "FirebaseSharp-2.0-Transit-Demo.jpeg"
+featured_image: '/images/archive/FirebaseSharp-2.0-Transit-Demo.jpeg'
 ---
 
 Firebase provides a few [open data sets](https://www.firebase.com/docs/open-data/), one of which is the [Transit](https://publicdata-transit.firebaseio.com/) data set. This data set includes real-time information about municipal transit systems - for example the [San Francisco Municipal](https://publicdata-transit.firebaseio.com/sf-muni) transit system.

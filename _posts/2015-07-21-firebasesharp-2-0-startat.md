@@ -4,7 +4,7 @@ date: "2015-07-21"
 categories: 
   - "firebase"
   - "programming"
-coverImage: "thistallblack.png"
+featured_image: '/images/archive/thistallblack.png'
 ---
 
 Today we'll look at the StartAt method on the new FirebaseSharp 2.0 library.

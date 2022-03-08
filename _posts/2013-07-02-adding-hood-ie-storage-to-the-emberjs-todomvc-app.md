@@ -3,7 +3,7 @@ title: "Adding Hood.ie storage to the EmberJS TodoMVC app"
 date: "2013-07-02"
 categories: 
   - "hoodie"
-coverImage: "emberjs1-700x300.jpg"
+featured_image: '/images/archive/emberjs1-700x300.jpg'
 ---
 
 [Yesterday](http://www.roberthorvick.com/2013/06/30/todomvc-angularjs-hood-ie-60-minutes-to-awesome/ "TodoMVC (AngularJS) + Hood.ie = 60 minutes to awesome") I took the AngularJS TodoMVC example and converted it to using Hood.ie for data storage and making it multi-user in the process. I was pretty impressed. Not with myself - but rather that despite myself, the task wasn't too bad.

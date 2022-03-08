@@ -1,7 +1,7 @@
 ---
 title: "Firebase .NET client library"
 date: "2014-03-26"
-coverImage: "Demo-of-Firebase-and-WPF-playing-together-using-the-FirebaseSharp-library.jpg"
+featured_image: '/images/archive/Demo-of-Firebase-and-WPF-playing-together-using-the-FirebaseSharp-library.jpg'
 ---
 
 * * *
@@ -69,7 +69,7 @@ Firebase has a bunch of sample applications. One of them is a multi-user realtim
 
 It looks like this:
 
-![Firebase drawing sample](images/firebase-face.png)
+![Firebase drawing sample](/images/archive/firebase-face.png)
 
 And if multiple browsers all connect to the same URL - they can all draw on the canvas at the same time.
 
@@ -134,7 +134,7 @@ Just want to see it all? I made a gist here: [https://gist.github.com/bubbafat/9
 
 The long and short of it is that my app looks like this:
 
-![Firebase .NET client WPF drawing app](images/wpf-face.png)
+![Firebase .NET client WPF drawing app](/images/archive/wpf-face.png)
 
 All those pixels came from Firebase and they update in real time. See... just check this video:
 
