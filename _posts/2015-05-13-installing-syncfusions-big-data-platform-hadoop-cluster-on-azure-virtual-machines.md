@@ -69,7 +69,7 @@ I did not try installing the Windows web role ahead of time - but that might wor
 
 With the cluster manager now working you can open the management dashboard (opens in your default browser) and click the "Create" button to create a new cluster. Setup the cluster to communicate with the other virtual machines (which are all on the same virtual network per the VM configuration section) ...
 
- [![create-cluster](/images/archive/create-cluster.png)](http://www.roberthorvick.com/wp-content/uploads/2015/05/create-cluster.png) 
+ ![create-cluster](/images/archive/create-cluster.png) 
 
 Enter the IP addresses (10.0.0.4, 10.0.0.5, 10.0.0.6) and click "Next"
 
@@ -81,11 +81,11 @@ So now go off and download the agent exe (from where you got the cluster manager
 
 Now the client agent is working.
 
- [![install-agent](/images/archive/install-agent.png)](http://www.roberthorvick.com/wp-content/uploads/2015/05/install-agent.png) 
+ ![install-agent](/images/archive/install-agent.png) 
 
 Now go repeat this step on the other two VM's. Download and install the agent then come back and click "refresh". But don't get all excited yet. It still not going to work. You'll see this:
 
- [![DNS and reverse DNS are not working](/images/archive/dns-bad.png)](http://www.roberthorvick.com/wp-content/uploads/2015/05/dns-bad.png) 
+ ![DNS and reverse DNS are not working](/images/archive/dns-bad.png) 
 
 So what's happening here is that the local VM is able to connect to the remote VM but DNS and reverse DNS are not working because Azure doesn't give you that by default.
 
@@ -99,17 +99,17 @@ Then (for my sanity) I ran these commands (from and admin command prompt):
 
 Now try refreshing again.
 
- [![success](/images/archive/success.png)](http://www.roberthorvick.com/wp-content/uploads/2015/05/success.png) Awesome! Click "Next" and wait for the package transfer (this takes several minutes)
+ ![success](/images/archive/success.png) Awesome! Click "Next" and wait for the package transfer (this takes several minutes)
 
-[![transfering-packages](/images/archive/transfering-packages.png)](http://www.roberthorvick.com/wp-content/uploads/2015/05/transfering-packages.png)
+![transfering-packages](/images/archive/transfering-packages.png)
 
 And then ensuring high availability goes for a while...
 
-[![ensuring-high-availability](/images/archive/ensuring-high-availability.png)](http://www.roberthorvick.com/wp-content/uploads/2015/05/ensuring-high-availability.png)
+![ensuring-high-availability](/images/archive/ensuring-high-availability.png)
 
 And finally we're done.
 
-[![all-working](/images/archive/all-working.png)](http://www.roberthorvick.com/wp-content/uploads/2015/05/all-working.png)
+![all-working](/images/archive/all-working.png)
 
 ## What's Next?
 

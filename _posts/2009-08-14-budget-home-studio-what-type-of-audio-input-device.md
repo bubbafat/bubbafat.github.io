@@ -10,7 +10,7 @@ tags:
 
 I learned something about myself this week.  I can’t stand it when people refer to an externally connected (FireWire or USB) audio device a “sound card”.
 
-[![audio-cards](/images/archive/audiocards_thumb.png "audio-cards")](http://www.roberthorvick.com/images/BudgetHomeStudiowhattypeofaudioinputdevi_14F/audiocards.png)
+![audio-cards](/images/archive/audiocards_thumb.png "audio-cards")
 
 One of these things is not like the other.  Know which one?  The one that’s actually a card.  The other are boxes.
 
@@ -22,7 +22,7 @@ Let me get you up to speed.  I have more time than money ($1000) and I want to 
 
 The first decision I made after several days of researching: I’m not using a digital-recorder-mixer combination plate.  At first I thought I was.  I had even figured out which one – the [Zoom HD8CD](http://www.samsontech.com/products/productpage.cfm?prodID=1918).
 
-[![zoom-hd8cd](/images/archive/zoomhd8cd_thumb.png "zoom-hd8cd")](http://www.roberthorvick.com/images/BudgetHomeStudiowhattypeofaudioinputdevi_14F/zoomhd8cd.png)
+![zoom-hd8cd](/images/archive/zoomhd8cd_thumb.png "zoom-hd8cd")
 
 This seemed ideal on the surface.  Buy one thing and just be done with it – even a CD burner.  It can communicate with a DAW to do further processing and mixing on the computer.  What’s not to like?
 
@@ -32,7 +32,7 @@ So at the end of the day I get a highly convenient device (a card?) of that leav
 
 So what are my options?  Well – there is a PCI card or an external device connected by USB or FireWire.
 
-[![pci-audio-card](/images/archive/pciaudiocard_thumb.png "pci-audio-card")](http://www.roberthorvick.com/images/BudgetHomeStudiowhattypeofaudioinputdevi_14F/pciaudiocard.png)
+![pci-audio-card](/images/archive/pciaudiocard_thumb.png "pci-audio-card")
 
 I’m using a laptop so PCI is out (and even if it were an option I wouldn’t necessary want it).  And since I’m using a lower-end laptop I don’t want to use USB since it puts more pressure on the CPU and has lower real-world transfer rates compared to FireWire.  I want to get everything I can out of what I have.
 

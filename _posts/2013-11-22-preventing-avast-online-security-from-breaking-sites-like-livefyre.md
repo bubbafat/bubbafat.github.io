@@ -7,7 +7,7 @@ There was some feedback left on the [Algorithms and Data Structures (Part 2)](ht
 
 The problem was that when I got to the page this is what I saw:
 
-[![livefyre](/images/archive/livefyre.png)](http://www.roberthorvick.com/wp-content/uploads/2013/11/livefyre.png)
+![livefyre](/images/archive/livefyre.png)
 
 Stalled.
 
@@ -25,4 +25,4 @@ Since it was between Buffer and avast! - I figured it must be avast trying to be
 
 I opened the extensions window and found the avast Extension and clicked on "Options" then I disabled the "Block social networks by default" option - and now LiveFyre works as expected. This problem can also happen if you are a victim of a cyberattack. To prevent this from happening, you can use [WAF](https://www.fortinet.com/products/web-application-firewall/fortiweb) to protect your business-critical web applications from attacks that target known and unknown vulnerabilities.
 
-[![avast-off](/images/archive/avast-off.png)](http://www.roberthorvick.com/wp-content/uploads/2013/11/avast-off.png)
+![avast-off](/images/archive/avast-off.png)

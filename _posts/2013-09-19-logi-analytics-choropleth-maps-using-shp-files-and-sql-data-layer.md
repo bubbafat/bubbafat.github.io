@@ -44,7 +44,7 @@ _NOTE: The US Census Bureau has some great data [here](http://www.census.gov/geo
     
     The window should now look like this:
     
-    [![spatialtool](/images/archive/spatialtool.png)](http://www.roberthorvick.com/wp-content/uploads/2013/09/spatialtool.png)
+    ![spatialtool](/images/archive/spatialtool.png)
 7. Click "Upload to Database" - a progress bar will appear at the bottom of the window and 56 (when I ran it) geographies will be uploaded.
 
 You should have 56 rows of data in the States table. Go check!
@@ -65,7 +65,7 @@ But go look at our States..geography column - it is not a string. Well ... maybe
 
 select geography.STAsText() from States
 
-[![STAsText](/images/archive/STAsText.png)](http://www.roberthorvick.com/wp-content/uploads/2013/09/STAsText.png)
+![STAsText](/images/archive/STAsText.png)
 
 There are two types of results:
 
@@ -93,7 +93,7 @@ Now we need to convert the States..geography data into the Logi-compatible forma
 
 I connect LinqPAD to SQL using this connection definition:
 
-[![spatial-connection](/images/archive/spatial-connection.png)](http://www.roberthorvick.com/wp-content/uploads/2013/09/spatial-connection.png)
+![spatial-connection](/images/archive/spatial-connection.png)
 
 _(SQL Server provider, Windows Authentication, Spatial database, all other defaults)_
 
@@ -160,7 +160,7 @@ So what did we do there?
 
 We created a Google Map (stateMap) and added a polygon layer to it (statePolygons). We added a SQL data layer under the polygons and are selecting back the id, state\_id and rdCoordinates column. This is enough information for Logi to render the regions in Google Maps. Save and hit F5 and your map should look like this:
 
-[![map-no-colors](/images/archive/map-no-colors.png)](http://www.roberthorvick.com/wp-content/uploads/2013/09/map-no-colors.png)
+![map-no-colors](/images/archive/map-no-colors.png)
 
 Awesome, right? Now let's add some colors.
 
@@ -178,7 +178,7 @@ What we just did was add a color spectrum column to the data source, set the hig
 
 Save and refresh the browser and now your map should look something like this:
 
-[![Logi Analytics US States and Territories](/images/archive/logi-us-states.png)](http://www.roberthorvick.com/wp-content/uploads/2013/09/logi-us-states.png)
+![Logi Analytics US States and Territories](/images/archive/logi-us-states.png)
 
 Awesome!
 
