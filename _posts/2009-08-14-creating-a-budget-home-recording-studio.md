@@ -24,7 +24,7 @@ I’m in the planning stages of putting together a home recording studio for cap
 
 Something like this
 
-[![wheremusiccomesfrom](images/wheremusiccomesfrom_thumb.png "wheremusiccomesfrom")](http://www.roberthorvick.com/images/CreatingaBudgetHomeRecordingStudio_14762/wheremusiccomesfrom.png)
+[![wheremusiccomesfrom](/images/archive/wheremusiccomesfrom_thumb.png "wheremusiccomesfrom")](http://www.roberthorvick.com/images/CreatingaBudgetHomeRecordingStudio_14762/wheremusiccomesfrom.png)
 
 That’s one hell of an expensive question mark.
 

@@ -14,28 +14,28 @@ Basically I wanted a way to reduce context switches caused by needing to go to t
 
 I ended up creating a few external commands (Tools -> External Tools) for perforce commands “Add” and “Edit” …
 
-[![clip_image002](images/clip_image002_thumb.jpg "clip_image002")](http://www.roberthorvick.com/wp-content/uploads/2011/02/clip_image002.jpg)
+[![clip_image002](/images/archive/clip_image002_thumb.jpg "clip_image002")](http://www.roberthorvick.com/wp-content/uploads/2011/02/clip_image002.jpg)
 
 Then I created a new toolbar (Tools -> Customize)
 
-[![clip_image004](images/clip_image004_thumb.jpg "clip_image004")](http://www.roberthorvick.com/wp-content/uploads/2011/02/clip_image004.jpg)
+[![clip_image004](/images/archive/clip_image004_thumb.jpg "clip_image004")](http://www.roberthorvick.com/wp-content/uploads/2011/02/clip_image004.jpg)
 
 And then from the toolbar in the IDE shell (which is empty so may be hard to find if you have many toolbars open) I clicked on the little down arrow and choose “Add or Remove Buttons” -> Customize.
 
 From there I selected the “My Tools” toolbar I created:
 
-[![clip_image006](images/clip_image006_thumb.jpg "clip_image006")](http://www.roberthorvick.com/wp-content/uploads/2011/02/clip_image006.jpg)
+[![clip_image006](/images/archive/clip_image006_thumb.jpg "clip_image006")](http://www.roberthorvick.com/wp-content/uploads/2011/02/clip_image006.jpg)
 
 And clicked “Add Command”
 
 From there I picked “Tools” from Categories and “External Command 1” (this is the first item in the External Tools list – so “Edit” in this case)
 
-[![clip_image008](images/clip_image008_thumb.jpg "clip_image008")](http://www.roberthorvick.com/wp-content/uploads/2011/02/clip_image008.jpg)
+[![clip_image008](/images/archive/clip_image008_thumb.jpg "clip_image008")](http://www.roberthorvick.com/wp-content/uploads/2011/02/clip_image008.jpg)
 
 And then back at the Customize window I clicked “Modify Selection” and renamed “External Command 1” to “Edit” to match the command.
 
 Now when I have a file open in VS I can just click the “Edit” button and the file is checked out for edit and the output of the command line goes to the Output window (notice I had that option selected above when defining the External Tool).
 
-[![image](images/image_thumb.png "image")](http://www.roberthorvick.com/wp-content/uploads/2011/02/image.png)
+[![image](/images/archive/image_thumb.png "image")](http://www.roberthorvick.com/wp-content/uploads/2011/02/image.png)
 
 It saves me from having to bounce back and forth between VS and the command line when I need to add/edit a file – this keeps my fingers on the keyboard and off the mouse.

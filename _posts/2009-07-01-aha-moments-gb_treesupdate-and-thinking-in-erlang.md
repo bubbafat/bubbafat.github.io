@@ -73,7 +73,7 @@ int size(Tree \*tree) {
     return tree->size;
 }
 
-![I'm Loving It](images/lovinit-300x290.jpg "I'm lovin it!")
+![I'm Loving It](/images/archive/lovinit-300x290.jpg "I'm lovin it!")
 
 ## How is the tree modified?
 
@@ -117,7 +117,7 @@ No.  No they can't.  I was having a little trouble groking this until I ran th
 
 Each time anything was done a new tree was created - the old tree was still valid and could be used but it was not the new tree.  It's the old tree.  This boggled me for a few minutes until [Justin Sheehy](https://twitter.com/justinsheehy) confirmed what the code was saying.
 
-![@bubbafat They are immutable data structures. In functional programming, "update" is nondestructive](images/thanks-justin.png "thanks-justin")
+![@bubbafat They are immutable data structures. In functional programming, "update" is nondestructive](/images/archive/thanks-justin.png "thanks-justin")
 
 So no - multiple processes could not possibly share the tree because the tree is immutable.
 

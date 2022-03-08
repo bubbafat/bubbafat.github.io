@@ -27,7 +27,7 @@ chmod +x erlang.protocol
 
 Finally I followed [these directions](http://kb.mozillazine.org/Register_protocol) and added the following config settings in firefox:
 
-![Adding custom protocol to firefox](images/aboutconfig.png "Adding custom protocol to firefox")
+![Adding custom protocol to firefox](/images/archive/aboutconfig.png "Adding custom protocol to firefox")
 
 Since the Erlang/OTP doc pages match their module names this works pretty well.
 

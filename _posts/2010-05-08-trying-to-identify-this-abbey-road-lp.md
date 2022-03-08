@@ -19,10 +19,10 @@ What I know:
 
 Can anyone suggest where I can find more information about what variation I have and what it’s general value is (I’m not trying to sell it but I’m trying to get an inventory of what I have).
 
-[![DSC05149 (600x450)](images/DSC05149600x450_thumb.jpg "DSC05149 (600x450)")](http://www.roberthorvick.com/images/TryingtoidentifythisAbbeyRoadpressing_E3EA/DSC05149600x450.jpg)
+[![DSC05149 (600x450)](/images/archive/DSC05149600x450_thumb.jpg "DSC05149 (600x450)")](http://www.roberthorvick.com/images/TryingtoidentifythisAbbeyRoadpressing_E3EA/DSC05149600x450.jpg)
 
-[![DSC05151 (600x450)](images/DSC05151600x450_thumb.jpg "DSC05151 (600x450)")](http://www.roberthorvick.com/images/TryingtoidentifythisAbbeyRoadpressing_E3EA/DSC05151600x450.jpg) 
+[![DSC05151 (600x450)](/images/archive/DSC05151600x450_thumb.jpg "DSC05151 (600x450)")](http://www.roberthorvick.com/images/TryingtoidentifythisAbbeyRoadpressing_E3EA/DSC05151600x450.jpg) 
 
-[![DSC05152 (600x450)](images/DSC05152600x450_thumb.jpg "DSC05152 (600x450)")](http://www.roberthorvick.com/images/TryingtoidentifythisAbbeyRoadpressing_E3EA/DSC05152600x450.jpg)
+[![DSC05152 (600x450)](/images/archive/DSC05152600x450_thumb.jpg "DSC05152 (600x450)")](http://www.roberthorvick.com/images/TryingtoidentifythisAbbeyRoadpressing_E3EA/DSC05152600x450.jpg)
 
- [![DSC05153 (600x450)](images/DSC05153600x450_thumb.jpg "DSC05153 (600x450)")](http://www.roberthorvick.com/images/TryingtoidentifythisAbbeyRoadpressing_E3EA/DSC05153600x450.jpg)
+ [![DSC05153 (600x450)](/images/archive/DSC05153600x450_thumb.jpg "DSC05153 (600x450)")](http://www.roberthorvick.com/images/TryingtoidentifythisAbbeyRoadpressing_E3EA/DSC05153600x450.jpg)

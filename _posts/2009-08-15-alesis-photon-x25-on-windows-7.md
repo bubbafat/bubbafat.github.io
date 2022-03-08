@@ -27,7 +27,7 @@ My contented feeling was short lived though.  After picking it up I went out to
 
 But I plugged it in and …
 
-[![image](images/image_thumb.png "image")](http://www.roberthorvick.com/images/AlesisPhotonx25onWindows7_13311/image.png)
+[![image](/images/archive/image_thumb.png "image")](http://www.roberthorvick.com/images/AlesisPhotonx25onWindows7_13311/image.png)
 
 Now … I haven’t done anything beyond this.  So does it work?  I’m installing Cubase LE now …
 
