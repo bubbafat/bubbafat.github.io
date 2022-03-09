@@ -1,6 +1,6 @@
 basic_settings:
-  site_title:
-  favicon_image: /images/favicon.png
+  site_title: roberthorvick.com
+  favicon_image: /images/images/android-chrome-192x192.png
 
 header_settings:
   logo_image: 
