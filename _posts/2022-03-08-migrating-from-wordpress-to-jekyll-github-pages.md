@@ -24,6 +24,8 @@ My process was:
 - Convert WordPress XML to Jekyll-compatible markdown
 - Pick a Jekyll theme
 - Update DNS
+- Generate and install certificate
+- Defaulting to the blog instead of projects
 - Make changes and keep on pushing
 
 <h3>Export WordPress to XML</h3>
@@ -140,6 +142,30 @@ My domain is registered through [namecheap.com](https://namecheap.com) and used 
 5. Wait about an hour for everything to update
 
 Once this was done [https://roberthorvick.com](https://roberthorvick.com) began properly serving the Jekyll content.
+
+<h3>Generate and install certificate</h3>
+
+Once the website was up and running at the correct domain, I wanted to install a cert so I could enforce https.
+
+1. Open the repo in github (while logged in)
+2. Click on "Settings"
+3. Click on "Pages" (URL is https://github.com/<user>/<repo>/settings/pages)
+4. Click on Enforce HTTPS.
+5. Wait ... wait ... wait
+
+Eventually it just started working.
+
+<h3>Defaulting to the blog instead of projects</h3>
+
+The template I choose defaulted the root URL to projects, not blog posts.  I wanted the opposite.  So I basically did:
+
+```zsh
+mkdir projects
+mv index.html projects
+mv blog/index.html .
+```
+
+Then edited the \_data\settings.yml to point the Blog menu to / (root) and the Projects menu to /projects/ - now it rendered the way I wanted.
 
 <h3>Make changes and keep on pushing</h3>
 
