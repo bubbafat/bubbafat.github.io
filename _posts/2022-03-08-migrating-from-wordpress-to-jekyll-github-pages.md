@@ -3,7 +3,7 @@ title: 'Migrating From WordPress to Jekyll on Github Pages'
 subtitle: ''
 date: 2022-03-08
 description: 'An overview of the steps I took to migrate from self-hosted Wordpress to Jekyll on Github pages.'
-featured_image: '/images/unsplash/c-dustin-91AQt9p4Mo8-unsplash.jpeg'
+featured_image: '/images/unsplash/c-dustin-91AQt9p4Mo8-unsplash.webp'
 ---
 
 After hosting for WordPress on Digital Ocean for years, I've decided to move to Jekyll on Github Pages.  The decision came down a few key points:
