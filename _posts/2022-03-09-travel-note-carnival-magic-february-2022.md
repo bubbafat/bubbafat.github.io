@@ -1,12 +1,14 @@
 ---
-title: 'DRAFT: Travel Log: Carnival Magic February 2022'
+title: 'Travel Log: Carnival Magic February 2022'
 #subtitle: 'Pictures and notes about our travel on the Carnival Magic during February 2022'
 date: 2022-03-08
 description: 'Notes and photos from our cruise on the Carnival Magic (February 2022)'
 featured_image: '/images/cruise2022magic/IMG_6360.jpg'
+categories: 
+  - "Travel"
 ---
 
-This February, my wife and I took an 8-night Eastern Caribbean cruise. This was post peak-Omicron but still definitely in the middle of it. Since that's probably the part people have the most questions about I'll start with that information and then dig into the stats around the trip (and photos).
+This February, my wife and I took an 8-night Eastern Caribbean cruise. This is our 5th or 6th cruise but our first during Covid. This was post peak-Omicron but still definitely in the midst of it. Since health protocols is probably the part people have the most questions about, I'll start with that information and then dig into the stats around the trip (and photos).
 
 <h3>Covid Health Protocols</h3>
 
@@ -91,6 +93,39 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 | Sat | Fun Day At Sea | - | - | 
 | Sun | Port Canaveral (Orlando), FL | 8:00 AM | - | 
 
+<h3>Things We Learned (Ports of Call)</h3>
+
+- St. Maarten's two sides each have a distinct vibe. I would suggest focusing on one or the other but not trying to do both in one afternoon. We were not looking for a beach day so we went to a French cooking class on the French side and had a great time.
+- San Juan is definitely a new favorite location. I anticipate we'll come here for a proper multiday vacation soon.
+	+ Tip: There is a CVS and Walgreens right off the pier - you can walk there in about 5 minutes.
+- St. Kitts' duty free had the best liquor selection. I was able to grab a bottle of Blanton's for about $10 over US MSRP.
+- Grand Turk is your best bet for a casual beach day.
+	+ Don't pre-pay for a chair or umbrella as there will be hundreds for rent on the beach.
+	+ If you walk down the beach (to the left as you leave the ship) you will eventually end up at Jack's Shack (5-10 minute walk). Very friendly staff, good drinks, and surprisingly good food. Get the conch.
+	
+<h3>Things We Learned (Ship and Sea Days)</h3>
+
+- Deck 5 on the Magic is a promenade deck. It sticks out further than the decks above it so if you are on deck 6 (like we were) with a balcony, you will be looking right over hot tubs and sunbathers. We like to sit and watch the flying fish jump through the ways from our balcony but that was not as easy with this setup.  Going a few decks up or down would have helped.
+- On this ship the Alchemy Bar is right next to the stage where bands play throughout the day and evening. It's not as quiet as on other ship layouts.
+- The Red Frog interior bar has a decent rum selection.
+- We paid for the multi-day Thalassotherapy package and were up in the pool and steam rooms daily. You need to use it almost daily to make it worthwhile.
+- I'm not a touchy-feely guy so I was a little hesitant to get my first massage (we went with a couples package). So I probably surprised my wife when I immediately bought a second for a few nights later.
+- The movies on the lido deck at night are awesome and very few people come to them.  Great way to chill out.
+- The Steakhouse was good but if you are only going to splurge on one meal, get the Chef's Table. It was amazing. It sells out quickly so buy it ahead of time. You will find out what night your reservation is for when you board (it took a few days for us to find out - they can let you know at the front desk).
+- The Italian restaurant was disappointing. It's free for lunch which would have been fine but we were not thrilled with paying extra for dinner.
+- The Hub App is improving but still has a lot of issues. Chat messages could take hours to arrive and it sometimes did not have our reservations listed. But it was great for pulling up maps or seeing what was happening.
+- We did not use ship wifi but many people we talked to were and there were some complaints about reliability and performance. If you are planning to work on the ship be prepared for that.
+- Our T-Mobile plan provided us at least 2G connectivity at each stop which was enough to check in but not enough to upload a lot of photos.  I'm not sure it mattered but I disabled all services that automatically uploaded photos and turned off background data for most applications.
+
+<h3>Things to Pack</h3>
+
+- [Cruise-safe (no surge protector) power strip with USB](https://www.amazon.com/gp/product/B07BHVKPC3/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1). Be aware that the stateroom has one US-style and one European-style outlet under the mirror. The US-style is "upside down" so getting this to plug in was a very tight fit but we were able to get it to work.  A small (inches) cord could have fixed the problem.
+- [Magnetic Hooks](https://www.amazon.com/gp/product/B0787Q54M1/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1) to hang clothing on the wall. The stateroom walls (but not the bathroom) are all steel so these work great to hold hats, damp swimsuits, etc.
+- [Luggage tag holders](https://www.amazon.com/Cruise-Luggage-tags-Holders-Steel/dp/B07PKKVQMQ/ref=sr_1_2_sspa?crid=11A21AJC03NK2&keywords=cruise%2Bluggage%2Btags&qid=1646836084&sprefix=cruise%2Bluggage%2Btags%2Caps%2C51&sr=8-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzM1U3OTdZTEk1TlJaJmVuY3J5cHRlZElkPUEwMTU3NTc0MVQzMDQ4RVFKWlE5VyZlbmNyeXB0ZWRBZElkPUEwOTEyNDcxMUlFNzZXWVdaWlVRVyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1). You'll need to secure luggage tags to your bags (you can print them at home) - stapling them works but these will help ensure they don't get ripped apart and your luggage lost.
+- [Towel bands](https://www.amazon.com/Function-Lightweight-Windproof-Colorful-Accessories/dp/B08V1RL89F/ref=sr_1_7?crid=GYK32HWJ43PW&keywords=towel+bands&qid=1646836206&sprefix=towel+bands%2Caps%2C51&sr=8-7) to hold your towel to your chair. This will ensure that when you put your towel on a chair at 7am, and then walk away for 12 hours, that no one else will ever be able to use it.
+
+
+<h3>Pictures</h3>
 
 <div class="gallery" data-columns="1">
 	<img src="/images/cruise2022magic/82270189-A5A9-4790-AA34-0C5ED2207D4B.jpg"/>
