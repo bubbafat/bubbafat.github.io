@@ -1,6 +1,6 @@
 basic_settings:
   site_title: roberthorvick.com
-  favicon_image: /images/images/android-chrome-192x192.png
+  favicon_image: /images/android-chrome-192x192.png
 
 header_settings:
   logo_image: 
@@ -73,6 +73,7 @@ color_settings:
   error_color: '#D64541'
 
 font_settings:
+  font_url: 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700'
   font_embed: '<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">'
   title_font: '"Muli", sans-serif'
   body_font: '"Muli", sans-serif'

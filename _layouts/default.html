@@ -43,9 +43,21 @@ layout: compress
 	<meta property="og:description" content="{{ page.description | strip_html | xml_escape }}" />
 	<meta property="og:image" content="{{ page.featured_image | absolute_url }}" />
 
-	{% if site.data.settings.font_settings.font_embed %}
-	<!-- Font Embed Code -->
-	{{ site.data.settings.font_settings.font_embed }}
+	{% if site.data.settings.font_settings.font_url %}
+	    <!-- https://pagespeedchecklist.com/asynchronous-google-fonts -->
+		<!-- connect to domain of font files -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<!-- optionally increase loading priority -->
+		<link rel="preload" as="style" href="{{ site.data.settings.font_settings.font_url }}">
+
+		<!-- async CSS -->
+		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ site.data.settings.font_settings.font_url }}">
+
+		<!-- no-JS fallback -->
+		<noscript>
+		    <link rel="stylesheet" href="{{ site.data.settings.font_settings.font_url }}">
+		</noscript>
 	{% endif %}
 
 	<!-- Styles -->
