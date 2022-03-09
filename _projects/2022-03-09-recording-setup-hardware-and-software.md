@@ -1,11 +1,13 @@
 ---
-title: 'Programming'
-#subtitle: 'An index of my posts related to programming and software engineering.'
-date: 2018-06-30 00:00:00
-description: An index of my posts related to programming and software engineering.
+title: 'DRAFT: Audio Recording Setup'
+subtitle: 'My current audio recording configuration for Pluralsight, streaming, and music.'
+date: 2022-03-09
+description: 'My current audio recording configuration and related posts.'
 featured_image: '/images/archive/screenshot1.jpg'
-published: false
 ---
+
+<h2>This is an unfinished draft</h2>
+
 
 
 <div id="archives">
@@ -13,7 +15,7 @@ published: false
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    {% if category_name contains page.title %}
+    {% if category_name contains "Recording" %}
     {% assign subcategory = category_name | split: "#" | slice: 1 %}
     <div id="#{{ subcategory | slugize }}"></div>
     <p></p>
