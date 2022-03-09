@@ -9,7 +9,5 @@ featured_image: /images/demo/about.jpg
 
 I'm a husband and father from the midwest who finds himself living in the south. I'm a software engineer by day, Pluralsight author in the evening, and pretty poor at most hobbies at night.
 
-You can contact me at robert@roberthorvick.com or on Twitter.
-
 If you find a mistake anywhere on this blog you are welcome to submit a PR to let me know.
 
