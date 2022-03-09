@@ -9,7 +9,7 @@ featured_image: '/images/unsplash/c-dustin-91AQt9p4Mo8-unsplash.jpeg'
 After hosting for WordPress on Digital Ocean for years, I've decided to move to Jekyll on Github Pages.  The decision came down a few key points:
 
 1. My content is infrequently updated and static - Wordpress was overkill
-2. It took more time to keep Wordpress and all the plugs updated than I spent on writing
+2. It took more time to keep Wordpress and all the plugins updated than I spent on writing
 3. It's $11/month I don't need to pay
 4. Anyone who finds a mistake is welcome to [submit a PR](https://github.com/bubbafat/bubbafat.github.io)
 
