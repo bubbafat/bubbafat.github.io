@@ -23,6 +23,7 @@ My process was:
 - Install Jekyll
 - Convert WordPress XML to Jekyll-compatible markdown
 - Pick a Jekyll theme
+- Update DNS
 - Make changes and keep on pushing
 
 <h3>Export WordPress to XML</h3>
@@ -127,6 +128,18 @@ I picked the theme I liked, paid, downloaded and followed the instructions in it
 So I did.
 
 There was an issue there the index.markdown references a layout that does not exist (read your warnings when starting Jekyll). I don't think I need index.markdown so I removed it and let index.html do the heavy lifting. Seems to be working fine.
+
+<h3>Update DNS</h3>
+
+My domain is registered through [namecheap.com](https://namecheap.com) and used Cloud Flare (free) for caching.  To reconfigure my domain I needed to 
+
+1. Change the DNS on namecheap back to their BasicDNS setting
+2. Removed the domain from Cloud Flare
+3. Create a CNAME record as described [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+4. Create the 4 A Record entries defined [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+5. Wait about an hour for everything to update
+
+Once this was done [https://roberthorvick.com](https://roberthorvick.com) began properly serving the Jekyll content.
 
 <h3>Make changes and keep on pushing</h3>
 
