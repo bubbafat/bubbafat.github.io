@@ -26,6 +26,7 @@ My process was:
 - Update DNS
 - Generate and install certificate
 - Defaulting to the blog instead of projects
+- Wiring up Google Analytics
 - Make changes and keep on pushing
 
 <h3>Export WordPress to XML</h3>
@@ -154,6 +155,10 @@ Once the website was up and running at the correct domain, I wanted to install a
 5. Wait ... wait ... wait
 
 Eventually it just started working.
+
+<h3>Wiring up Google Analytics</h3>
+
+I followed the instructions on [Michael Lee's blog](https://michaelsoolee.com/google-analytics-jekyll/).
 
 <h3>Defaulting to the blog instead of projects</h3>
 
