@@ -6,7 +6,7 @@
 
 		<div class="footer__copyright">
 			<span>© {{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}</span>
-			<a href="https://roberthorvick.com" target="_blank">Robert Horvick</a> <span>(build: {{site.github.build_revision}})</span>
+			<a href="https://roberthorvick.com" target="_blank">Robert Horvick</a> <span>([build](https://github.com/bubbafat/bubbafat.github.io/commit/{{site.github.build_revision}}))</span>
 		</div>
 
 		{% include socials.html %}
@@ -14,3 +14,4 @@
 	</div>
 
 </footer>
+
