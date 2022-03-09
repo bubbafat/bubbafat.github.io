@@ -1,7 +1,7 @@
 ---
 title: 'Migrating From WordPress to Jekyll on Github Pages'
 subtitle: ''
-date: 2022-03-08 00:00:00
+date: 2022-03-08
 description: 'An overview of the steps I took to migrate from self-hosted Wordpress to Jekyll on Github pages.'
 featured_image: '/images/unsplash/c-dustin-91AQt9p4Mo8-unsplash.jpeg'
 ---
