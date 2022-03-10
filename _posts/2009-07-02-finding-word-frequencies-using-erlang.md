@@ -5,7 +5,7 @@ categories:
   - "Programming#Erlang"
 ---
 
-[Here's a follow-up post that provides a better implementation.](http://www.roberthorvick.com/blog/word-frequency-redux-erlang-list-comprehension-regex-and-list-folding/)
+[Here's a follow-up post that provides a better implementation.]({{ site.url }}/blog/word-frequency-redux-erlang-list-comprehension-regex-and-list-folding/)
 
 I wanted to try and bite off something a little larger today hitting a few areas that seem generally useful:
 

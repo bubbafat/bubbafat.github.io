@@ -33,4 +33,4 @@ Finally I followed [these directions](http://kb.mozillazine.org/Register_protoco
 
 Since the Erlang/OTP doc pages match their module names this works pretty well.
 
-For queries where I'm not sure what I want I added a Erlang specific google search to my [Erlang Resources](http://www.roberthorvick.com/erlang-resources/) page.
+For queries where I'm not sure what I want I added a Erlang specific google search to my [Erlang Resources]({{ site.url }}/erlang-resources/) page.

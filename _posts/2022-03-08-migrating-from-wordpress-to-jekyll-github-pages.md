@@ -144,7 +144,7 @@ My domain is registered through [namecheap.com](https://namecheap.com) and used 
 4. Create the 4 A Record entries defined [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 5. Wait about an hour for everything to update
 
-Once this was done [https://roberthorvick.com](https://roberthorvick.com) began properly serving the Jekyll content.
+Once this was done [{{ site.url }}]({{ site.url }}) began properly serving the Jekyll content.
 
 <h3>Generate and install certificate</h3>
 

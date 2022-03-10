@@ -39,7 +39,7 @@ The add event includes the path and new item (json), the updated event includes 
 
 And a sample
 
-I mentioned a drawing sample [yesterday](http://www.roberthorvick.com/blog/firebase-net-client-library/) \- I have added this sample to the [FirebaseSharp repo](https://github.com/bubbafat/FirebaseSharp/) right [here](https://github.com/bubbafat/FirebaseSharp/tree/master/samples/draw).
+I mentioned a drawing sample [yesterday]({{ site.url }}/blog/firebase-net-client-library/) \- I have added this sample to the [FirebaseSharp repo](https://github.com/bubbafat/FirebaseSharp/) right [here](https://github.com/bubbafat/FirebaseSharp/tree/master/samples/draw).
 
 It has a few updates.
 

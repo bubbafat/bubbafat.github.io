@@ -5,7 +5,7 @@ categories:
   - "running"
 ---
 
-Back in 2012 I [trained for](http://www.roberthorvick.com/blog/disneys-twilight-zone-tower-of-terror-10-miler-training-plan/) (and ran) the [Disney Tower of Terror 10-miler](http://www.rundisney.com/tower-of-terror-10-miler/).
+Back in 2012 I [trained for]({{ site.url }}/blog/disneys-twilight-zone-tower-of-terror-10-miler-training-plan/) (and ran) the [Disney Tower of Terror 10-miler](http://www.rundisney.com/tower-of-terror-10-miler/).
 
 Well - I'm doing it again.
 
