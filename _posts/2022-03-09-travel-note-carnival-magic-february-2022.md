@@ -5,7 +5,7 @@ date: 2022-03-08
 description: 'Notes and photos from our cruise on the Carnival Magic (February 2022)'
 featured_image: '/images/cruise2022magic/IMG_6360.jpg'
 categories: 
-  - "Travel"
+  - "Travel#Report"
 ---
 
 This February, my wife and I took an 8-night Eastern Caribbean cruise. This is our 5th or 6th cruise but our first during Covid. This was post peak-Omicron but still definitely in the midst of it. Since health protocols is probably the part people have the most questions about, I'll start with that information and then dig into the stats around the trip (and photos).
