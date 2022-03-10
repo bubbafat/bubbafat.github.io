@@ -14,10 +14,21 @@ featured_image: /images/demo/about.jpg
 	<div class="wrap">
 
 		<h1>Page not found.</h1>
-		<p class="hero__text editable">Sorry – the page your looking for doesn't exist.</p>
-		<p class="hero__text editable">Perhaps you typed the URL incorrectly, or it may have moved.</p>
-		<p><a href="/" class="button button--large">Back To Home</a></p>
-
+		<p class="hero__text editable">The page you are looking for has probably moved - sorry about that. I've been working on moving from Wordpress to Jekyll and my blog post URLs all changed.</p>
+		<p class="hero__text editable">Below is a list of the previous blog posts - perhaps one of them is it?</p>
 	</div>
+</section>
 
+<hr/>
+
+<section class="listing">
+	<div class="wrap">
+		{% for post in site.posts %}
+		  {% unless post.published == false %}
+		  	<h3>
+			    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+			</h3>
+		  {% endunless %}
+		{% endfor %}
+	</div>	
 </section>

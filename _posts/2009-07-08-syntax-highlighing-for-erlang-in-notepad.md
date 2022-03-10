@@ -34,7 +34,7 @@ Looks a lot better than nothing and it took all of 10 15 minutes.
 
 If you are using NotePad++ here is the file:
 
-[http://www.roberthorvick.com/wp-content/uploads/2009/07/erlangSyntaxDefinition.zip](http://www.roberthorvick.com/wp-content/uploads/2009/07/erlangSyntaxDefinition.zip)
+[http://www.roberthorvick.com/downloads/erlangSyntaxDefinition.zip](/downloads/erlangSyntaxDefinition.zip)
 
 And here are the instructions on how to install it:
 

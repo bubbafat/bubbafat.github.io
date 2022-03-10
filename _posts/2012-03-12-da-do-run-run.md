@@ -19,7 +19,7 @@ Here’s how you can focus on being the healthiest runner possible:
 
 KEEP TRAINING REASONABLE
 
-The temptation to add more mileage to your running routine might be pretty compelling right now. But while moderate exercise can help support your immunity, adding a lot of volume or intensity can wreak havoc on your immune system. “I am suggesting that a lot of my athletes do aerobic rebuild weeks in the coming weeks ahead. Overtraining or rapidly increasing training load has the potential to burden the immune system and could make the body more vulnerable to sickness and infection,” says Dr. Megan Roche, who is also an endurance runner and coach. “With races being canceled, now can be a good time to focus on low-level aerobic gains or working in strength training and rehabilitation to establish a strong foundation.” Make sure to check out these _[proven reviews](https://www.sfexaminer.com/marketplace/proven-reviews-nutravesta-proven-weight-loss-pills-worth-buying-2020-update/)_.
+The temptation to add more mileage to your running routine might be pretty compelling right now. But while moderate exercise can help support your immunity, adding a lot of volume or intensity can wreak havoc on your immune system. “I am suggesting that a lot of my athletes do aerobic rebuild weeks in the coming weeks ahead. Overtraining or rapidly increasing training load has the potential to burden the immune system and could make the body more vulnerable to sickness and infection,” says Dr. Megan Roche, who is also an endurance runner and coach. “With races being canceled, now can be a good time to focus on low-level aerobic gains or working in strength training and rehabilitation to establish a strong foundation.”
 
 2
 
@@ -43,7 +43,7 @@ While it’s tempting to focus entirely on the physical when it comes to staying
 
 STAY SAFE WHEN RUNNING SOLO
 
-When you are getting out for a run it’s likely that you’re going solo, which means focusing on your personal safety. That means bringing your phone, letting someone know where you’re running and how long you’ll be gone, running without podcasts or playlists blasting in your ears so you can stay aware of your surroundings, wearing high-vis accents on your clothing, and even carrying something like a whistle. It can be tricky finding a spot that feels safe and populated enough to run solo, while still being able to socially distance from other runners and walkers, so don’t feel stressed if your new running route involves doing laps of the same half-mile stretch of road. Try out _[steel bite pro](https://www.metrotimes.com/detroit/steel-bite-pro-reviews-is-it-the-real-deal-or-just-another-scam/Content?oid=25343513)_ healthy supplement.
+When you are getting out for a run it’s likely that you’re going solo, which means focusing on your personal safety. That means bringing your phone, letting someone know where you’re running and how long you’ll be gone, running without podcasts or playlists blasting in your ears so you can stay aware of your surroundings, wearing high-vis accents on your clothing, and even carrying something like a whistle. It can be tricky finding a spot that feels safe and populated enough to run solo, while still being able to socially distance from other runners and walkers, so don’t feel stressed if your new running route involves doing laps of the same half-mile stretch of road.
 
 6
 
