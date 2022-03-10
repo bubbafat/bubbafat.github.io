@@ -8,7 +8,7 @@ categories:
 
 * * *
 
-_Update: How events work has changed and the drawing app is now available as a sample on GitHub. Find out more here: [{{ site.url }}/blog/firebase-events-in-the-net-client/]({{ site.url }}/blog/firebase-events-in-the-net-client/)_
+_Update: How events work has changed and the drawing app is now available as a sample on GitHub. Find out more here: [{{ site.url }}/blog/firebase-events-in-the-net-client]({{ site.url }}/blog/firebase-events-in-the-net-client)_
 
 * * *
 

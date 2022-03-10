@@ -1,4 +1,4 @@
-||---
+---
 title: "Disney's Twilight Zone Tower of Terror 10-Miler Training Plan"
 date: "2012-03-12"
 categories: 

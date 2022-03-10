@@ -7,7 +7,7 @@ categories:
 
 ### Hood.ie + TodoMVC - For More Best Power!
 
-Now that I have Hood.ie [working on my Windows 7]({{ site.url }}/blog/getting-hoodie-0-2-working-on-windows-7-x64/) laptop, I wanted to get something going quickly to really see what was up. But I didn't want to go down a app-building yak-shaving path filled with time-sinks and bike sheds. So I did something else.
+Now that I have Hood.ie [working on my Windows 7]({{ site.url }}/blog/getting-hoodie-0-2-working-on-windows-7-x64) laptop, I wanted to get something going quickly to really see what was up. But I didn't want to go down a app-building yak-shaving path filled with time-sinks and bike sheds. So I did something else.
 
 I went over to [todomvc.com](http://todomvc.com) and grabbed their AngularJS site. Why AngularJS? I don't know AngularJS. I use KnockoutJS at work but the AngularJS site was perfectly structured for this. The persistence code was all in a single object ([todoStorage.js](https://github.com/tastejs/todomvc/blob/gh-pages/architecture-examples/angularjs/js/services/todoStorage.js)) which I assumed would make the process much easier.
 
