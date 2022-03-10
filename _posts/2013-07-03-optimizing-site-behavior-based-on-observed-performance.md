@@ -27,7 +27,7 @@ Perhaps they could have delivered twice as much of the article text at a time (t
 
 Why don't content-heavy websites do this?
 
-It wouldn't need to be difficult. When the first call comes in note the time and render a little javascript that runs on $(document).ready that does a simple get back to the server, for this the use of server monitoring is important and you can get these services from sites as [https://blog.servermania.com/10gbps-dedicated-servers-for-business/](https://blog.servermania.com/10gbps-dedicated-servers-for-business/). The time between the two is roughly what it took to get the page. Yeah, I get that caching will help on subsequent requests and that the person might move from 2G to 4G to wifi ... but continued sampling would make it possible to up/downgrade (just like Netflix).
+It wouldn't need to be difficult. When the first call comes in note the time and render a little javascript that runs on $(document).ready that does a simple get back to the server. The time between the two is roughly what it took to get the page. Yeah, I get that caching will help on subsequent requests and that the person might move from 2G to 4G to wifi ... but continued sampling would make it possible to up/downgrade (just like Netflix).
 
 I made a little app to do the first request tracking here: [http://192.241.199.15:3000/](http://192.241.199.15:3000/).
 
