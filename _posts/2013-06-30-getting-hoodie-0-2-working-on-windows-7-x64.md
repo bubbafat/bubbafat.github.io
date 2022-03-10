@@ -5,7 +5,7 @@ categories:
   - "hoodie"
 ---
 
-![](images/ErHLRj7.png)
+![](/images/archive/ErHLRj7.png)
 
 [Hood.ie](http://hood.ie) looks rad. I'm want to try it out. Problem is that I need to self-host for now and I'm on a Windows machine. Sure, I could go stand up one of my AWS instances or just piggy back on one in production but I'm kind of a masochist.
 
