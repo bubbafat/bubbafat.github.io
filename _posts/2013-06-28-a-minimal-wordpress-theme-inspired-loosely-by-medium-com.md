@@ -40,7 +40,7 @@ The 10 Step process I used was:
 
 1. Mock up basically what I wanted in a static HTML and CSS file
 2. Download the [Blank](http://themeclubhouse.digwp.com/index.php?wptheme=BLANK%20Theme) template from [DiW](http://digwp.com/).
-3. Move my style ideas into the theme [style.css]({{ site.url }}/wp-content/themes/simplyreadable/style.css).
+3. Move my style ideas into the theme style.css.
 4. Remove comments
 5. Add some custom navigation
 6. Rinse and repeat on style changes until I was minimally happy
@@ -49,9 +49,7 @@ The 10 Step process I used was:
 9. Step 6-9 a few times
 10. Drink a [Barrel Aged Bourbon Vortex II](http://www.pisgahbrewing.com/beer/seasonal) from [Pisgah](http://www.pisgahbrewing.com/).
 
-And now I’m at what I consider a minimally acceptable result. The text is readable, the mobile reading is much better than what I had before, the navigation is terrible but the 404 page (which is actually what the [Archive]({{ site.url }}/archive) link above is – hackity-hack-hack).
-
-Check out how you can [get custom acrylic prints](https://www.bumblejax.com/custom-acrylic-prints/)for your photos and renovate your web pages.
+And now I’m at what I consider a minimally acceptable result. The text is readable, and the mobile reading is much better than what I had before.
 
 A bunch more needs to be done but it can wait until I have more beer.
 

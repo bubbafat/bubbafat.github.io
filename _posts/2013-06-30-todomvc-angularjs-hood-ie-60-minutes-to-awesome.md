@@ -88,7 +88,7 @@ Let's look at the CouchDB data ...
 
 ![](/images/archive/couchdb-proof.png)
 
-There you go. You can see the user was created (we're in their database) and the document contains the todo items. Actually, it is missing one but that's just because of how I took the screen shots. Deal with it.
+There you go. You can see the user was created (we're in their database) and the document contains the todo items. Actually, it is missing one but that's just because of how I took the scre   en shots. Deal with it.
 
 #### But fast, right?
 
