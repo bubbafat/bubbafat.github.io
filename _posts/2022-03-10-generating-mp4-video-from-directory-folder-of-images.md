@@ -31,7 +31,7 @@ I'm not the command line guru so this is the approach I took to figure this out:
 
 <h3>Generate a Video From a Directory of Images</h3>
 
-I started by manually trying to find a command, using ffmpeg, that would create a video for the directory gen-1 with the following properties:
+I started by trying to find a [command](https://ffmpeg.org/ffmpeg.html), using [ffmpeg](https://ffmpeg.org/), that would create a video for the directory gen-1 with the following properties:
 
 | Feature | Desired |
 |---------|---------|
