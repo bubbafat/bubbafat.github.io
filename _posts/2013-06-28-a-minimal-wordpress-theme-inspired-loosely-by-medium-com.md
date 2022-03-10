@@ -17,7 +17,7 @@ When linked from Twitter, I am significantly more likely to read something on Me
 
 #### I know my place in this relationship
 
-My relationship with Medium is, and will likely remain, that of an information consumer. However, that does not mean I shouldn't create content nor does it mean my content must be ugly or hard to read. To that end I spent a little time last night working on a very (VERY) basic WordPress theme that is somewhat Medium-ish but not really. Prior to last night I had never looked at the structure of a WP template and I am not a php developer (in fact, this is probably the most I've ever used it). Needless to say this is not meant to be a general purpose theme. It is something that I am working on for me. If you also have a blog and you want to expand beyond the constraints of shared hosting, consider switching to [unmanaged vps internet hosting plans](https://www.knownhost.com/vps-hosting.html) for better speed, privacy, and performance for your site.
+My relationship with Medium is, and will likely remain, that of an information consumer. However, that does not mean I shouldn't create content nor does it mean my content must be ugly or hard to read. To that end I spent a little time last night working on a very (VERY) basic WordPress theme that is somewhat Medium-ish but not really. Prior to last night I had never looked at the structure of a WP template and I am not a php developer (in fact, this is probably the most I've ever used it). Needless to say this is not meant to be a general purpose theme. It is something that I am working on for me. 
 
 I started with a few goals I borrowed from looking at Medium:
 
@@ -26,13 +26,13 @@ I started with a few goals I borrowed from looking at Medium:
 - Looks reasonable on mobile
 - No comments (let’s talk on Twitter)
 
-For fonts I choose a combination of [Source Sans Pro](http://www.google.com/fonts/specimen/Source+Sans+Pro) and [Open Sans](http://www.google.com/fonts/specimen/Open+Sans). I plan to tweak this a little over time. They might be a little too similar – but they are easy for my eyes to follow and that’s important to me. I might also check [Collectiveray list of minimalist wordpress themes](https://www.collectiveray.com/minimalist-wordpress-themes).
+For fonts I choose a combination of [Source Sans Pro](http://www.google.com/fonts/specimen/Source+Sans+Pro) and [Open Sans](http://www.google.com/fonts/specimen/Open+Sans). I plan to tweak this a little over time. They might be a little too similar – but they are easy for my eyes to follow and that’s important to me.
 
 The layout is attempting to optimize for the pattern of “picture up front, single column, not a lot of markup”.
 
 For mobile, I’m just using screen width specific CSS to force max widths and a few sizing tweaks. I will probably end up doing more as I discover bugs and learn better practices. I also spent a little time making print look OK. No great, but I wanted something that would look ok if it was imported in to Pocket or Readability.
 
-As for comments – I have removed them for now while I figure out what I want to do. More than 99% of the comments I got last year were flagged as spam. Of the remaining 1%, very few were anything but “Thanks!” – so … why not just take it to Twitter? I might regret this decision. If I do, I’ll add them back. If you want to check more themes for your website, there is an expert that has [put together a best real estate wordpress themes](https://showcaseidx.com/the-11-best-wordpress-themes-for-real-estate-websites/) list from Showcase IDX and you can find them at the link.
+As for comments – I have removed them for now while I figure out what I want to do. More than 99% of the comments I got last year were flagged as spam. Of the remaining 1%, very few were anything but “Thanks!” – so … why not just take it to Twitter? I might regret this decision. If I do, I’ll add them back.
 
 _EDIT: I added comments back but this time using Disqus._
 
