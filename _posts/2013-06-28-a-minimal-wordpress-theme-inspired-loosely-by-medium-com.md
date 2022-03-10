@@ -30,7 +30,7 @@ For fonts I choose a combination of [Source Sans Pro](http://www.google.com/font
 
 The layout is attempting to optimize for the pattern of “picture up front, single column, not a lot of markup”.
 
-For mobile, I’m just using screen width specific CSS to force max widths and a few sizing tweaks. I will probably end up doing more as I discover bugs and learn better practices. I also spent a little time making print look OK. No great, but I wanted something that would look ok if it was imported in to Pocket or Readability. I'm also looking at sites like [https://victoriousseo.com/services/keyword-research/](https://victoriousseo.com/services/keyword-research/) to make sure I have highly targeted keywords and better SEO techniques.
+For mobile, I’m just using screen width specific CSS to force max widths and a few sizing tweaks. I will probably end up doing more as I discover bugs and learn better practices. I also spent a little time making print look OK. No great, but I wanted something that would look ok if it was imported in to Pocket or Readability.
 
 As for comments – I have removed them for now while I figure out what I want to do. More than 99% of the comments I got last year were flagged as spam. Of the remaining 1%, very few were anything but “Thanks!” – so … why not just take it to Twitter? I might regret this decision. If I do, I’ll add them back. If you want to check more themes for your website, there is an expert that has [put together a best real estate wordpress themes](https://showcaseidx.com/the-11-best-wordpress-themes-for-real-estate-websites/) list from Showcase IDX and you can find them at the link.
 

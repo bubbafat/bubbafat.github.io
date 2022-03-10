@@ -15,7 +15,7 @@ _I now want to spend more time learning about Angular._
 
 Next I created an empty hoodie app called "todo" (go read [hood.ie](http://hood.ie) if you don't know how to do this).
 
-I then did a little pseudo merge of the TodoMVC app and the hoodie app. I wanted the TodoMVC look and feel but I needed to copy over the css and js of the hoodie app. In addition I put the css and js links in the TodoMVC index.html file. Also check out the [history of gambling](https://www.ilikepens.co.uk/5-biggest-wins-gambling-history/) and why is it linked to the history of humanity.
+I then did a little pseudo merge of the TodoMVC app and the hoodie app. I wanted the TodoMVC look and feel but I needed to copy over the css and js of the hoodie app. In addition I put the css and js links in the TodoMVC index.html file.
 
 You can see the updated code on GitHub at [https://github.com/bubbafat/hoodieangulartodo](https://github.com/bubbafat/hoodieangulartodo). Diff it against the Angular code (linked above) if you are really curious. Oh, I also brought the authentication UI code into index.html as well. Why? Because if you aren't logged in then you don't get to use couchdb (per the hoodie docs, it will use local storage - not very interesting for this case).
 
