@@ -26,7 +26,7 @@ I started with a few goals I borrowed from looking at Medium:
 - Looks reasonable on mobile
 - No comments (let’s talk on Twitter)
 
-For fonts I choose a combination of [Source Sans Pro](http://www.google.com/fonts/specimen/Source+Sans+Pro) and [Open Sans](http://www.google.com/fonts/specimen/Open+Sans). I plan to tweak this a little over time. They might be a little too similar – but they are easy for my eyes to follow and that’s important to me.  I might also check [Collectiveray list of minimalist wordpress themes](https://www.collectiveray.com/minimalist-wordpress-themes).
+For fonts I choose a combination of [Source Sans Pro](http://www.google.com/fonts/specimen/Source+Sans+Pro) and [Open Sans](http://www.google.com/fonts/specimen/Open+Sans). I plan to tweak this a little over time. They might be a little too similar – but they are easy for my eyes to follow and that’s important to me. I might also check [Collectiveray list of minimalist wordpress themes](https://www.collectiveray.com/minimalist-wordpress-themes).
 
 The layout is attempting to optimize for the pattern of “picture up front, single column, not a lot of markup”.
 
@@ -51,7 +51,7 @@ The 10 Step process I used was:
 
 And now I’m at what I consider a minimally acceptable result. The text is readable, the mobile reading is much better than what I had before, the navigation is terrible but the 404 page (which is actually what the [Archive](http://roberthorvick.com/archive) link above is – hackity-hack-hack).
 
-Check out how you can [get custom acrylic prints](https://www.bumblejax.com/custom-acrylic-prints/) for your photos and renovate your web pages.
+Check out how you can [get custom acrylic prints](https://www.bumblejax.com/custom-acrylic-prints/)for your photos and renovate your web pages.
 
 A bunch more needs to be done but it can wait until I have more beer.
 

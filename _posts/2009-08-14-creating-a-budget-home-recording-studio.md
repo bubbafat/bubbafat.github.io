@@ -8,7 +8,7 @@ tags:
   - "music"
 ---
 
-I’m in the planning stages of putting together a home recording studio for capturing the musical ideas that no one else wants to hear.  In high school I spent my junior year at the [Minnesota Center for Arts Education](http://www.pcae.k12.mn.us/) (I spent my senior year preparing to have my first child but that’s another story for another time) – while at MCAE I had the opportunity to spend my afternoons (and many many nights) in a very nice production studio.  Many many thousands of dollars of gear – much of which you couldn’t give away today.  The point being that I’m familiar with what a high-end home studio would have looked like 15 years ago – unfortunately that knowledge does not do me a whole lot of good.
+I’m in the planning stages of putting together a home recording studio for capturing the musical ideas that no one else wants to hear. In high school I spent my junior year at the [Minnesota Center for Arts Education](http://www.pcae.k12.mn.us/) (I spent my senior year preparing to have my first child but that’s another story for another time) – while at MCAE I had the opportunity to spend my afternoons (and many many nights) in a very nice production studio. Many many thousands of dollars of gear – much of which you couldn’t give away today. The point being that I’m familiar with what a high-end home studio would have looked like 15 years ago – unfortunately that knowledge does not do me a whole lot of good.
 
 **What I have**
 

@@ -6,7 +6,7 @@ categories:
 featured_image: '/images/archive/emberjs1-700x300.jpg'
 ---
 
-[Yesterday](http://www.roberthorvick.com/2013/06/30/todomvc-angularjs-hood-ie-60-minutes-to-awesome/ "TodoMVC (AngularJS) + Hood.ie = 60 minutes to awesome") I took the AngularJS TodoMVC example and converted it to using Hood.ie for data storage and making it multi-user in the process. I was pretty impressed. Not with myself - but rather that despite myself, the task wasn't too bad.
+[Yesterday](http://www.roberthorvick.com/blog/todomvc-angularjs-hood-ie-60-minutes-to-awesome/ "TodoMVC (AngularJS) + Hood.ie = 60 minutes to awesome") I took the AngularJS TodoMVC example and converted it to using Hood.ie for data storage and making it multi-user in the process. I was pretty impressed. Not with myself - but rather that despite myself, the task wasn't too bad.
 
 But there is this other kinda popular front-end MVC framework: [EmberJS](http://emberjs.com/ "This is where EmberJS comes from"). I was curious about Ember so I did a little reading. Watched a few videos. Witnessed an [absolute smackdown](http://vimeo.com/68215606 "Set aside an hour to watch this. "). Go watch that. It's better than my blog post - I promise you that.
 

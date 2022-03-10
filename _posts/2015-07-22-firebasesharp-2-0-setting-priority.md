@@ -5,7 +5,7 @@ categories:
   - "Programming#Firebase"
 ---
 
-Since we can [order by priority](http://www.roberthorvick.com/2015/07/21/firebasesharp-2-0-orderbypriority/), it sure would be nice to be able to set priorities with FirebaseSharp.
+Since we can [order by priority](http://www.roberthorvick.com/blog/firebasesharp-2-0-orderbypriority/), it sure would be nice to be able to set priorities with FirebaseSharp.
 
 And now we can!
 

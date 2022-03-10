@@ -38,9 +38,6 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  -
-    scope:
-      path: "downloads"
 
 markdown: kramdown
 

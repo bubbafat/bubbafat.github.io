@@ -5,7 +5,7 @@ categories:
   - "Programming#Erlang"
 ---
 
-[Here's a follow-up post that provides a better implementation.](http://www.roberthorvick.com/2009/07/02/word-frequency-redux-erlang-list-comprehension-regex-and-list-folding/)
+[Here's a follow-up post that provides a better implementation.](http://www.roberthorvick.com/blog/word-frequency-redux-erlang-list-comprehension-regex-and-list-folding/)
 
 I wanted to try and bite off something a little larger today hitting a few areas that seem generally useful:
 
@@ -14,7 +14,7 @@ I wanted to try and bite off something a little larger today hitting a few areas
 3. Using the [gb\_trees](http://www.erlang.org/doc/man/gb_trees.html) module
 4. Avoiding any usage of lists:foreach; instead using tail recursion (that whole "thinking in Erlang" thing).
 
-The problem is to produce the word frequency of a specific text file and to print out the frequency information.  For example if a file overdunn.txt contained the text:
+The problem is to produce the word frequency of a specific text file and to print out the frequency information. For example if a file overdunn.txt contained the text:
 
 _"Dunn was over Unger and I was over Dunn."_ ([Capt. Oveur](http://www.imdb.com/character/ch0006136/quotes), [Airplane II: The Sequel)](http://www.imdb.com/title/tt0083530/)
 
@@ -22,7 +22,7 @@ The output would be:
 
     Dunn: 2 I: 1 Unger: 1 and: 1 over: 2 was: 2
 
-Word frequencies have some practical uses (fuzzy text matching, building tag clouds, etc).  So while it's a bit contrived it is the basis for something useful.
+Word frequencies have some practical uses (fuzzy text matching, building tag clouds, etc). So while it's a bit contrived it is the basis for something useful.
 
 The code doesn't need a lot of explanation - so here you go ...
 
@@ -90,4 +90,4 @@ print\_word\_counts(Filename) ->
 	end.
 ```
 
-As usual - I'm just getting started with Erlang.  What is the good, bad and ugly with this code?
+As usual - I'm just getting started with Erlang. What is the good, bad and ugly with this code?

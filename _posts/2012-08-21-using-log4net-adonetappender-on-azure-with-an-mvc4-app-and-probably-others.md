@@ -44,52 +44,52 @@ And then this section
 
 ```xml
 <log4net>  
-  <appender name="ADONetAppender" type="log4net.Appender.ADONetAppender">  
-    <bufferSize value="1" />  
-    <connectionType value="System.Data.SqlClient.SqlConnection, System.Data,  Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
-    <connectionStringName value="DefaultConnection" />  
-    <commandText value="INSERT INTO Log (\[Date\],\[Level\],\[Message\],\[Exception\]) VALUES (@log\_date, @log\_level, @message, @exception)" />  
-    <parameter>  
-      <parameterName value="@log\_date"/>  
-      <dbType value="DateTime"/>  
-      <layout type="log4net.Layout.RawTimeStampLayout"/>  
-    </parameter>  
-    <parameter>  
-      <parameterName value="@log\_level"/>  
-      <dbType value="String"/>  
-      <size value="50"/>  
-      <layout type="log4net.Layout.PatternLayout">  
-        <conversionPattern value="%level"/>  
-      </layout>  
-    </parameter>  
-    <parameter>  
-      <parameterName value="@message"/>  
-      <dbType value="String"/>  
-      <size value="4000"/>  
-      <layout type="log4net.Layout.PatternLayout">  
-        <conversionPattern value="%message"/>  
-      </layout>  
-    </parameter>  
-    <parameter>  
-      <parameterName value="@exception"/>  
-      <dbType value="String"/>  
-      <size value="4000"/>  
-      <layout type="log4net.Layout.ExceptionLayout"/>  
-    </parameter>  
-  </appender>
+ <appender name="ADONetAppender" type="log4net.Appender.ADONetAppender">  
+ <bufferSize value="1" />  
+ <connectionType value="System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
+ <connectionStringName value="DefaultConnection" />  
+ <commandText value="INSERT INTO Log (\[Date\],\[Level\],\[Message\],\[Exception\]) VALUES (@log\_date, @log\_level, @message, @exception)" />  
+ <parameter>  
+ <parameterName value="@log\_date"/>  
+ <dbType value="DateTime"/>  
+ <layout type="log4net.Layout.RawTimeStampLayout"/>  
+ </parameter>  
+ <parameter>  
+ <parameterName value="@log\_level"/>  
+ <dbType value="String"/>  
+ <size value="50"/>  
+ <layout type="log4net.Layout.PatternLayout">  
+ <conversionPattern value="%level"/>  
+ </layout>  
+ </parameter>  
+ <parameter>  
+ <parameterName value="@message"/>  
+ <dbType value="String"/>  
+ <size value="4000"/>  
+ <layout type="log4net.Layout.PatternLayout">  
+ <conversionPattern value="%message"/>  
+ </layout>  
+ </parameter>  
+ <parameter>  
+ <parameterName value="@exception"/>  
+ <dbType value="String"/>  
+ <size value="4000"/>  
+ <layout type="log4net.Layout.ExceptionLayout"/>  
+ </parameter>  
+ </appender>
 
  <root>  
-    <level value="All"/>  
-    <appender-ref ref="ADONetAppender"/>  
-  </root>  
-</log4net> 
+ <level value="All"/>  
+ <appender-ref ref="ADONetAppender"/>  
+ </root>  
+</log4net>
 ```
 
-Notice that the buffer size is set to 1 – this will flush after every log.  Maybe change that to something larger when you go to scale.
+Notice that the buffer size is set to 1 – this will flush after every log. Maybe change that to something larger when you go to scale.
 
 # Using the Logger
 
-First initialize the logger.  You can add this to whatever startup code you want (Global.asax.cs, OnStart, etc) …
+First initialize the logger. You can add this to whatever startup code you want (Global.asax.cs, OnStart, etc) …
 
 ```csharp
 log4net.Config.XmlConfigurator.Configure();

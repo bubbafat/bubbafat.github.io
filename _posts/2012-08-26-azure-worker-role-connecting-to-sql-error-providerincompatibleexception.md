@@ -3,7 +3,7 @@ title: "Azure Worker Role connecting to SQL error ProviderIncompatibleException"
 date: "2012-08-26"
 ---
 
-I ran into an issue where connecting my Azure worker role to my Azure SQL database was failing with the exception type ProviderIncompatibleException and the message “An error occurred while getting provider information from the database.  This can be caused by Entity Framework using an incorrect connection string.”
+I ran into an issue where connecting my Azure worker role to my Azure SQL database was failing with the exception type ProviderIncompatibleException and the message “An error occurred while getting provider information from the database. This can be caused by Entity Framework using an incorrect connection string.”
 
 The inner exception was of type ProviderIncompatibleException with the message “The provider did not return a ProviderManifestToken string.”
 
@@ -16,7 +16,7 @@ I had:
 
 ```xml
 <connectionStrings>  
-   <add name="DefaultConnection" connectionString="…" providerName="System.Data.SqlClient" />  
+ <add name="DefaultConnection" connectionString="…" providerName="System.Data.SqlClient" />  
 </connectionStrings>
 ```
 
@@ -24,9 +24,9 @@ I needed
 
 ```xml
 <connectionStrings>  
-    <add name="DefaultConnection" connectionString="…" providerName="System.Data.SqlClient" />  
-    <add name="Fully.Qualified.ContextDb.Class" connectionString="…" providerName="System.Data.SqlClient" />  
-    <add name="Fully.Qualified.ContextDb.Class\_DatabasePublish" connectionString="…" providerName="System.Data.SqlClient" />  
+ <add name="DefaultConnection" connectionString="…" providerName="System.Data.SqlClient" />  
+ <add name="Fully.Qualified.ContextDb.Class" connectionString="…" providerName="System.Data.SqlClient" />  
+ <add name="Fully.Qualified.ContextDb.Class\_DatabasePublish" connectionString="…" providerName="System.Data.SqlClient" />  
 </connectionStrings>  
 ```
 

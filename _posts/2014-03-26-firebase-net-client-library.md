@@ -8,7 +8,7 @@ categories:
 
 * * *
 
-_Update: How events work has changed and the drawing app is now available as a sample on GitHub. Find out more here: [http://www.roberthorvick.com/2014/03/28/firebase-events-in-the-net-client/](http://www.roberthorvick.com/2014/03/28/firebase-events-in-the-net-client/)_
+_Update: How events work has changed and the drawing app is now available as a sample on GitHub. Find out more here: [http://www.roberthorvick.com/blog/firebase-events-in-the-net-client/](http://www.roberthorvick.com/blog/firebase-events-in-the-net-client/)_
 
 * * *
 
