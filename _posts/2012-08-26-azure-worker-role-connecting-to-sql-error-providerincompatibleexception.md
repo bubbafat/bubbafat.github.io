@@ -26,7 +26,7 @@ I needed
 <connectionStrings>  
  <add name="DefaultConnection" connectionString="…" providerName="System.Data.SqlClient" />  
  <add name="Fully.Qualified.ContextDb.Class" connectionString="…" providerName="System.Data.SqlClient" />  
- <add name="Fully.Qualified.ContextDb.Class\_DatabasePublish" connectionString="…" providerName="System.Data.SqlClient" />  
+ <add name="Fully.Qualified.ContextDb.Class_DatabasePublish" connectionString="…" providerName="System.Data.SqlClient" />  
 </connectionStrings>  
 ```
 

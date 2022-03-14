@@ -30,7 +30,7 @@ FirebaseApp app = new FirebaseApp(new Uri("https://dinosaur-facts.firebaseio.com
 var scoresRef = app.Child("scores");
 scoresRef.OrderByValue().LimitToLast(3).On("value", (snapshot, child, context) => {
   foreach (var data in snapshot.Children) {
-    Console.WriteLine("The {0} dinosaur\\'s score is {1}",
+    Console.WriteLine("The {0} dinosaur\'s score is {1}",
                         data.Key, data.Value());
    }
 }); 

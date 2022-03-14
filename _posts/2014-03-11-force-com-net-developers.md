@@ -14,7 +14,7 @@ I'm primarily a .NET developer but over the last year have had a little exposure
 
 - It's basically declarative with Java on the backend
 - The editing experience is lacking
-- "\_\_c" gets appended on to everything
+- "__c" gets appended on to everything
 - It is expensive to get started
 - This is a technology I can probably ignore
 

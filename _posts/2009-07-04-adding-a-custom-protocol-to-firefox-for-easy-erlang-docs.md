@@ -17,8 +17,8 @@ To do this I first created a little shell script that would take the address and
 
 ```bash
 #!/bin/bash
-ERLANG\_TOPIC=\`echo $1 | sed 's/erlang:\\/\\///'\`
-exec firefox http://www.erlang.org/doc/man/$ERLANG\_TOPIC.html
+ERLANG_TOPIC=\`echo $1 | sed 's/erlang:\/\///'\`
+exec firefox http://www.erlang.org/doc/man/$ERLANG_TOPIC.html
 ```
 
 Next I marked it as executable:

@@ -15,22 +15,22 @@ Since walk and visit are the process entry points they need to be in the export 
 
 ```erlang
 start(Path) ->
-	Visit\_PID = spawn(walkproc, visit, \[\]),
-	spawn(walkproc, walk, \[Path, Visit\_PID\]).
+	Visit_PID = spawn(walkproc, visit, []),
+	spawn(walkproc, walk, [Path, Visit_PID]).
 ```
 
-On line 2 we create the process whose pid is assigned to Visit\_PID. This process calls the visit() function with 0 parameters. At this point visit is running and waiting to receive a message.
+On line 2 we create the process whose pid is assigned to Visit_PID. This process calls the visit() function with 0 parameters. At this point visit is running and waiting to receive a message.
 
-On line 3 we spawn off another process. This process calls the walk/2 function as walk(Path, Visit\_PID). Since the walk function is doing the file system walking it makes sense that it will be the one sending the first message. Because of this it needs to know the PID of the process to send the message to.
+On line 3 we spawn off another process. This process calls the walk/2 function as walk(Path, Visit_PID). Since the walk function is doing the file system walking it makes sense that it will be the one sending the first message. Because of this it needs to know the PID of the process to send the message to.
 
 visit is a very straight forward function. It receives a message, processes it, sends a response and recurses (rinse and repeat).
 
 ```erlang
 visit() ->
 	receive
-		{Path, Walk\_PID} ->
-			io:format("~s~n", \[Path\]),
-			Walk\_PID ! next,
+		{Path, Walk_PID} ->
+			io:format("~s~n", [Path]),
+			Walk_PID ! next,
 			visit()
 	end.
 ```
@@ -38,23 +38,23 @@ visit() ->
 walk is very similar (and has not changed substantially from our previous version. it starts by firing a message off to visit with the Path passed as a parameter. Next it waits for the "next" message. Once it receives that it gets the next file system entry and recurses.
 
 ```erlang
-walk(Path, Visit\_PID) ->
-	Visit\_PID ! {Path, self()},
+walk(Path, Visit_PID) ->
+	Visit_PID ! {Path, self()},
 	receive
 		next ->
-			FileType = file\_type(Path),
+			FileType = file_type(Path),
 			case FileType of
 				file ->
 					ok;
 				symlink ->
 					ok;
 				directory ->
-					Children = filelib:wildcard(Path ++ "/\*"),
-					lists:foreach(fun(P) -> walk(P, Visit\_PID) end, Children)
+					Children = filelib:wildcard(Path ++ "/*"),
+					lists:foreach(fun(P) -> walk(P, Visit_PID) end, Children)
 			end
 	end.
 ```
 
-The other methods (file\_type and is\_symlink) have not changed.
+The other methods (file_type and is_symlink) have not changed.
 
 I enjoyed how easy it was to convert to a multi-process approach and am looking forward to moving to a solution that uses RabbitMQ.

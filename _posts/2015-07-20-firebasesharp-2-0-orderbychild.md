@@ -19,7 +19,7 @@ Their node example is:
 
 ```csharp
 var ref = new Firebase("https://dinosaur-facts.firebaseio.com/dinosaurs");
-ref.orderByChild("height").on("child\_added", function(snapshot) {
+ref.orderByChild("height").on("child_added", function(snapshot) {
   console.log(snapshot.key() + " was " + snapshot.val().height + " meters tall");
 });
 ```
@@ -38,10 +38,10 @@ How does this translate to FirebaseSharp 2.0? Pretty closely.
 ```csharp
 FirebaseApp app = new FirebaseApp(new Uri("https://dinosaur-facts.firebaseio.com/"));
 
-var scoresRef = app.Child("dinosaurs").OrderByChild("height").On("child\_added",
+var scoresRef = app.Child("dinosaurs").OrderByChild("height").On("child_added",
     (snapshot, child, context) => {
         Console.WriteLine("{0} was {1} meters tall", 
-            snapshot.Key, snapshot\["height"\].Value());
+            snapshot.Key, snapshot["height"].Value());
     }); 
 ```
 

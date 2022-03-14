@@ -25,13 +25,13 @@ Then it was just a few changes.
 
 ```js
 todomvc.factory('todoStorage', function () {
-    var STORAGE\_ID = 'todos-angularjs';
+    var STORAGE_ID = 'todos-angularjs';
 
     return {
         get: function () {
             var deferred = $.Deferred();
 
-            hoodie.store.findOrAdd('todo', STORAGE\_ID, {values: \[\] })
+            hoodie.store.findOrAdd('todo', STORAGE_ID, {values: [] })
                 .then(function(loaded) {
                     deferred.resolve(loaded.values);
                 })
@@ -40,7 +40,7 @@ todomvc.factory('todoStorage', function () {
         },
 
         put: function (todos) {
-            hoodie.store.update('todo', STORAGE\_ID, {values: todos })
+            hoodie.store.update('todo', STORAGE_ID, {values: todos })
         }
     };
 });
@@ -68,7 +68,7 @@ todomvc.controller('TodoCtrl', function TodoCtrl($scope, $location, todoStorage,
     });
 ```
 
-/\* ... nothing else changed ... \*/
+/* ... nothing else changed ... */
 
 The only change here is using the done method to get the results. Yeah, I'm being optimistic about it and not checking for failure.
 

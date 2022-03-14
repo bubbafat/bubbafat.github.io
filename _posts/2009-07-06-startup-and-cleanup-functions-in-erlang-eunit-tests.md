@@ -14,7 +14,7 @@ start() -> ok
 stop() -> ok
 write(Key, Element) -> ok
 delete(Key) -> ok
-read(Key) -> {ok, Value} | not\_found
+read(Key) -> {ok, Value} | not_found
 ```
 
 Calling start() spawns and registers the process the dictionary lives in. Calling stop ends the process. The rest do what you expect.
@@ -26,19 +26,19 @@ It took about 15 minutes of reading to realize that I needed to create a test ge
 Conceptually it was easy to understand but getting the syntax right was a royal pain. Basically you do this (I'm not sure if giving the function arity is the preferred method but it saved some keystrokes so I went with it):
 
 ```erlang
-my\_db\_test\_() ->
+my_db_test_() ->
   {spawn,
     {setup,
       fun start/0,
       fun stop/1,
-      \[
-        fun write\_new/0,
-        fun write\_existing/0,
-        fun read\_existing/0,
-        fun read\_missing/0,
-        fun delete\_existing/0,
-        fun delete\_missing/0
-      \]
+      [
+        fun write_new/0,
+        fun write_existing/0,
+        fun read_existing/0,
+        fun read_missing/0,
+        fun delete_existing/0,
+        fun delete_missing/0
+      ]
     }
   }.
 ```

@@ -20,12 +20,12 @@ struct currency
     public float last;
     public float ask;
     public float bid;
-    public string \_credits;
-    public string \_updated;
+    public string _credits;
+    public string _updated;
 }
 ```
 
-And now we can get an instance of that directly from our snapshot - for example here we'll use the child\_changed event off the crypto root to get changed events for the three support currencies - bitcoin, litecoin and dogecoin.
+And now we can get an instance of that directly from our snapshot - for example here we'll use the child_changed event off the crypto root to get changed events for the three support currencies - bitcoin, litecoin and dogecoin.
 
 ```csharp
 using (var app = new FirebaseApp(new Uri("https://publicdata-cryptocurrency.firebaseio.com/")))
@@ -38,7 +38,7 @@ using (var app = new FirebaseApp(new Uri("https://publicdata-cryptocurrency.fire
         Console.WriteLine("{0}: {1} / {2} / {3}", snap.Key, c.bid, c.ask, c.last);
     };
 
-    currencyRef.On("child\_changed", showPrice);
+    currencyRef.On("child_changed", showPrice);
 
     Console.ReadKey();
 } 

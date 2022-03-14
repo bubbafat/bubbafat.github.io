@@ -35,37 +35,37 @@ It came down to a few things.
 My changes (minus the rename) to [localstorage adapter](https://github.com/rpflorence/ember-localstorage-adapter "Read this code.  It is better.").
 
 ```js
-  \_getNamespace: function() {
+  _getNamespace: function() {
     return this.namespace || 'HoodieAdaptor';
   },
   
-  \_getInstanceId: function() {
-  return this.\_data.id || this.instanceId || 'default';
+  _getInstanceId: function() {
+  return this._data.id || this.instanceId || 'default';
   },
 
-  \_loadData: function() {  
-    var \_this = this;
-    \_this.\_data = {};
+  _loadData: function() {  
+    var _this = this;
+    _this._data = {};
   
     var def = $.Deferred();
   
-    hoodie.store.find(this.\_getNamespace(), this.\_getInstanceId())
+    hoodie.store.find(this._getNamespace(), this._getInstanceId())
                 .then(function(loaded) {
                     def.resolve(loaded);
                 });
         
     def.done(function(data) { 
-      \_this.\_data = data;
+      _this._data = data;
     })
     .fail(function(err) { 
       throw err; 
     });
   },
 
-  \_didSaveRecords: function(store, type, records) {
-    this.\_data = this.\_data || {}
+  _didSaveRecords: function(store, type, records) {
+    this._data = this._data || {}
   
-    var promise = this.\_saveData();
+    var promise = this._saveData();
     promise.done(function(saved) {
       store.didSaveRecords(records);
     })
@@ -74,8 +74,8 @@ My changes (minus the rename) to [localstorage adapter](https://github.com/rpflo
 	});
   },
 
-  \_saveData: function() {
-    return hoodie.store.update(this.\_getNamespace(), this.\_getInstanceId(), this.\_data).promise();
+  _saveData: function() {
+    return hoodie.store.update(this._getNamespace(), this._getInstanceId(), this._data).promise();
   },
 ```
 

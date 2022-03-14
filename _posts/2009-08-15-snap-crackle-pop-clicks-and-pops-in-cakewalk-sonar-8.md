@@ -35,7 +35,7 @@ clicks and pops like mad.
 
 Again … let me save you the trouble:
 
-[http://www.cakewalk.com/support/FAQ/SR\_FAQ.aspx#9](http://www.cakewalk.com/support/FAQ/SR_FAQ.aspx#9)
+[http://www.cakewalk.com/support/FAQ/SR_FAQ.aspx#9](http://www.cakewalk.com/support/FAQ/SR_FAQ.aspx#9)
 
 Adjusting my buffer to “Safe” made it better so I knew I was on the right track – but changing my driver from WDM to MME was the key (ASIO didn’t work – no sound … I’ll look into that some other time). Once I was switch to MME I was able to drop my latency back to 10ms. At 10ms I get an occasional pop. At 30ms almost none. At 90 – I’ve yet to hear any. Beauty!
 

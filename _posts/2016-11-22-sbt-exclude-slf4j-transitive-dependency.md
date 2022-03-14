@@ -14,29 +14,29 @@ featured_image: '/images/archive/sbt-after.jpg'
 If you've written any Spark code using Scala and SBT there's a good chance you've come across this warning about SLF4J.
 
     SLF4J: Class path contains multiple SLF4J bindings.
-    SLF4J: Found binding in \[jar:file:/C:/Users/RHorvick/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class\]
-    SLF4J: Found binding in \[jar:file:/C:/Users/RHorvick/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class\]
+    SLF4J: Found binding in [jar:file:/C:/Users/RHorvick/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+    SLF4J: Found binding in [jar:file:/C:/Users/RHorvick/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 
-    SLF4J: See http://www.slf4j.org/codes.html#multiple\_bindings for an explanation.
-    SLF4J: Actual binding is of type \[org.slf4j.impl.SimpleLoggerFactory\]
+    SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+    SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 
 
 And even if you have a conf/log4j.properties file, you might be getting INFO level logging when all you want is WARN or ERROR. So when your tests run your console is riddled with this nonsense:
 
-    \[Executor task launch worker-0\] INFO org.apache.spark.executor.Executor - Running task 30.0 in stage 3.0 (TID 35)
-    \[task-result-getter-0\] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 26.0 in stage 3.0 (TID 31) in 39 ms on localhost (27/199)
-    \[Executor task launch worker-0\] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 non-empty blocks out of 4 blocks
-    \[Executor task launch worker-0\] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 1 ms
-    \[Executor task launch worker-2\] INFO org.apache.spark.executor.Executor - Finished task 27.0 in stage 3.0 (TID 32). 1652 bytes result sent to driver
-    \[dispatcher-event-loop-2\] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 31.0 in stage 3.0 (TID 36, localhost, partition 32,NODE\_LOCAL, 1999 bytes)
-    \[task-result-getter-3\] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 27.0 in stage 3.0 (TID 32) in 37 ms on localhost (28/199)
-    \[Executor task launch worker-2\] INFO org.apache.spark.executor.Executor - Running task 31.0 in stage 3.0 (TID 36)
-    \[Executor task launch worker-3\] INFO org.apache.spark.executor.Executor - Finished task 28.0 in stage 3.0 (TID 33). 1652 bytes result sent to driver
-    \[Executor task launch worker-2\] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 non-empty blocks out of 4 blocks
-    \[Executor task launch worker-2\] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 2 ms
-    \[dispatcher-event-loop-0\] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 32.0 in stage 3.0 (TID 37, localhost, partition 33,NODE\_LOCAL, 1999 bytes)
-    \[Executor task launch worker-3\] INFO org.apache.spark.executor.Executor - Running task 32.0 in stage 3.0 (TID 37)
-    \[Executor task launch worker-3\] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 non-empty blocks out of 4 blocks
+    [Executor task launch worker-0] INFO org.apache.spark.executor.Executor - Running task 30.0 in stage 3.0 (TID 35)
+    [task-result-getter-0] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 26.0 in stage 3.0 (TID 31) in 39 ms on localhost (27/199)
+    [Executor task launch worker-0] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 non-empty blocks out of 4 blocks
+    [Executor task launch worker-0] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 1 ms
+    [Executor task launch worker-2] INFO org.apache.spark.executor.Executor - Finished task 27.0 in stage 3.0 (TID 32). 1652 bytes result sent to driver
+    [dispatcher-event-loop-2] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 31.0 in stage 3.0 (TID 36, localhost, partition 32,NODE_LOCAL, 1999 bytes)
+    [task-result-getter-3] INFO org.apache.spark.scheduler.TaskSetManager - Finished task 27.0 in stage 3.0 (TID 32) in 37 ms on localhost (28/199)
+    [Executor task launch worker-2] INFO org.apache.spark.executor.Executor - Running task 31.0 in stage 3.0 (TID 36)
+    [Executor task launch worker-3] INFO org.apache.spark.executor.Executor - Finished task 28.0 in stage 3.0 (TID 33). 1652 bytes result sent to driver
+    [Executor task launch worker-2] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 non-empty blocks out of 4 blocks
+    [Executor task launch worker-2] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 2 ms
+    [dispatcher-event-loop-0] INFO org.apache.spark.scheduler.TaskSetManager - Starting task 32.0 in stage 3.0 (TID 37, localhost, partition 33,NODE_LOCAL, 1999 bytes)
+    [Executor task launch worker-3] INFO org.apache.spark.executor.Executor - Running task 32.0 in stage 3.0 (TID 37)
+    [Executor task launch worker-3] INFO org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 3 non-empty blocks out of 4 blocks
 
 Thousands of lines of it for a simple test.
 
@@ -44,7 +44,7 @@ The common solution is to add excludes to the Spark dependencies in the sbt file
 
 ```scala
 libraryDependencies ++= Seq(
-  "com.holdenkarau" %% "spark-testing-base" % sparkTestingVersion % "test" exclude("org.slf4j", "\*")
+  "com.holdenkarau" %% "spark-testing-base" % sparkTestingVersion % "test" exclude("org.slf4j", "*")
 )
 ```
 
@@ -57,7 +57,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion % "provided" ,
   "org.apache.spark" %% "spark-sql" % sparkVersion % "provided" ,
   "com.holdenkarau" %% "spark-testing-base" % sparkTestingVersion % "test" ,
-).map(\_.exclude("org.slf4j", "\*"))
+).map(_.exclude("org.slf4j", "*"))
 
 libraryDependencies ++= Seq(
   "org.slf4j" % "slf4j-api" % slf4jVersion % "provided",

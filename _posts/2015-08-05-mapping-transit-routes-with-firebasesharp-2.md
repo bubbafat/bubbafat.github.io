@@ -13,19 +13,19 @@ I wanted to create a simple application that would watch the SF Muni system and 
 The whole thing is about 40 lines of code. Here's the form load event handler:
 
 ```csharp
-private void MainWindow\_OnLoaded(object sender, RoutedEventArgs e)
+private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
 {
     MainMap.MapProvider = GMapProviders.OpenStreetMap;
 
-    \_app = new FirebaseApp(new Uri("https://publicdata-transit.firebaseio.com/sf-muni/vehicles"));
-    var vehicles = \_app.Child("/");
+    _app = new FirebaseApp(new Uri("https://publicdata-transit.firebaseio.com/sf-muni/vehicles"));
+    var vehicles = _app.Child("/");
 
-    vehicles.On("child\_changed", (snap, child, context) =>
+    vehicles.On("child_changed", (snap, child, context) =>
     {
         UpdateMarker(snap);
     });
 
-    vehicles.On("child\_removed", (snap, child, context) =>
+    vehicles.On("child_removed", (snap, child, context) =>
     {
         RemoveMarker(snap);
     });
@@ -41,7 +41,7 @@ private void UpdateMarker(IDataSnapshot snap)
 {
     Dispatcher.Invoke(() =>
     {
-        PointLatLng position = new PointLatLng(snap\["lat"\].Value(), snap\["lon"\].Value());
+        PointLatLng position = new PointLatLng(snap["lat"].Value(), snap["lon"].Value());
 
         var marker = MainMap.Markers.FirstOrDefault(m => m.Tag.ToString() == snap.Key);
         if (marker == null)
@@ -58,7 +58,7 @@ private void UpdateMarker(IDataSnapshot snap)
         else
         {
             marker.Position = position;
-            ((Rectangle) marker.Shape).Fill = SpeedBrush(snap\["speedKmHr"\].Value());
+            ((Rectangle) marker.Shape).Fill = SpeedBrush(snap["speedKmHr"].Value());
         }
     });
 } 
@@ -99,7 +99,7 @@ private UIElement CreateMarker(IDataSnapshot snap)
     {
         Height = 10,
         Width = 10,
-        Fill = SpeedBrush(snap\["speedKmHr"\].Value()),
+        Fill = SpeedBrush(snap["speedKmHr"].Value()),
     };
 
     element.MouseLeftButtonDown += (sender, args) =>

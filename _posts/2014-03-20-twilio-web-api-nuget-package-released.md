@@ -30,8 +30,8 @@ Here's a Twilio Web API controller (deriving from our Web API TwilioController c
 ```csharp
 public class SmsController : TwilioController
 {
-    \[HttpPost\]
-    \[ValidateRequest("YOUR AUTH KEY")\]
+    [HttpPost]
+    [ValidateRequest("YOUR AUTH KEY")]
     public IHttpActionResult Echo(SmsRequest request)
     {
         TwilioResponse response = new TwilioResponse();

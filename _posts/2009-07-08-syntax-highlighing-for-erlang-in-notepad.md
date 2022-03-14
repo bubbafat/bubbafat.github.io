@@ -26,7 +26,7 @@ Highlighted entities include
 - Operators
 - Comments
 - Kernal, stdlib, mnesia and odbc modules.
-- Support for \*.erl, \*.hrl and \*.htp extentions
+- Support for *.erl, *.hrl and *.htp extentions
 
 I've probably missed several things.
 
@@ -38,8 +38,8 @@ If you are using NotePad++ here is the file:
 
 And here are the instructions on how to install it:
 
-[http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Syntax\_Highlighting\_Sharing](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Syntax_Highlighting_Sharing)
+[http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Syntax_Highlighting_Sharing](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Syntax_Highlighting_Sharing)
 
 And here's the instructions on modifying or creating your own:
 
-[http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=User\_Defined\_Languages](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=User_Defined_Languages)
+[http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=User_Defined_Languages](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=User_Defined_Languages)

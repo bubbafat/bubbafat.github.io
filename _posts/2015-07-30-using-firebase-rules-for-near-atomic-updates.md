@@ -36,7 +36,7 @@ Now let's create a new object and save it to Firebase:
 
 ```csharp
 // in production this requires a using block
-var app = new FirebaseApp(/\* your connection details \*/);
+var app = new FirebaseApp(/* your connection details */);
 
 // we're creating the child "item1" under trx
 var item1Ref = app.Child("trx/item1");

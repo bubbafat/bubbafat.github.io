@@ -31,28 +31,37 @@ It is also a Nuget package: [https://www.nuget.org/packages/FirebaseSharp/](http
 
 ### Create the Firebase .NET object
 
+```csharp
 Firebase fb = new Firebase(new Uri("https://dazzling-fire-1575.firebaseio.com/"));
+```
 
 ### Create the Firebase object with an auth token
 
+```csharp
 string rootUri = "https://dazzling-fire-1575.firebaseio.com/";
 string authToken = "YOUR FIREBASE AUTH TOKEN";
 
 Firebase fb = new Firebase(rootUri, authToken);
+```
 
 ### Post Data
 
+```csharp
 string path = "/path";
-string data = "{{\\"value\\": \\"Hello!\\"}}";
-
+{% raw %}
+string data = "{{\"value\": \"Hello!\"}}";
+{% endraw %}
 string id = fb.Post(path, data);
+```
 
 ### Get Data
 
+```csharp
 string jsonData = gb.Get(path);
-
+```
 ### Stream Data
 
+```csharp
 Response resp = fb.GetStreaming(path, response => {
    // see https://www.firebase.com/docs/rest-api.html
    // response.Event
@@ -60,10 +69,13 @@ Response resp = fb.GetStreaming(path, response => {
 });
 
 // resp.Dispose() !
+```
 
 ### Delete Data
 
+```csharp
 fb.Delete(path);
+```
 
 ## The Big Demo
 
@@ -81,19 +93,21 @@ Honestly, most of the app is just converting the Firebase JSON into WPF Points, 
 
 The most interesting thing is probably that the WPF UI only updates when the message comes back from Firebase. What I mean is that the MouseDown handler is this:
 
-private readonly BlockingCollection \_queue = new BlockingCollection();
+```csharp
+private readonly BlockingCollection _queue = new BlockingCollection();
 
-/\* skip a bunch \*/
+/* skip a bunch */
 
-private void PaintCanvas\_OnMouseDown(object sender, MouseButtonEventArgs e)
+private void PaintCanvas_OnMouseDown(object sender, MouseButtonEventArgs e)
 {
     Point firebasePoint = FirebasePointFromCanvas(GetNormalizedPoint(e.GetPosition(PaintCanvas)));
-    \_queue.Add(new PaintQueue
+    _queue.Add(new PaintQueue
     {
         Point = firebasePoint,
         Color = "000",
     });
 } 
+```
 
 _Yeah, I hard-coded the color black ... the point was learning about Firebase, not WPF._
 
@@ -101,21 +115,22 @@ Notice all I did was stick a message in a BlockingCollection? That's basically a
 
 That's because my background worker is doing this:
 
-void \_firebaseWorker\_DoWork(object sender, DoWorkEventArgs e)
+```csharp
+void _firebaseWorker_DoWork(object sender, DoWorkEventArgs e)
 {
     // setup streaming
-    \_firebase.GetStreaming(string.Empty, PaintFromFirebase);
+    _firebase.GetStreaming(string.Empty, PaintFromFirebase);
  
     // changes are queued so that the UI thread doesn't need
     // to do anything expensive
     while (true)
     {
-        PaintQueue queue = \_queue.Take();
+        PaintQueue queue = _queue.Take();
  
         try
         {
-            \_firebase.PutAsync(string.Format("{0}:{1}", queue.Point.X, queue.Point.Y), 
-                               string.Format("\\"{0}\\"", queue.Color)).Wait();
+            _firebase.PutAsync(string.Format("{0}:{1}", queue.Point.X, queue.Point.Y), 
+                               string.Format("\"{0}\"", queue.Color)).Wait();
         }
         catch (Exception)
         {
@@ -123,14 +138,18 @@ void \_firebaseWorker\_DoWork(object sender, DoWorkEventArgs e)
         }
     }
 }
+```
 
 It is just draining from the queue and sending things to Firebase.
 
 Then when the update event comes from Firebase the streaming callback (PaintFromFirebase) gets called which ends up calling:
 
+```csharp
+
 PaintPoint(
     NormalizedPointFromFirebase(result.path.Substring(1)), 
     GetBrushFromFirebaseColor(result.data));
+```
 
 Just want to see it all? I made a gist here: [https://gist.github.com/bubbafat/9789791](https://gist.github.com/bubbafat/9789791)
 

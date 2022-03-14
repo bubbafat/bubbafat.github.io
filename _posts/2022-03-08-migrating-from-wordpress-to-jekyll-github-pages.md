@@ -120,7 +120,7 @@ My steps were:
 2. Copy roberthorvick-export.xml from Downloads to the wordpress-export-to-markdown
 3. Rename roberthorvick-export.xml to export.xml
 4. Run `node index.js --post-folders=false --prefix-date=true --wizard=false`
-5. Copy the output to the Jekyll \_posts directory.
+5. Copy the output to the Jekyll _posts directory.
 
 The command to use was documented in the [README.md](https://github.com/lonekorean/wordpress-export-to-markdown/blob/master/README.md) - so big thanks to [Will Boyd](https://twitter.com/lonekorean) for not just creating the tool but also making it easy to use with Jekyll.
 
@@ -172,13 +172,13 @@ mv index.html projects
 mv blog/index.html .
 ```
 
-Then edited the \_data\settings.yml to point the Blog menu to / (root) and the Projects menu to /projects/ - now it rendered the way I wanted.
+Then edited the _data\settings.yml to point the Blog menu to / (root) and the Projects menu to /projects/ - now it rendered the way I wanted.
 
 <h3>Make changes and keep on pushing</h3>
 
 With the theme applied I started making changes. Things like 
 
-- Updating all the image references to the /images folder instead of \_posts/images (the output from the exporter tool).
+- Updating all the image references to the /images folder instead of _posts/images (the output from the exporter tool).
 - Updating the hero images
 - Updating the post preview images that show up in the index pages and as the hero image for the post
 - Created a category page with multi-level categories.

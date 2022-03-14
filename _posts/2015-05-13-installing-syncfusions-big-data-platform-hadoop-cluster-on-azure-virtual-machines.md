@@ -15,7 +15,7 @@ Sounds great, right? So let's give it a go, installing a 3-node cluster on Azure
 
 I created 3 Azure VM's using these basic settings:
 
-- dlhadoop1 (10.0.0.4), dlhadoop2 (\*.5), dlhadoop3 (\*.6)
+- dlhadoop1 (10.0.0.4), dlhadoop2 (*.5), dlhadoop3 (*.6)
 - Dual core, 14 GB RAM
 - Virtual Network: hadoop
 - Storage Account: hadoop
@@ -89,7 +89,7 @@ Now go repeat this step on the other two VM's. Download and install the agent th
 
 So what's happening here is that the local VM is able to connect to the remote VM but DNS and reverse DNS are not working because Azure doesn't give you that by default.
 
-Here's where I got lazy. I'm just trying to use Hadoop not solve the world's problems so on the current VM I opened the HOSTS file (%windir%\\system32\\drivers\\etc\\hosts) and added these lines:
+Here's where I got lazy. I'm just trying to use Hadoop not solve the world's problems so on the current VM I opened the HOSTS file (%windir%\system32\drivers\etc\hosts) and added these lines:
 
 `dlhadoop2 10.0.0.5 dlhadoop3 10.0.0.6`
 

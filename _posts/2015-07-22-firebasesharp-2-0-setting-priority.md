@@ -39,12 +39,12 @@ Now we can order the values by priority and see that they are returned in priori
 ```csharp
 root.OrderByPriority().Once("value", (snap, child, context) => {
   var children = snap.Children.ToArray();
-  Assert.AreEqual("ccc", children\[0\].Key);
-  Assert.AreEqual(1, float.Parse(children\[0\].GetPriority().Value));
-  Assert.AreEqual("bbb", children\[1\].Key);
-  Assert.AreEqual(2, float.Parse(children\[1\].GetPriority().Value));
-  Assert.AreEqual("aaa", children\[2\].Key);
-  Assert.AreEqual(3, float.Parse(children\[2\].GetPriority().Value));
+  Assert.AreEqual("ccc", children[0].Key);
+  Assert.AreEqual(1, float.Parse(children[0].GetPriority().Value));
+  Assert.AreEqual("bbb", children[1].Key);
+  Assert.AreEqual(2, float.Parse(children[1].GetPriority().Value));
+  Assert.AreEqual("aaa", children[2].Key);
+  Assert.AreEqual(3, float.Parse(children[2].GetPriority().Value));
 });
 ```
 

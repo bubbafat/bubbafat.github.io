@@ -16,8 +16,7 @@ published: false
     {% if category_name contains page.title %}
     {% assign subcategory = category_name | split: "#" | slice: 1 %}
     <div id="#{{ subcategory | slugize }}"></div>
-    <p></p>
-
+    <p/>
     <h3 class="category-head">{{ subcategory }}</h3>
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}

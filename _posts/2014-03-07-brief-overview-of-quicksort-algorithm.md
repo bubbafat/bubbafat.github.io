@@ -56,7 +56,7 @@ Exciting, right?
 
 ## But wait ... now we have two unsorted ranges!
 
-Uh, yeah ... that's the whole point! Quicksort is a divide and conquer algorithm. We divided (partitioned) and conquered (sorted the one value). Now we can repeat that exact same process on the remaining sets (\[3, 2, 1\] and \[5, 8, 6, 7\]).
+Uh, yeah ... that's the whole point! Quicksort is a divide and conquer algorithm. We divided (partitioned) and conquered (sorted the one value). Now we can repeat that exact same process on the remaining sets ([3, 2, 1] and [5, 8, 6, 7]).
 
 Here's the whole process:
 

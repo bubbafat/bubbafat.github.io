@@ -12,16 +12,16 @@ Logi Analytics has good support for rendering data on google maps however the do
 
 ## Get your shape file
 
-1. Download [tl\_2013\_us\_state.zip](ftp://ftp2.census.gov/geo/tiger/TIGER2013/STATE/tl_2013_us_state.zip)
-2. Unzip this files to c:\\spatial\\states.
+1. Download [tl_2013_us_state.zip](ftp://ftp2.census.gov/geo/tiger/TIGER2013/STATE/tl_2013_us_state.zip)
+2. Unzip this files to c:\spatial\states.
 
 You should now have these files:
 
-c:\\spatial\\states\\tl\_2013\_us\_state.dbf
-c:\\spatial\\states\\tl\_2013\_us\_state.prj
-c:\\spatial\\states\\tl\_2013\_us\_state.shp
-c:\\spatial\\states\\tl\_2013\_us\_state.shp.xml
-c:\\spatial\\states\\tl\_2013\_us\_state.shx
+c:\spatial\states\tl_2013_us_state.dbf
+c:\spatial\states\tl_2013_us_state.prj
+c:\spatial\states\tl_2013_us_state.shp
+c:\spatial\states\tl_2013_us_state.shp.xml
+c:\spatial\states\tl_2013_us_state.shx
 
 _NOTE: The US Census Bureau has some great data [here](http://www.census.gov/geo/maps-data/data/tiger-geodatabases.html)._
 
@@ -29,11 +29,11 @@ _NOTE: The US Census Bureau has some great data [here](http://www.census.gov/geo
 
 2. Download Shape2Sql from here: [http://www.sharpgis.net/page/SQL-Server-2008-Spatial-Tools.aspx](http://www.sharpgis.net/page/SQL-Server-2008-Spatial-Tools.aspx)
 
-4. Extract the zipfile to c:\\spatial\\shape2sql
+4. Extract the zipfile to c:\spatial\shape2sql
 
 6. Run Shape2Sql.exe and do the following:
     
-    1. Choose the states shape file tl\_2013\_us\_state.shp
+    1. Choose the states shape file tl_2013_us_state.shp
     2. Choose your desired SQL server and database (I created a DB named "Spatial")
     3. Ensure "Replace existing table" is checked
     4. Change the radio button from "Planar Geometry" to "Geography (Spheric)"
@@ -49,7 +49,7 @@ _NOTE: The US Census Bureau has some great data [here](http://www.census.gov/geo
 
 You should have 56 rows of data in the States table. Go check!
 
-select \* from States
+select * from States
 
 ## A little rant...
 
@@ -85,8 +85,8 @@ To get the data in a form that makes Logi happy, let's state by creating a new S
 
 ```sql
 create table StateCache (
-    id int identity(1,1) not null constraint PK\_StateCache primary key,
-    state\_id int not null constraint FK\_StateCache\_States references states(id),
+    id int identity(1,1) not null constraint PK_StateCache primary key,
+    state_id int not null constraint FK_StateCache_States references states(id),
     rdCoordinates nvarchar(max)
 )
 ```
@@ -107,7 +107,7 @@ The C# code is this:
 
 ```csharp
 var allStates = from s in States select s.ID;
-var cachedStates = from s in StateCaches select s.State\_id;
+var cachedStates = from s in StateCaches select s.State_id;
 var toProcessStates = allStates.Except(cachedStates);
 
 foreach(var id in toProcessStates)
@@ -122,7 +122,7 @@ foreach(var id in toProcessStates)
         int points = (int)geography.STNumPoints(); 
         if(points > 0)
         {
-          StringBuilder kml = new StringBuilder(points \* 25);
+          StringBuilder kml = new StringBuilder(points * 25);
           for(int i = 1; i <= points; i++)
           {
             var point = geography.STPointN(i);
@@ -131,7 +131,7 @@ foreach(var id in toProcessStates)
 
         var row = new StateCache
         {
-          State\_id = id,
+          State_id = id,
           RdCoordinates = kml.ToString(),
         };
 
@@ -160,27 +160,27 @@ With the data created it is time to open Logi Info Studio. I'm using version 11.
 4. Add a Google Map Polygons under stateMap. Set ID to statePolygons
 5. Add a DataLayer.SQL under statePolygons. Set ID to stateSql
 6. Set stateSql Connection ID to the Spatial connection
-7. Set stateSql's Source to "select \* from StateCache"
+7. Set stateSql's Source to "select * from StateCache"
 
 So what did we do there?
 
-We created a Google Map (stateMap) and added a polygon layer to it (statePolygons). We added a SQL data layer under the polygons and are selecting back the id, state\_id and rdCoordinates column. This is enough information for Logi to render the regions in Google Maps. Save and hit F5 and your map should look like this:
+We created a Google Map (stateMap) and added a polygon layer to it (statePolygons). We added a SQL data layer under the polygons and are selecting back the id, state_id and rdCoordinates column. This is enough information for Logi to render the regions in Google Maps. Save and hit F5 and your map should look like this:
 
 ![map-no-colors](/images/archive/map-no-colors.png)
 
 Awesome, right? Now let's add some colors.
 
-Our query is bringing back not only the coordinates but also a state\_id. Ok, this isn't really a measurement but it is a number that differs for each state so we can use it for distinct colors.
+Our query is bringing back not only the coordinates but also a state_id. Ok, this isn't really a measurement but it is a number that differs for each state so we can use it for distinct colors.
 
 So now let's do this...
 
 1. Add a Color Spectrum Column under stateSql. Set ID to colorSpectrum
-2. Set colorSpectrum Data Column to "state\_id"
+2. Set colorSpectrum Data Column to "state_id"
 3. Set colorSpectrum High Value Color to #0000FF
 4. Set colorSpectrum Low Value Color to #FF0000
 5. Set statePolygons Fill Color to "@Data.colorSpectrum~" (no quotes)
 
-What we just did was add a color spectrum column to the data source, set the high color to blue and the low color to red and defined the state\_id column as the data. This means that state with an ID of 1 would use a red color and a state with ID of 56 would use a blue color. The data here is contrived but it could just as easily been population or sales or whatever.
+What we just did was add a color spectrum column to the data source, set the high color to blue and the low color to red and defined the state_id column as the data. This means that state with an ID of 1 would use a red color and a state with ID of 56 would use a blue color. The data here is contrived but it could just as easily been population or sales or whatever.
 
 Save and refresh the browser and now your map should look something like this:
 

@@ -14,25 +14,25 @@ This method prints the path name, determines the type of the current path (file,
 ```erlang
 \-module(walker).
 
--include\_lib("kernel/include/file.hrl").
+-include_lib("kernel/include/file.hrl").
 
--export(\[walk/1\]).
+-export([walk/1]).
 
-is\_symlink(Path) ->
-	case file:read\_link\_info(Path) of
-		{ok, #file\_info{type = symlink}} ->
+is_symlink(Path) ->
+	case file:read_link_info(Path) of
+		{ok, #file_info{type = symlink}} ->
 			true;
-		\_ ->
+		_ ->
 			false
 	end.
 
-file\_type(Path) ->
-	IsRegular = filelib:is\_regular(Path),
+file_type(Path) ->
+	IsRegular = filelib:is_regular(Path),
 	case IsRegular of
 		true ->
 			file;
 		false ->
-			case is\_symlink(Path) of
+			case is_symlink(Path) of
 				true ->
 					symlink;
 				false ->
@@ -41,16 +41,16 @@ file\_type(Path) ->
 	end.
 
 walk(Path) ->
-	io:format("~s~n", \[Path\]),
+	io:format("~s~n", [Path]),
 
-	FileType = file\_type(Path),
+	FileType = file_type(Path),
 	case FileType of
 		file ->
 			ok;
 		symlink ->
 			ok;
 		directory ->
-			Children = filelib:wildcard(Path ++ "/\*"),
+			Children = filelib:wildcard(Path ++ "/*"),
 			lists:foreach(fun(P) -> walk(P) end, Children)
 	end.
 ```
@@ -59,7 +59,7 @@ My questions about this module are:
 
 1. Does calling walk(P) in a foreach prevent tail recursion optimizations?
 2. Where I have "case FileType of" (in walk/1) is there a more succinct way to express that?
-3. Why doesn't read\_file\_info ever return file\_info#type==symlink?
+3. Why doesn't read_file_info ever return file_info#type==symlink?
 4. How should this have really been done?
 
 I'll be working on answering #1-3 on my way to learning #4 - but if you have any feedback I would love to hear it.

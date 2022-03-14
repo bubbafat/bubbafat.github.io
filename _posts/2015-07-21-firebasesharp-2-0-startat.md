@@ -12,7 +12,7 @@ The [startAt](https://www.firebase.com/docs/web/api/query/startat.html) function
 
 ```csharp
 var ref = new Firebase("https://dinosaur-facts.firebaseio.com/dinosaurs");
-ref.orderByChild("height").startAt(3).on("child\_added", function(snapshot) {
+ref.orderByChild("height").startAt(3).on("child_added", function(snapshot) {
   console.log(snapshot.key())
 });
 ```
@@ -24,7 +24,7 @@ ref.orderByChild("height").startAt(3).on("child\_added", function(snapshot) {
 FirebaseSharp 2.0 has the same basic syntax (note: creating the FirebaseApp instance has been removed from this sample and won't be shown in future posts unless the topic is specifically about the FirebaseApp type).
 
 ```csharp
-var sref = app.Child("dinosaurs").OrderByChild("height").StartAt(3).On("child\_added",
+var sref = app.Child("dinosaurs").OrderByChild("height").StartAt(3).On("child_added",
     (snapshot, child, context) => {
         Console.WriteLine(snapshot.Key);
     });

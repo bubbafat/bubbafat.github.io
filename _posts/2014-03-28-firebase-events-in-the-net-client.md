@@ -11,7 +11,7 @@ Firebase events now fire when an item is added, removed or updated and the updat
 
 ## Firebase Events in Action
 
-Firebase fb = new Firebase("https://\[YOUR FIREBASE URL\].firebaseio.com/");
+Firebase fb = new Firebase("https://[YOUR FIREBASE URL].firebaseio.com/");
 
 fb.GetStreaming("path/to/monitor", 
     added: (s, args) => AddedItem(args),

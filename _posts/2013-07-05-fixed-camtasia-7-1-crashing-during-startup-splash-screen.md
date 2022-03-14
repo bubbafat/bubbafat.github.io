@@ -11,18 +11,18 @@ I started my search and found this support post at Techsmith: [https://support.t
 
 _It did not help._
 
-So I looked for a log. I didn't see anything in the %programfiles%\\techsmith folder so I moved on to %temp% (which on my machine was C:\\Users\\Robert\\AppData\\Local\\Temp).
+So I looked for a log. I didn't see anything in the %programfiles%\techsmith folder so I moved on to %temp% (which on my machine was C:\Users\Robert\AppData\Local\Temp).
 
 In the temp folder I found a file that had been created at the same time as the crash: G2MCodec.txt
 
 I open it up, scroll to the bottom and find this gem:
 
-    \[CamtasiaStudio\] ...
-    First chance EXCEPTION\_ACCESS\_VIOLATION at 5D1FD578
-    \*\*\* Crash \*\*\*
+    [CamtasiaStudio] ...
+    First chance EXCEPTION_ACCESS_VIOLATION at 5D1FD578
+    *** Crash ***
     Exception: C0000005 at 5D1FD578 
-    in C:\\Program Files (x86)\\Citrix\\GoToMeeting\\969\\G2M.dll
-    ACCESS\_VIOLATION while reading 00000038
+    in C:\Program Files (x86)\Citrix\GoToMeeting\969\G2M.dll
+    ACCESS_VIOLATION while reading 00000038
     Loaded dbghelp.dll ver. 6.01.7601.17514
     EBP walk -> 5D1FD578; ...
 

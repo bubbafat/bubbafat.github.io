@@ -48,14 +48,14 @@ And then this section
  <bufferSize value="1" />  
  <connectionType value="System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
  <connectionStringName value="DefaultConnection" />  
- <commandText value="INSERT INTO Log (\[Date\],\[Level\],\[Message\],\[Exception\]) VALUES (@log\_date, @log\_level, @message, @exception)" />  
+ <commandText value="INSERT INTO Log ([Date],[Level],[Message],[Exception]) VALUES (@log_date, @log_level, @message, @exception)" />  
  <parameter>  
- <parameterName value="@log\_date"/>  
+ <parameterName value="@log_date"/>  
  <dbType value="DateTime"/>  
  <layout type="log4net.Layout.RawTimeStampLayout"/>  
  </parameter>  
  <parameter>  
- <parameterName value="@log\_level"/>  
+ <parameterName value="@log_level"/>  
  <dbType value="String"/>  
  <size value="50"/>  
  <layout type="log4net.Layout.PatternLayout">  

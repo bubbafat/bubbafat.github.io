@@ -10,27 +10,27 @@ categories:
 Based on his feedback I made three changes. First - the regular expression code has changed from this:
 
 ```erlang
-matches(H,{match,M}) -> matches(H,M,\[\]).
-matches(\_,\[\],Acc) -> Acc;
-matches(H,\[{I,L}|T\],Acc) ->
-    matches(H,T,\[lists:sublist(H,I,L)|Acc\]).
+matches(H,{match,M}) -> matches(H,M,[]).
+matches(_,[],Acc) -> Acc;
+matches(H,[{I,L}|T],Acc) ->
+    matches(H,T,[lists:sublist(H,I,L)|Acc]).
  
-words(String) -> matches(String,regexp:matches(String, "\[A-Za-z0-1\]+")).
+words(String) -> matches(String,regexp:matches(String, "[A-Za-z0-1]+")).
 ```
 
 to this:
 
 ```erlang
 words(String) ->
-  {match, Captures} = re:run(String, "\\\\b\\\\w+\\\\b", \[global,{capture,first,list}\]),
-  \[hd(C) || C<-Captures\].
+  {match, Captures} = re:run(String, "\b\w+\b", [global,{capture,first,list}]),
+  [hd(C) || C<-Captures].
 ```
 
 That last line took me a bit to grok. It's a [list comprehension](http://wiki.trapexit.org/List_Comprehension) (if you are reading Joe Armstrong's [thesis](http://www.sics.se/~joe/thesis/armstrong_thesis_2003.pdf) it is section 3.3.13. In Erlang Programming it is chapter 9.3). Basically it's saying "for each list in the list of matches take the head of the list" - a-gigga-wah?
 
-Ok. Let's go to erl. `7> re:run("foo foo bar", "\\b\\w+\\b", [global,{capture,first,list}]). {match,[["foo"],["foo"],["bar"]]}` Observe that re:run returns a nested list (i.e. a list of lists) - and each list has exactly one element (the string \[which is itself a list but I'll cal them strings\]). What we want to do is take that list-of-lists-of-strings and turn it into a list-of-strings.
+Ok. Let's go to erl. `7> re:run("foo foo bar", "\b\w+\b", [global,{capture,first,list}]). {match,[["foo"],["foo"],["bar"]]}` Observe that re:run returns a nested list (i.e. a list of lists) - and each list has exactly one element (the string [which is itself a list but I'll cal them strings]). What we want to do is take that list-of-lists-of-strings and turn it into a list-of-strings.
 
-That's what "\[hd(C) || C<-Captures\]." does - it pulls every capture (a word wrapped in a list) from the match list and runs it through erlang:hd which pulls the word from the list - then it gets added to the resulting list. So we end up with a list strings.
+That's what "[hd(C) || C<-Captures]." does - it pulls every capture (a word wrapped in a list) from the match list and runs it through erlang:hd which pulls the word from the list - then it gets added to the resulting list. So we end up with a list strings.
 
 It's un-nesting the list.
 
@@ -49,7 +49,7 @@ I spent some time thinking and after some trial and error came up with this:
 ```erlang
 lists:foldl(fun(W, Dict) -> 
     dict:update(W, fun(C) -> C + 1 end, 1, Dict) end, dict:new(), 
-    \["foo", "foo", "bar"\]).  %% sample input
+    ["foo", "foo", "bar"]).  %% sample input
 ```
 
 In a nutshell - for every word in the list update the dictionary by calling the fun which increments the count value, setting the initial count to 1 if the value does not already exist in the dictionary (and starting with an empty dictionary).
@@ -63,16 +63,16 @@ The new code ...
 ```erlang
 \-module(wordlist).
 
--export(\[print\_word\_counts/1\]).
+-export([print_word_counts/1]).
 
 words(String) ->
-  {match, Captures} = re:run(String, "\\\\b\\\\w+\\\\b", \[global,{capture,first,list}\]),
-  \[hd(C) || C<-Captures\].
+  {match, Captures} = re:run(String, "\b\w+\b", [global,{capture,first,list}]),
+  [hd(C) || C<-Captures].
 
 %% reads the next line from the file.  If there is data then...
 %% split the data into a list of words and add those to the word dict
-process\_each\_line(IoDevice, Dict) ->
-    case io:get\_line(IoDevice, "") of
+process_each_line(IoDevice, Dict) ->
+    case io:get_line(IoDevice, "") of
         eof -> 
             file:close(IoDevice),
             Dict;
@@ -84,19 +84,19 @@ process\_each\_line(IoDevice, Dict) ->
                         fun(W, D) -> dict:update(W, fun(C) -> C + 1 end, 1, D) end, 
                         dict:new(), 
                         words(Data)),
-            process\_each\_line(IoDevice, NewDict)
+            process_each_line(IoDevice, NewDict)
     end.
 
-print\_dict(Dict) ->
+print_dict(Dict) ->
     dict:fold(fun(Word, Count, AccIn) -> 
-        io:format("~s: ~w~n", \[Word, Count\]), AccIn end, void, Dict).
+        io:format("~s: ~w~n", [Word, Count]), AccIn end, void, Dict).
 
 %% opens the indicated file, processes the contents and prints
 %% out the word/count pairs to stdout
-print\_word\_counts(Filename) ->
+print_word_counts(Filename) ->
     case file:open(Filename, read) of
         {ok, IoDevice} ->
-            Dict = process\_each\_line(IoDevice, dict:new()),
-            print\_dict(Dict);
+            Dict = process_each_line(IoDevice, dict:new()),
+            print_dict(Dict);
     end.
 ```
