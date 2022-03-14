@@ -197,9 +197,16 @@ ul li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 	}
 
+
+ul ul li::before {
+  color: darkorchid;
+}
+
 li {
   margin: 1.5em 2em;
 }
+
+
 
 blockquote {
 	margin-top: 15px;
@@ -323,6 +330,31 @@ hr {
 ::selection 	 { background: $accent-color; color: $background-color; }
 ::-moz-selection { background: $accent-color; color: $background-color; }
 
+
+.tip
+{
+    background-color: #f0f7fb;
+    border-left: 6px solid #3498db;
+    padding: 1em 1em 1em 1em;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.tip .tip-bulb {
+}
+
+.tip .tip-bulb:before
+{
+   font-family: "Font Awesome 5 Free";
+   content: "\f0eb";
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+   font-size: 3em;
+}
+
+.tip .tip-content {
+}
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page loading

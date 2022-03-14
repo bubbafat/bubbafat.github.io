@@ -96,7 +96,12 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 
 - St. Maarten's two sides each have a distinct vibe. I would suggest focusing on one or the other but not trying to do both in one afternoon. We were not looking for a beach day so we went to a French cooking class on the French side and had a great time.
 - San Juan is definitely a new favorite location. I anticipate we'll come here for a proper multiday vacation soon.
-	+ Tip: There is a CVS and Walgreens right off the pier - you can walk there in about 5 minutes.
+
+<div class="tip">
+	<p class="tip-bulb"/>
+	<p class="tip-content">There is a <a href="https://www.cvs.com/store-locator/san-juan-pr-pharmacies/105-gilberto-concepcion-de-gracia-san-juan-pr-00901/storeid=7979">CVS</a> and <a href="https://www.walgreens.com/locator/walgreens-100+calle+brumbaugh-san+juan-pr-00901/id=16409">Walgreens</a> right off the pier in San Juan - you can walk there in about 5 minutes.</p>
+</div>
+
 - St. Kitts' duty free had the best liquor selection. I was able to grab a bottle of Blanton's for about $10 over US MSRP.
 - Grand Turk is your best bet for a casual beach day.
 	+ Don't pre-pay for a chair or umbrella as there will be hundreds for rent on the beach.
