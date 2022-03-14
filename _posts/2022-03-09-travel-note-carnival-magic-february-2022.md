@@ -58,13 +58,13 @@ At the port you have a checkin time - don't try to come early but you can always
 
 When you arrive there will be two lines.  One is for people who have everything ready to go.  This line was pretty long and moved reasonably fast.  The other line was for people who either needed day-of testing, had vaccine exceptions, or simply did not have their paperwork.  That line was short but moving very slowly.
 
-You will be crammed into a small room with a lot of people - if you have covid-crowd-anxiety, you might want a later time to get the masses get through.  We were there at 11:30AM and the line went out the door - probably a 30 minute wait in a crowd.
+You will be crammed into a small room with a lot of people - if you have covid-crowd-anxiety, you might want a later time to let the masses get through.  We were there at 11:30AM and the line went out the door - probably a 30 minute wait in a crowd.
 
-Once at the counter we needed to provide proof of our vaccination and testing results. Cell-service was non-existance in this metal cube building so even though I had VeriFLY open and ready, it was faster to just hand them our paper backups.
+Once at the counter we needed to provide proof of our vaccination and testing results. Cell-service was non-existant in this metal cube building so even though I had VeriFLY open and ready, it was faster to just hand them our paper backups.
 
 We did see people having their paperwork challenged and at least one couple was turned away because what they brought was not acceptable. They really did more than just glance - they compared IDs, checked dates, made sure things were from approved vendors, etc.
 
-Once we were through the line we were able to get our boarding pass (not room keys) and were allowed to board. Once boarded you need to check in at your muster station and get a 30-second talk about how life jackets work.  It was so much better than a full muster drill.  It really just took a minute.
+Once we were through the line we were able to get our boarding pass (not room keys) and were allowed to board. Once boarded you need to check in at your muster station (listed on your boarding pass) and hear a 30-second talk about how life jackets work.  It was so much better than a full muster drill.  It really just took a minute.
 
 At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sealed envelope at your door.  When you arrive you can ensure it has not been tampered with and then securely enter your room.  Luggage will show up in the next 2-5 hours (in the hallway outside your door).
 
@@ -111,11 +111,11 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 - We paid for the multi-day Thalassotherapy package and were up in the pool and steam rooms daily. You need to use it almost daily to make it worthwhile.
 - I'm not a touchy-feely guy so I was a little hesitant to get my first massage (we went with a couples package). So I probably surprised my wife when I immediately bought a second for a few nights later.
 - The movies on the lido deck at night are awesome and very few people come to them.  Great way to chill out.
-- The Steakhouse was good but if you are only going to splurge on one meal, get the Chef's Table. It was amazing. It sells out quickly so buy it ahead of time. You will find out what night your reservation is for when you board (it took a few days for us to find out - they can let you know at the front desk).
-- The Italian restaurant was disappointing. It's free for lunch which would have been fine but we were not thrilled with paying extra for dinner.
+- The Steakhouse was good but if you are only going to splurge on one meal, get the Chef's Table. It was amazing. It sells out quickly so make your reservations before boarding. You will find out what night your reservation is for when you board (it took a few days for us to find out - they can let you know at the front desk).
+- The Italian restaurant was disappointing. It's free for lunch, though, which would have been fine but we were not thrilled with paying extra for the dinner we received.
 - The Hub App is improving but still has a lot of issues. Chat messages could take hours to arrive and it sometimes did not have our reservations listed. But it was great for pulling up maps or seeing what was happening.
 - We did not use ship wifi but many people we talked to were and there were some complaints about reliability and performance. If you are planning to work on the ship be prepared for that.
-- Our T-Mobile plan provided us at least 2G connectivity at each stop which was enough to check in but not enough to upload a lot of photos.  I'm not sure it mattered but I disabled all services that automatically uploaded photos and turned off background data for most applications.
+- Our T-Mobile plan provided us at least 2G connectivity at each port. This was enough to check in but not enough to upload photos.  I'm not sure it mattered but I disabled all services that automatically uploaded photos and turned off background data for most applications.
 
 <h3>Things to Pack</h3>
 
