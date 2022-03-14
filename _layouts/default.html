@@ -85,6 +85,8 @@ layout: compress
 	{{ site.data.settings.advanced_settings.header_js }}
 	{% endif %}
 
+	<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
 	{% if jekyll.environment == 'production' %}
 	  {% include analytics.html %}
 	{% endif %}
@@ -127,6 +129,11 @@ layout: compress
 	{{ site.data.settings.advanced_settings.footer_js }}
 	{% endif %}
 
+
+	<script>
+	  anchors.options.visible = 'always';
+	  anchors.add();
+	</script>
 
 </body>
 
