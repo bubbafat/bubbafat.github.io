@@ -20,7 +20,7 @@ root.Child("ccc").SetWithPriority("{}", 1)
 
 In this example we end up with a tree that looks like this:
 
-```json
+```js
 {
   'aaa': {
     '.priority': 3

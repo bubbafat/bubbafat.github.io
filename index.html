@@ -31,12 +31,17 @@ featured_image: /images/home/blogbg.webp
 		<article class="post">
 
 			<div class="post__image-wrap">
+				{% if post.featured_image %}
 				<div class="post__image" style="background-image: url({{ post.featured_image | relative_url }})"></div>
+				{% else %}
+				<div class="post__image" style="background-image: url({{ site.data.settings.defaults.post_image | relative_url }})"></div>
+				{% endif %}
 			</div>
 
 			<div class="post__content-wrap">
 				<div class="post__content">
 					<h2 class="post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+					<p class="post__date">{{ post.date  | date: "%B %d, %Y" }}</p>
 					<p class="post__subtitle">{{ post.subtitle }}</p>
 					<p class="post__description">{{ post.description }}</p>
 				</div>

@@ -37,7 +37,7 @@ What's important to understand about this is how the filters are related.
 
 Think about if the dinosaur JSON looked like this:
 
-```json
+```js
 {
     'dino1': {
         weight: 200,

@@ -126,7 +126,7 @@ var robert = new Person
 
 What happens now is that we send up a JSON object that looks like this:
 
-```json
+```js
 {  
   "-JvFOCRHPFLy34gG4Fof":{  
     "age":38,

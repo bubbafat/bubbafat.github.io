@@ -7,7 +7,7 @@ categories:
 
 Using Firebase you can provide a priority for a data item. The JSON would look like this:
 
-```json
+```js
 {
     'item1': {
         'data': 'foo',

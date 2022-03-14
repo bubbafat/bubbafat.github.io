@@ -20,7 +20,7 @@ public class TrxItem
 
 And then add a Firebase validate rule that says that the if the object already exists that the Version value must be 1 greater than the current version. For example:
 
-```json
+```js
 {
   "rules": {
     "trx": {
@@ -51,7 +51,7 @@ item1Ref.Set(item1);
 
 Now in Firebase we have data like this:
 
-```json
+```js
 {
   "trx": {
     "item1": {
@@ -111,7 +111,7 @@ item1Ref.Once("value", (snap, child, context) => {
 
 That query will succeed (assuming no one else already updated the version) and the Firebase database will now look like:
 
-```json
+```js
 {
   "trx": {
     "item1": {

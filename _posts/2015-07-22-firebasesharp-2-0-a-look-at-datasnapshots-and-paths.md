@@ -14,7 +14,7 @@ The [Firebase docs](https://www.firebase.com/docs/web/api/datasnapshot/) for dat
 
 I'll repeat and example they give in the docs - we start with this JSON:
 
-```json
+```js
 {
   "messages": {
     "-JqpIO567aKezufthrn8" {

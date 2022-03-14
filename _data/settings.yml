@@ -2,6 +2,9 @@ basic_settings:
   site_title: roberthorvick.com
   favicon_image: /images/android-chrome-192x192.png
 
+defaults:
+  post_image: /images/post/defaultbg.jpg
+
 header_settings:
   logo_image: 
   logo_width: 200
