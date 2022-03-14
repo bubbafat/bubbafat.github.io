@@ -29,10 +29,12 @@ Ok - fine. I can use dir, right? Indeed I can.
 
 So let's go and find that file RenderingEngine.cs ...
 
+```powershell
 PS > dir /s RenderingEngine.cs
 
 Get-ChildItem : Cannot find path 'C:\\Source\\s' 
                 because it does not exist.
+```
 
 ## The Hell?
 
@@ -50,8 +52,8 @@ Mark's course really isn't a lesson in PowerShell. He is making a case for why y
 
 The basics I cared most about were:
 
-- Command Structure (verb-singularnoun)
-- Get-Command
+* Command Structure (verb-singularnoun)
+* Get-Command
 
 Now that I understand the structure and I understand how to find commands, there really is no excuse for dropping back to the command shell.
 

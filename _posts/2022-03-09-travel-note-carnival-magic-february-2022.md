@@ -20,8 +20,7 @@ The only changes in the booking processes were that we had to sign more acknowle
 
 - We understood the risks and uncertainties associated with cruising during covid.
 - We understood the vaccination and testing requirements
-- We were required to purchase "Vacation Protection" (trip insurnace)
-	+ "Vacation Protection" was roughly 10% of the overall cruise cost (before port taxes and port fees).
+- We were required to purchase "Vacation Protection" (trip insurance) which was roughly 10% of the overall cruise cost (before port taxes and port fees).
 
 <h4>Vaccination</h4>
 
