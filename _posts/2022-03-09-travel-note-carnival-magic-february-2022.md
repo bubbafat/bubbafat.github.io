@@ -53,17 +53,22 @@ _If you decide to try this, bring acceptable paper backups of everything._
 
 <h4>Boarding</h4>
 
-At the port you have a checkin time - don't try to come early but you can always come late (just not too late!).
+_Our embarkation was at [Port Canaveral Terminal 6](https://www.google.com/maps/@28.4168539,-80.6290006,3a,60y,217.37h,85.69t/data=!3m6!1e1!3m4!1sOXmeTa2X1Ezb72MfFy6yIQ!2e0!7i13312!8i6656)._
 
-When you arrive there will be two lines.  One is for people who have everything ready to go.  This line was pretty long and moved reasonably fast.  The other line was for people who either needed day-of testing, had vaccine exceptions, or simply did not have their paperwork.  That line was short but moving very slowly.
+At the port you have a checkin time (ours was 11:30AM) - don't try to come early but you can always come late (just not too late!).
 
-You will be crammed into a small room with a lot of people - if you have covid-crowd-anxiety, you might want a later time to let the masses get through.  We were there at 11:30AM and the line went out the door - probably a 30 minute wait in a crowd.
+When we arrived there were two lines.  One was for people who had everything ready to go - this line was pretty long and moved reasonably fast.  The other line was for people who either needed day-of testing, had vaccine exceptions, or simply did not have their paperwork. That line was short but appeared to move very slowly.
+
+<div class="tip">
+	<p class="tip-bulb"/>
+	<p class="tip-content">Early boarding is very busy and you will be crammed into a room with a lot of other people.  If you have crowd anxiety, you may want to select a later boarding time.</p>
+</div>
 
 Once at the counter we needed to provide proof of our vaccination and testing results. Cell-service was non-existant in this metal cube building so even though I had VeriFLY open and ready, it was faster to just hand them our paper backups.
 
-We did see people having their paperwork challenged and at least one couple was turned away because what they brought was not acceptable. They really did more than just glance - they compared IDs, checked dates, made sure things were from approved vendors, etc.
+We did see people having their paperwork thoroughly reviewed and at least one couple was turned away because what they brought was not acceptable. They really did more than just glance - they compared IDs, checked dates, made sure things were from approved vendors, etc.
 
-Once we were through the line we were able to get our boarding pass (not room keys) and were allowed to board. Once boarded you need to check in at your muster station (listed on your boarding pass) and hear a 30-second talk about how life jackets work.  It was so much better than a full muster drill.  It really just took a minute.
+Once through the line we were able to get our boarding pass (not room keys) and were able to board. Once boarded we needed to check in at our muster station (it is listed on your boarding pass) and hear a 30-second talk about how life jackets work.  It was so much better than a full muster drill.  It really just took a minute.
 
 At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sealed envelope at your door.  When you arrive you can ensure it has not been tampered with and then securely enter your room.  Luggage will show up in the next 2-5 hours (in the hallway outside your door).
 
@@ -105,7 +110,7 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 - St. Kitts' duty free had the best liquor selection. I was able to grab a bottle of Blanton's for about $10 over US MSRP.
 - Grand Turk is your best bet for a casual beach day.
 	+ Don't pre-pay for a chair or umbrella as there will be hundreds for rent on the beach.
-	+ If you walk down the beach (to the left as you leave the ship) you will eventually end up at Jack's Shack (5-10 minute walk). Very friendly staff, good drinks, and surprisingly good food. Get the conch.
+	+ If you walk down the beach (to the left as you leave the ship) you will eventually end up at [Jack's Shack](https://www.jacksshack.tc/) (5-10 minute walk). Very friendly staff, good drinks, and surprisingly good food. Get the conch.
 	
 <h3>Things We Learned (Ship and Sea Days)</h3>
 
@@ -131,7 +136,7 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 
 <h3>Pictures</h3>
 
-<div class="gallery" data-columns="1">
+<div class="gallery" data-columns="2">
 	<img src="/images/cruise2022magic/82270189-A5A9-4790-AA34-0C5ED2207D4B.jpg"/>
 	<img src="/images/cruise2022magic/9C8EA250-A314-4450-899B-54BD8E79601B.jpg"/>
 	<img src="/images/cruise2022magic/B6AFAA6D-A439-4744-B0E4-E5517A6F98C6.jpg"/>
