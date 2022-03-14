@@ -156,10 +156,6 @@ ul, ol {
 	list-style-position: inside;
 }
 
-ul {
-  list-style: none;
-}
-
 ol {
   list-style: none;
   counter-reset: steps;
@@ -167,6 +163,7 @@ ol {
 
 ol li {
   counter-increment: steps;
+  margin: 1.5em 2em;
 }
 
 ol li::before {
@@ -188,23 +185,18 @@ ol ol li::before {
   background: darkorchid;
 }
 
-ul li::before :not(.socials) {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ff6f00; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+ul li {
+	  margin: 1em 1em;
 }
 
-
-ul ul li::before {
-  color: darkorchid;
+ul li::marker {
+	color: #ff6f00;
 }
 
-li {
-  margin: 1.5em 2em;
+ul ul li::marker {
+	color: darkorchid;
 }
+
 
 
 
