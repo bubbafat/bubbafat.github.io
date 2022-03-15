@@ -61,7 +61,7 @@ When this runs each png file in the directory tree will have a cooresponding web
 Now my steps were:
 
 1. Delete the original files (I used the same command as above but replaced the bash command with an `rm` command)
-2. Mass-update the blog posts (U used Find/Replace in [Sublime](https://www.sublimetext.com/))
+2. Mass-update the blog posts (I used Find/Replace in [Sublime](https://www.sublimetext.com/))
 3. Run jekyll and test
 
 And I think the outputs speak for themselves.  Here is an example input image:
