@@ -1,4 +1,15 @@
-<div class="tip">
-	<p class="tip-bulb"/>
+<div class="tip" style="
+    background-color: {{ include.background_color | default:  '#ECF7FF' }};
+    border-left: 6px solid {{ include.border_color | default:  '#0065B4' }};
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    column-gap: 2rem;
+    margin: 2em 2em 2em 2em;">
+	<p class="tip-bulb" style="
+		font-family: 'Font Awesome 5 Free';
+	    vertical-align: middle;
+	    font-weight: 900;
+	    font-size: {{ include.bulb_size | default:  '3em' }};
+	    color: {{ include.bulb_color | default:  '#ff6f00' }};">{{ include.icon | default:  '&#xf0eb;' }}</p>
 	<p class="tip-content">{{ include.content }}</p>
 </div>
