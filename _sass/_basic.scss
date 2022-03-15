@@ -323,31 +323,6 @@ hr {
 ::-moz-selection { background: $accent-color; color: $background-color; }
 
 
-.tip {
-    background-color: #ECF7FF;
-    border-left: 6px solid #0065B4;
-    padding: 1em 1em 1em 1em;
-    display: flex;
-    column-gap: 2rem;
-    margin: 2em 2em 2em 2em;
-}
-
-.tip .tip-bulb {
-}
-
-.tip .tip-bulb:before
-{
-   font-family: "Font Awesome 5 Free";
-   content: "\f0eb";
-   vertical-align: middle;
-   font-weight: 900;
-   font-size: 3em;
-   color: #ff6f00;
-}
-
-.tip .tip-content {
-}
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page loading
 
 .page-loader {
