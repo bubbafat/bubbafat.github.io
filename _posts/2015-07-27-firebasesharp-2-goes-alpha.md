@@ -3,7 +3,7 @@ title: "FirebaseSharp 2 goes alpha"
 date: "2015-07-27"
 categories: 
   - "Programming#Firebase"
-featured_image: '/images/archive/alpha.jpeg'
+featured_image: '/images/archive/alpha.webp'
 ---
 
 FirebaseSharp 2 has gone into an early alpha. This post is using version [2.0.1-alpha](https://www.nuget.org/packages/FirebaseSharp/2.0.1-alpha) - and the latest package is always available [here](https://www.nuget.org/packages/FirebaseSharp/). Just remember that because it is an alpha release you have to instruct nuget to get [pre-release packages](https://docs.nuget.org/create/versioning#installing-prerelease-packages).
@@ -90,7 +90,7 @@ using (var app = new FirebaseApp(new Uri("https://yourfirebase.url/")))
 
 And what did that push? Exactly what you'd expect:
 
-![addobjectresult](/images/archive/addobjectresult.png)
+![addobjectresult](/images/archive/addobjectresult.webp)
 
 ## Server Timestamps
 

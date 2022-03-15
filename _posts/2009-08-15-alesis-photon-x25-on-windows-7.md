@@ -27,7 +27,7 @@ My contented feeling was short lived though. After picking it up I went out to d
 
 But I plugged it in and …
 
-![image](/images/archive/image_thumb.png "image")
+![image](/images/archive/image_thumb.webp "image")
 
 Now … I haven’t done anything beyond this. So does it work? I’m installing Cubase LE now …
 

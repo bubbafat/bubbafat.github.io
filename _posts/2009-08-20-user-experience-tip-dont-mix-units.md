@@ -9,7 +9,7 @@ tags:
 
 I need how much space?
 
-![image](/images/archive/image_thumb.png "image")
+![image](/images/archive/image_thumb.webp "image")
 
 Maybe I’m dense. But I had to read this window not once or twice … but 5, yes 5, times before I realized that it was giving the “Required” units in “KB” and “Available” units in “MB”.
 

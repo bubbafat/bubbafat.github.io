@@ -5,7 +5,7 @@ categories:
   - "data"
   - "logi-analytics"
   - "programming"
-featured_image: '/images/archive/logi-us-states.png'
+featured_image: '/images/archive/logi-us-states.webp'
 ---
 
 Logi Analytics has good support for rendering data on google maps however the documentation is very biased to using KML or GPX files. In this post we'll walk through using a SQL data layer to render regions with a data point on the google map. I assume you have SQL Server 2008 R2 or newer. If you don't the post is still relevant but the specific commands might not work.
@@ -44,7 +44,7 @@ _NOTE: The US Census Bureau has some great data [here](http://www.census.gov/geo
     
     The window should now look like this:
     
-    ![spatialtool](/images/archive/spatialtool.png)
+    ![spatialtool](/images/archive/spatialtool.webp)
 7. Click "Upload to Database" - a progress bar will appear at the bottom of the window and 56 (when I ran it) geographies will be uploaded.
 
 You should have 56 rows of data in the States table. Go check!
@@ -65,7 +65,7 @@ But go look at our States..geography column - it is not a string. Well ... maybe
 
 select geography.STAsText() from States
 
-![STAsText](/images/archive/STAsText.png)
+![STAsText](/images/archive/STAsText.webp)
 
 There are two types of results:
 
@@ -97,7 +97,7 @@ Now we need to convert the States..geography data into the Logi-compatible forma
 
 I connect LinqPAD to SQL using this connection definition:
 
-![spatial-connection](/images/archive/spatial-connection.png)
+![spatial-connection](/images/archive/spatial-connection.webp)
 
 _(SQL Server provider, Windows Authentication, Spatial database, all other defaults)_
 
@@ -166,7 +166,7 @@ So what did we do there?
 
 We created a Google Map (stateMap) and added a polygon layer to it (statePolygons). We added a SQL data layer under the polygons and are selecting back the id, state_id and rdCoordinates column. This is enough information for Logi to render the regions in Google Maps. Save and hit F5 and your map should look like this:
 
-![map-no-colors](/images/archive/map-no-colors.png)
+![map-no-colors](/images/archive/map-no-colors.webp)
 
 Awesome, right? Now let's add some colors.
 
@@ -184,7 +184,7 @@ What we just did was add a color spectrum column to the data source, set the hig
 
 Save and refresh the browser and now your map should look something like this:
 
-![Logi Analytics US States and Territories](/images/archive/logi-us-states.png)
+![Logi Analytics US States and Territories](/images/archive/logi-us-states.webp)
 
 Awesome!
 

@@ -13,7 +13,7 @@ But today I found myself on a windows box and wanted a basic syntax highlighting
 
 I grabbed the "[free as in beer](http://en.wikipedia.org/wiki/Free_as_in_beer)" and "[free as in speech](http://en.wikipedia.org/wiki/Free_as_in_beer#.22Free_as_in_beer.22_vs_.22Free_as_in_speech.22)" editor [NotePad++](http://notepad-plus.sourceforge.net) and created a simple syntax file that is a bit hokey but will serve my needs fine.
 
-Here's a screen shot ... ![Windows Erlang Syntax Highlighting Editor](/images/archive/screenshot1.jpg "Windows Erlang Syntax Highlighting Editor")
+Here's a screen shot ... ![Windows Erlang Syntax Highlighting Editor](/images/archive/screenshot1.webp "Windows Erlang Syntax Highlighting Editor")
 
 NotePad++ has pretty weak syntax highlighting but was sufficent to do most of what I wanted. Some regex based rules would make this a more robust.
 

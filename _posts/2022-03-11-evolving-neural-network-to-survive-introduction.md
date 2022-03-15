@@ -3,7 +3,7 @@ title: 'Trying to Survive: An Evolving Neural Network'
 subtitle: 'The first post in a series where we''ll work through building an evolving network of nodes fighting for survival.'
 description: 'The first post in a series where we''ll work through building an evolving network of nodes fighting for survival.'
 date: 2022-03-11
-featured_image: '/images/post/evolve/gen-1000-graph.jpg'
+featured_image: '/images/post/evolve/gen-1000-graph.webp'
 categories: 
   - "Programming#Evolve"
 ---
@@ -32,7 +32,7 @@ Here's a video of generation 1 - notice that there is a breeding zone highlighte
 
 With high genetic diversity there very few similar nodes, but the most common (2% of nodes) was:
 
-![Most common node structure in generation 1](/images/post/evolve/gen-1-graph.jpg)
+![Most common node structure in generation 1](/images/post/evolve/gen-1-graph.webp)
 
 And after more generations (this is generation 1000 but it stablized far earlier).
 
@@ -54,7 +54,7 @@ A few things to notice in this video:
 
 The most common genetic structure is:
 
-![Most common node structure in generation 1](/images/post/evolve/gen-1000-graph.jpg)
+![Most common node structure in generation 1](/images/post/evolve/gen-1000-graph.webp)
 
 This makes sense - to survive the nodes need to move to the west.  For most nodes that is the only survival trait that matters so it becomes the predominate trait quickly.
 

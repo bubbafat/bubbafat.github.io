@@ -9,7 +9,7 @@ In my [previous post]({{ site.url }}/blog/walking-the-directory-tree-in-erlang) 
 
 Something along the lines of this...
 
-![walk-visit](/images/archive/walk-visit1.png "walk-visit")
+![walk-visit](/images/archive/walk-visit1.webp "walk-visit")
 
 Since walk and visit are the process entry points they need to be in the export list (by the way - forgetting to do this does not cause a compiler error in erl - why is that?) and we need a new entry function to create the new processes (start/1).
 

@@ -3,7 +3,7 @@ title: "FirebaseSharp 2.0 - orderByChild"
 date: "2015-07-20"
 categories: 
   - "Programming#Firebase"
-featured_image: '/images/archive/dino.png'
+featured_image: '/images/archive/dino.webp'
 ---
 
 Firebase [orderByChild](https://www.firebase.com/docs/web/api/query/orderbychild.html) allows your query to be ordered by (no surprises here) - the child value. It uses a pretty straight-forward [set of rules](https://www.firebase.com/docs/web/guide/retrieving-data.html#section-ordered-data) to make this happen:

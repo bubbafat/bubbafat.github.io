@@ -27,7 +27,7 @@ No problem. Let's work through the first iteration of the algorithm.
 
 We start with a range of unsorted data.
 
-![unsorted data width=](/images/archive/quicksort-start.png)
+![unsorted data width=](/images/archive/quicksort-start.webp)
 
 The first thing we do is pick a partition point.
 
@@ -35,11 +35,11 @@ Pick anything. The left most value. The right most value. The one in the middle.
 
 _We'll pick 4._
 
-![quicksort partitions the unsorted range](/images/archive/quicksort-part.png)
+![quicksort partitions the unsorted range](/images/archive/quicksort-part.webp)
 
 Now we are going to move all the values less than 4 to the left of the partition point, and all the values greater than 4 to the right of the partition point. In this case, we are going to move the 8 and 5 to the right of the partition point.
 
-![quicksort swaps the values](/images/archive/quicksort-swap.png)
+![quicksort swaps the values](/images/archive/quicksort-swap.webp)
 
 Think about what we now know about our partition point.
 
@@ -50,7 +50,7 @@ That one value, the partition point, is exactly where it belongs. Sure, things t
 
 To commemorate this occasion, let's paint it green.
 
-![quicksort is complete](/images/archive/quicksort-done.png)
+![quicksort is complete](/images/archive/quicksort-done.webp)
 
 Exciting, right?
 

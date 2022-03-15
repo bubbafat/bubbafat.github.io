@@ -9,13 +9,13 @@ I’m in the early stages of learning Python – and by early I mean 3 days (abo
 
 Let’s start by looking at our sample graph (this is the sample from the problem website):
 
-![tree1](/images/archive/tree1_thumb.png "tree1")
+![tree1](/images/archive/tree1_thumb.webp "tree1")
 
 And we want to find the most expensive path from the root (3) to the bottom row (8 5 9 3).
 
 In this example the maximum path has the value 23
 
-![tree2](/images/archive/tree2_thumb.png "tree2")
+![tree2](/images/archive/tree2_thumb.webp "tree2")
 
 On a small triangle (graph) like this we can just see the answer – but how would we do it with 16 or 100 rows (problems 18 and 67, respectively)?
 
@@ -35,15 +35,15 @@ Now let’s step back and realize that between every connected pair of nodes the
 
 So far we’ve seen 3 nodes. One of them had no parents (3) and two had one parent (7 and 4). So for those three nodes we know their maximal path weight. Since we know their weight we never to calculate those nodes again. So our tree can now be thought of this like this:
 
-![tree3](/images/archive/tree3_thumb.png "tree3")
+![tree3](/images/archive/tree3_thumb.webp "tree3")
 
 Moving on to the third row – let’s apply those maximal path rules and see the new values:
 
-![tree4](/images/archive/tree4_thumb.png "tree4")
+![tree4](/images/archive/tree4_thumb.webp "tree4")
 
 And now we can finish the third row …
 
-![tree5](/images/archive/tree5_thumb.png "tree5")
+![tree5](/images/archive/tree5_thumb.webp "tree5")
 
 And there you have it – the maximal path value of each node is known.
 

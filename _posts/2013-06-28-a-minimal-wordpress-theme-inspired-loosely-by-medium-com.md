@@ -5,7 +5,7 @@ categories:
   - "programming"
 ---
 
-![The bad artists imitate, the great artists steal](/images/archive/great-artists-steal.jpg)
+![The bad artists imitate, the great artists steal](/images/archive/great-artists-steal.webp)
 
 _Update:_ The theme code (such as it is) is available on [GitHub](https://github.com/bubbafat/SimplyReadable).
 

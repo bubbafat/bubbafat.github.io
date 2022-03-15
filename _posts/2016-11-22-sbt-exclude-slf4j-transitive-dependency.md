@@ -4,10 +4,10 @@ date: "2016-11-22"
 categories: 
   - "Programming#Scala"
 description: "Clean up unit test output by removing the SLF4J refernence from all dependencies and then adding them back selectively."
-featured_image: '/images/archive/sbt-after.jpg'
+featured_image: '/images/archive/sbt-after.webp'
 ---
 
-![](/images/archive/sbt-after.png)
+![](/images/archive/sbt-after.webp)
 
 ## Implied Header
 
@@ -71,8 +71,8 @@ Next we add the SLF4J dependencies back - but this time we indicate that in test
 
 And now our unit tests which used to look like this:
 
-![Before the NOP logger and SLF4J logging change](/images/archive/sbt-before.jpg)
+![Before the NOP logger and SLF4J logging change](/images/archive/sbt-before.webp)
 
 Now look like this:
 
-![After the NOP logger and SLF4J logging change](/images/archive/sbt-after.jpg)
+![After the NOP logger and SLF4J logging change](/images/archive/sbt-after.webp)

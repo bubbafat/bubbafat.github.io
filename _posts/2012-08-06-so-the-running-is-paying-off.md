@@ -7,4 +7,4 @@ tags:
 
 I've been eating better and working out. I won't get into the details - but here's the current progress...
 
-![](/images/archive/contrast.jpg "contrast")
+![](/images/archive/contrast.webp "contrast")

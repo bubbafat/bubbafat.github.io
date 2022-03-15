@@ -1,7 +1,7 @@
 ---
 title: "Twilio Web API nuget package released"
 date: "2014-03-20"
-featured_image: '/images/archive/twilio-plus-webapi.png'
+featured_image: '/images/archive/twilio-plus-webapi.webp'
 ---
 
 Every time I start creating a Twilio Web API application I always get a little frustrated. It's not that using their API is hard - it certainly isn't. Rather, their API does not play well with ASP.NET Web API.

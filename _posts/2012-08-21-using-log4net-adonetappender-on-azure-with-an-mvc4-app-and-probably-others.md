@@ -20,13 +20,13 @@ Once these are done you can use your logger.
 
 Use NuGet to get Log4Net.
 
-![image](/images/archive/image_thumb.png "image")
+![image](/images/archive/image_thumb.webp "image")
 
 # Create a table on Azure
 
 I created a table using the database management website – the database looks like this:
 
-![image](/images/archive/image_thumb1.png "image")
+![image](/images/archive/image_thumb1.webp "image")
 
 It’s really important that the ID column be an Identity column – Azure DB requires clustered indexes.
 

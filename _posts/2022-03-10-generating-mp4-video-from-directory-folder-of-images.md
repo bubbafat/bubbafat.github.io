@@ -3,7 +3,7 @@ title: 'Generating an MP4 Video From a Directory of Images'
 subtitle: 'Using find, xargs, and ffmpeg to create an mp4 video from a folder of images'
 date: 2022-03-08
 description: 'Using find, xargs, and ffmpeg to create an mp4 video from a folder of images'
-featured_image: '/images/post/2022-03-10/preview.png'
+featured_image: '/images/post/2022-03-10/preview.webp'
 categories: 
   - "Programming#Evolve"
 ---

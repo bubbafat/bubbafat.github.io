@@ -24,7 +24,7 @@ I’m in the planning stages of putting together a home recording studio for cap
 
 Something like this
 
-![wheremusiccomesfrom](/images/archive/wheremusiccomesfrom_thumb.png "wheremusiccomesfrom")
+![wheremusiccomesfrom](/images/archive/wheremusiccomesfrom_thumb.webp "wheremusiccomesfrom")
 
 That’s one hell of an expensive question mark.
 

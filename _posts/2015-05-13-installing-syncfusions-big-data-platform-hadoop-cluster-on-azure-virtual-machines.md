@@ -4,7 +4,7 @@ date: "2015-05-13"
 categories: 
   - "data"
   - "programming"
-featured_image: '/images/archive/hadoop-ballons.png'
+featured_image: '/images/archive/hadoop-ballons.webp'
 ---
 
 This week SyncFusion announced their new [Big Data platform](http://syncfusion.com/products/big-data) - basically it is Hadoop in an easy to install, configure and monitor format. You can also [go here](https://www.couchbase.com/resources/why-nosql) for more information on Hadoop, Couchbase. MongoDB and other kinds of NoSQL database.
@@ -41,11 +41,11 @@ This is a simple self-extracting zip that starts the installer when it is finish
 
 When the "dashboard" (which is really just a splash screen with 2 buttons) is loaded, click the green "Cluster Manager" button.
 
-![IIS Express is not installed on your machine.](/images/archive/iis-error.png)
+![IIS Express is not installed on your machine.](/images/archive/iis-error.webp)
 
 Whoa ... hold on now. What the hell is this? Let's go back to SyncFusion's Big Data [product page](http://www.syncfusion.com/products/big-data). Anyone notice this claim?
 
-![All you need on each node is a small agent that depends on .NET Framework 4.5 or later. There are absolutely no other dependencies.](/images/archive/no-prereqs.png)
+![All you need on each node is a small agent that depends on .NET Framework 4.5 or later. There are absolutely no other dependencies.](/images/archive/no-prereqs.webp)
 
 Look, I don't mind needing to install a pre-req (though you could have installed this one during your installation process) ... but don't claim there aren't any when there are.
 
@@ -69,23 +69,23 @@ I did not try installing the Windows web role ahead of time - but that might wor
 
 With the cluster manager now working you can open the management dashboard (opens in your default browser) and click the "Create" button to create a new cluster. Setup the cluster to communicate with the other virtual machines (which are all on the same virtual network per the VM configuration section) ...
 
- ![create-cluster](/images/archive/create-cluster.png) 
+ ![create-cluster](/images/archive/create-cluster.webp) 
 
 Enter the IP addresses (10.0.0.4, 10.0.0.5, 10.0.0.6) and click "Next"
 
 This takes you to a page that, after a minute or two, tells you that the agents are not installed. This is correct. We have not installed them.
 
-![agent-not-installed](/images/archive/agent-not-installed.png)
+![agent-not-installed](/images/archive/agent-not-installed.webp)
 
 So now go off and download the agent exe (from where you got the cluster manager) and install it on this VM. There are no options and the installation takes about 30 seconds. Once it is done click the refresh button on the line for the current VM (10.0.0.4 in my case).
 
 Now the client agent is working.
 
- ![install-agent](/images/archive/install-agent.png) 
+ ![install-agent](/images/archive/install-agent.webp) 
 
 Now go repeat this step on the other two VM's. Download and install the agent then come back and click "refresh". But don't get all excited yet. It still not going to work. You'll see this:
 
- ![DNS and reverse DNS are not working](/images/archive/dns-bad.png) 
+ ![DNS and reverse DNS are not working](/images/archive/dns-bad.webp) 
 
 So what's happening here is that the local VM is able to connect to the remote VM but DNS and reverse DNS are not working because Azure doesn't give you that by default.
 
@@ -99,17 +99,17 @@ Then (for my sanity) I ran these commands (from and admin command prompt):
 
 Now try refreshing again.
 
- ![success](/images/archive/success.png) Awesome! Click "Next" and wait for the package transfer (this takes several minutes)
+ ![success](/images/archive/success.webp) Awesome! Click "Next" and wait for the package transfer (this takes several minutes)
 
-![transfering-packages](/images/archive/transfering-packages.png)
+![transfering-packages](/images/archive/transfering-packages.webp)
 
 And then ensuring high availability goes for a while...
 
-![ensuring-high-availability](/images/archive/ensuring-high-availability.png)
+![ensuring-high-availability](/images/archive/ensuring-high-availability.webp)
 
 And finally we're done.
 
-![all-working](/images/archive/all-working.png)
+![all-working](/images/archive/all-working.webp)
 
 ## What's Next?
 

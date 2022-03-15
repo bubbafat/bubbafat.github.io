@@ -5,7 +5,7 @@ categories:
   - "programming"
 ---
 
-![Waiting](/images/archive/waiting.jpg)
+![Waiting](/images/archive/waiting.webp)
 
 ## Ready for a terrible idea?
 

@@ -3,7 +3,7 @@ title: "FirebaseSharp 2.0 - StartAt"
 date: "2015-07-21"
 categories: 
   - "Programming#Firebase"
-featured_image: '/images/archive/thistallblack.png'
+featured_image: '/images/archive/thistallblack.webp'
 ---
 
 Today we'll look at the StartAt method on the new FirebaseSharp 2.0 library.

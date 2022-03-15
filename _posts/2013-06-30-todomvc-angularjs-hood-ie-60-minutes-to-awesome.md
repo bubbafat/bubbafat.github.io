@@ -74,11 +74,11 @@ The only change here is using the done method to get the results. Yeah, I'm bein
 
 #### So how does it look?
 
-![](/images/archive/todos.png)
+![](/images/archive/todos.webp)
 
 But what about the login stuff? Well ... I didn't make that pretty.
 
-![](/images/archive/save.png)
+![](/images/archive/save.webp)
 
 I just don't care.
 
@@ -86,7 +86,7 @@ I just don't care.
 
 Let's look at the CouchDB data ...
 
-![](/images/archive/couchdb-proof.png)
+![](/images/archive/couchdb-proof.webp)
 
 There you go. You can see the user was created (we're in their database) and the document contains the todo items. Actually, it is missing one but that's just because of how I took the scre   en shots. Deal with it.
 
