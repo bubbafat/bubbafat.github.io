@@ -54,7 +54,7 @@ Basically the pipeline is this:
 4. Use xargs specificying "-n2" to say "read two lines"
 5. Kick off a bash script providing both args calling cwebp
 
-This seems super hacky but it works and that's all I really cared about.  If you can improve on this then please feel free to submit a PR to this blog post to help (really, please do!)
+This seems super hacky but it works and that's all I really cared about.  If you can improve on this then please feel free to [submit a PR to this blog post](https://github.com/bubbafat/bubbafat.github.io/blob/main/_posts/2022-03-15-converting-images-from-png-jpg-to-webp-and-resizing.md) to help (really, please do!)
 
 When this runs each png file in the directory tree will have a cooresponding webp at the same location and that webp file will have been resized to a max width of 800px.
 
