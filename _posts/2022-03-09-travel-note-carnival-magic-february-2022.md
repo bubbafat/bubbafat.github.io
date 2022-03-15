@@ -59,10 +59,7 @@ At the port you have a checkin time (ours was 11:30AM) - don't try to come early
 
 When we arrived there were two lines.  One was for people who had everything ready to go - this line was pretty long and moved reasonably fast.  The other line was for people who either needed day-of testing, had vaccine exceptions, or simply did not have their paperwork. That line was short but appeared to move very slowly.
 
-<div class="tip">
-	<p class="tip-bulb"/>
-	<p class="tip-content">Early boarding is very busy and you will be crammed into a room with a lot of other people.  If you have crowd anxiety, you may want to select a later boarding time.</p>
-</div>
+{% include tip.html content="Early boarding is very busy and you will be crammed into a room with a lot of other people.  If you have crowd anxiety, you may want to select a later boarding time." %}
 
 Once at the counter we needed to provide proof of our vaccination and testing results. Cell-service was non-existant in this metal cube building so even though I had VeriFLY open and ready, it was faster to just hand them our paper backups.
 
@@ -102,10 +99,7 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 - St. Maarten's two sides each have a distinct vibe. I would suggest focusing on one or the other but not trying to do both in one afternoon. We were not looking for a beach day so we went to a French cooking class on the French side and had a great time.
 - San Juan is definitely a new favorite location. I anticipate we'll come here for a proper multiday vacation soon.
 
-<div class="tip">
-	<p class="tip-bulb"/>
-	<p class="tip-content">There is a <a href="https://www.cvs.com/store-locator/san-juan-pr-pharmacies/105-gilberto-concepcion-de-gracia-san-juan-pr-00901/storeid=7979">CVS</a> and <a href="https://www.walgreens.com/locator/walgreens-100+calle+brumbaugh-san+juan-pr-00901/id=16409">Walgreens</a> right off the pier in San Juan - you can walk there in about 5 minutes.</p>
-</div>
+{% include tip.html content="There is a <a href='https://www.cvs.com/store-locator/san-juan-pr-pharmacies/105-gilberto-concepcion-de-gracia-san-juan-pr-00901/storeid=7979'>CVS</a> and <a href='https://www.walgreens.com/locator/walgreens-100+calle+brumbaugh-san+juan-pr-00901/id=16409'>Walgreens</a> right off the pier in San Juan - you can walk there in about 5 minutes." %}
 
 - St. Kitts' duty free had the best liquor selection. I was able to grab a bottle of Blanton's for about $10 over US MSRP.
 - Grand Turk is your best bet for a casual beach day.
