@@ -1,4 +1,4 @@
-// - - - - - - - - - - - - - - - - - -
+	// - - - - - - - - - - - - - - - - - -
 
 // Basics
 
@@ -327,8 +327,8 @@ hr {
     background-color: #ECF7FF;
     border-left: 6px solid #0065B4;
     padding: 1em 1em 1em 1em;
-    display: grid;
-    grid-template-columns: 1fr 9fr;
+    display: flex;
+    column-gap: 2rem;
     margin: 2em 2em 2em 2em;
 }
 
@@ -339,7 +339,6 @@ hr {
 {
    font-family: "Font Awesome 5 Free";
    content: "\f0eb";
-   padding-right: 3px;
    vertical-align: middle;
    font-weight: 900;
    font-size: 3em;
@@ -453,7 +452,7 @@ section {
 
 	@include mq(laptop) {
 		max-width: 1100px;
-	}
+	}	
 }
 
 
