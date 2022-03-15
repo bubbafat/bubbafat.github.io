@@ -66,11 +66,12 @@ Now my steps were:
 
 And I think the outputs speak for themselves.  Here is an example input image:
 
-![Original image from Unsplash](/images/post/2022-03-15/matt-artz-7_zxKAWCDQI-unsplash.jpg)
+{% include image.html url="/images/post/2022-03-15/matt-artz-7_zxKAWCDQI-unsplash.jpg" description="A black c-clamp on a black background" unsplash_profile="mattartz" unsplash_name="Matt Artz" %}
+
 
 And here is the WebP compressed and resized version
 
-![WebP compressed and resized version](/images/post/2022-03-15/matt-artz-7_zxKAWCDQI-unsplash.webp)
+{% include image.html url="/images/post/2022-03-15/matt-artz-7_zxKAWCDQI-unsplash.webp" description="A black c-clamp on a black background" unsplash_profile="mattartz" unsplash_name="Matt Artz" %}
 
 The original file was 338712 bytes and the webp version is 16544 bytes - roughly 95% savings with very little change in the overall visual experience (as needed for a personal blog).
 

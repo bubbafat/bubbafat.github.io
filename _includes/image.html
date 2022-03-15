@@ -1,0 +1,16 @@
+<div class="image-wrap">
+  <figure class="image">
+    <img style="vertical-align: top;" src="{{ include.url }}" alt="{{ include.description }}">
+    <figcaption style="text-align: center;">
+      {% if include.unsplash_profile %}
+        Photo by <a href="https://unsplash.com/@{{ include.unsplash_profile }}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">{{ include.unsplash_name }}</a> on <a href="https://unsplash.com/s/photos/clamp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>    
+      {% else %}
+        {{ include.description }}
+      {% endif %}
+    </figcaption>
+  </figure>
+</div>
+
+
+
+
