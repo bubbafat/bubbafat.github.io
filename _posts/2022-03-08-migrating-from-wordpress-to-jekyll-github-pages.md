@@ -240,7 +240,10 @@ There are few changes that matter:
 
 <h3>Setting up Auto-Publishing Future Posts</h3>
 
-And that's where I am now.  If I do anything else interesting I will add it here.
+I tried using the Jekyll [drafts feature](https://jekyllrb.com/docs/posts/#drafts) but I found it pretty annoying. The drafts are non-dated so publishing is more than just copying from \_drafts to \_posts - you also need to rename the file.
+
+Then I looked at using the [future post](https://jekyllrb.com/docs/configuration/options/) approach. Create a post like you normally do but have it dated in the future. The main problem with this approach is that when you publish to e GitHub there is nothing that causes your post to rebuild and render when the post time passes. But I figured there had to be a way so I start looking at [Actions](https://github.com/features/actions) and discovered [this post](https://seankilleen.com/2020/02/how-to-deploy-github-pages-on-a-schedule-to-publish-future-posts/) by [Sean Killeen](https://twitter.com/sjkilleen) which clearly explained the steps to create an Action that uses cron scheduling to rebuild the site. I [changed it](https://github.com/bubbafat/bubbafat.github.io/blob/main/.github/workflows/scheduled-posts.yml) from running hourly to running once daily at 4AM but otherwise it was a pretty easy configuration.
+
 
 <hr/>
 

@@ -5,7 +5,7 @@ date: 2022-03-08
 description: 'Using find, xargs, and ffmpeg to create an mp4 video from a folder of images'
 featured_image: '/images/post/2022-03-10/preview.webp'
 categories: 
-  - "Programming#Evolve"
+  - "Programming#Web"
 ---
 
 As part of a personal project I've been toying with I wanted to be able to generate images using a naming convention where the image name would describe the frame order.  For example: `frame-1.png`, `frame-2.png`, ... `frame-100.png`. 

@@ -5,7 +5,7 @@ description: 'Using the cwebp tool to automate image optimization on individual 
 date: 2022-03-15
 featured_image: '/images/post/2022-03-15/matt-artz-7_zxKAWCDQI-unsplash.webp'
 categories: 
-  - "Programming#Misc"
+  - "Programming#Web"
 ---
 
 I'm not overly concerned with SEO or my blog's performance but there is no need to make someone download a 350k image when a 17k one will do. To make that happen I have converted all my images from their previous png and jpg formats, and using Google's WebP format.  I've been doing this using the [cwebp](https://developers.google.com/speed/webp/docs/cwebp) command line tool.

@@ -5,7 +5,7 @@ description: 'Animating collections of images into the animated webp format'
 date: 2022-03-17
 featured_image: '/images/post/gen100.webp'
 categories: 
-  - "Programming#Misc"
+  - "Programming#Web"
 ---
 
 I frequently find myself needing to create videos from a series of rendered frames. I have been using ffmpeg to generated mp4's but it would be nice to be able to create GIF's - or in this case animated WebP files.  The biggest benefits of this are that I don't need to rely on an external hosting service for the video and that they can be used anywhere an image is used.

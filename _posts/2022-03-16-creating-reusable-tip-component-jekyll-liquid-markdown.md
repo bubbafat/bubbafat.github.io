@@ -5,7 +5,7 @@ description: 'Using Jekyll (liquid + markdown) and Font Awesome'
 date: 2022-03-16
 featured_image: '/images/post/jekyll-tips.webp'
 categories: 
-  - "Programming#Jekyll"
+  - "Programming#Web"
 ---
 
 When writing blog posts I like to use "tip" sections to call out key points. Here's a screenshot:
