@@ -30,6 +30,7 @@ My process was:
 - Defaulting to the blog instead of projects
 - Wiring up Google Analytics
 - Make changes and keep on pushing
+- Setting up Auto-Publishing Future Posts
 
 <h3>Export WordPress to XML</h3>
 
@@ -120,7 +121,7 @@ My steps were:
 2. Copy roberthorvick-export.xml from Downloads to the wordpress-export-to-markdown
 3. Rename roberthorvick-export.xml to export.xml
 4. Run `node index.js --post-folders=false --prefix-date=true --wizard=false`
-5. Copy the output to the Jekyll _posts directory.
+5. Copy the output to the Jekyll \_posts directory.
 
 The command to use was documented in the [README.md](https://github.com/lonekorean/wordpress-export-to-markdown/blob/master/README.md) - so big thanks to [Will Boyd](https://twitter.com/lonekorean) for not just creating the tool but also making it easy to use with Jekyll.
 
@@ -172,7 +173,7 @@ mv index.html projects
 mv blog/index.html .
 ```
 
-Then edited the _data\settings.yml to point the Blog menu to / (root) and the Projects menu to /projects/ - now it rendered the way I wanted.
+Then edited the \_data\settings.yml to point the Blog menu to / (root) and the Projects menu to /projects/ - now it rendered the way I wanted.
 
 <h3>Make changes and keep on pushing</h3>
 
@@ -236,6 +237,8 @@ There are few changes that matter:
 2. I assigned a new variable named subcategory which splits on "#" and picks the second word ("Programming#Erlang" -> "Erlang")
 3. I display the subcategory but continue using the category_name in links and slugs
 4. I print the date the post was written with the title
+
+<h3>Setting up Auto-Publishing Future Posts</h3>
 
 And that's where I am now.  If I do anything else interesting I will add it here.
 
