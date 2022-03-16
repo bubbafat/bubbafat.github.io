@@ -30,7 +30,7 @@ Ok - fine. I can use dir, right? Indeed I can.
 So let's go and find that file RenderingEngine.cs ...
 
 ```powershell
-PS > dir /s RenderingEngine.cs
+PS \> dir /s RenderingEngine.cs
 
 Get-ChildItem : Cannot find path 'C:\Source\s' 
                 because it does not exist.

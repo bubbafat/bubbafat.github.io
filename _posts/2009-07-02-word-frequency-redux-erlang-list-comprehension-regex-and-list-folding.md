@@ -28,9 +28,15 @@ words(String) ->
 
 That last line took me a bit to grok. It's a [list comprehension](http://wiki.trapexit.org/List_Comprehension) (if you are reading Joe Armstrong's [thesis](http://www.sics.se/~joe/thesis/armstrong_thesis_2003.pdf) it is section 3.3.13. In Erlang Programming it is chapter 9.3). Basically it's saying "for each list in the list of matches take the head of the list" - a-gigga-wah?
 
-Ok. Let's go to erl. `7> re:run("foo foo bar", "\b\w+\b", [global,{capture,first,list}]). {match,[["foo"],["foo"],["bar"]]}` Observe that re:run returns a nested list (i.e. a list of lists) - and each list has exactly one element (the string [which is itself a list but I'll cal them strings]). What we want to do is take that list-of-lists-of-strings and turn it into a list-of-strings.
+Ok. Let's go to erl. 
 
-That's what "[hd(C) || C<-Captures]." does - it pulls every capture (a word wrapped in a list) from the match list and runs it through erlang:hd which pulls the word from the list - then it gets added to the resulting list. So we end up with a list strings.
+```erlang
+7> re:run("foo foo bar", "\b\w+\b", [global,{capture,first,list}]). {match,[["foo"],["foo"],["bar"]]}
+```
+
+Observe that re:run returns a nested list (i.e. a list of lists) - and each list has exactly one element (the string [which is itself a list but I'll cal them strings]). What we want to do is take that list-of-lists-of-strings and turn it into a list-of-strings.
+
+That's what `[hd(C) || C<-Captures].` does - it pulls every capture (a word wrapped in a list) from the match list and runs it through erlang:hd which pulls the word from the list - then it gets added to the resulting list. So we end up with a list strings.
 
 It's un-nesting the list.
 

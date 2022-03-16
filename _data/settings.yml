@@ -3,7 +3,7 @@ basic_settings:
   favicon_image: /images/android-chrome-192x192.png
 
 defaults:
-  post_image: /images/post/defaultbg.jpg
+  post_image: /images/post/defaultbg.webp
 
 header_settings:
   logo_image: 

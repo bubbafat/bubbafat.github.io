@@ -7,15 +7,14 @@ I know there are many variations in the Abbey Road LP – I’m trying to track 
 
 What I know:
 
-1. It’s a Apple SO-383 release
-2. You can see sewer in the walkway
-3. Her Majesty is not listed on the cover or album
-4. The album label is thick lettering – I haven’t seen this much
-5. The Apple logo is aligned properly
-6. Matrix numbers are
-
-1. s0-1-383-b19 #4 (maybe #1??)
-2. sw2 383 a20 #1
+- It’s a Apple SO-383 release
+- You can see sewer in the walkway
+- Her Majesty is not listed on the cover or album
+- The album label is thick lettering – I haven’t seen this much
+- The Apple logo is aligned properly
+- Matrix numbers are
+	- s0-1-383-b19 #4 (maybe #1??)
+	- sw2 383 a20 #1
 
 Can anyone suggest where I can find more information about what variation I have and what it’s general value is (I’m not trying to sell it but I’m trying to get an inventory of what I have).
 
