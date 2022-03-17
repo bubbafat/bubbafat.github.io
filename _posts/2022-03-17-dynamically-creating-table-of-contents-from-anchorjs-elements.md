@@ -116,7 +116,7 @@ Now when page is rendered, the table of contents display - but they are kind of 
 
 <h2>Formatting the Table of Contents</h2>
 
-To format the table of contents I created the file [`_scss/_includes/_toc.sccs`](https://github.com/bubbafat/bubbafat.github.io/blob/9ad78db0e23f0691eac0aa949f7f3e7d9534416d/_sass/_includes/_toc.scss) which included the following:
+To format the table of contents I started with the example [here](https://www.tipsandtricks-hq.com/simple-table-of-contents-toc-using-pure-html-and-css-code-9217) and created the file [`_scss/_includes/_toc.sccs`](https://github.com/bubbafat/bubbafat.github.io/blob/9ad78db0e23f0691eac0aa949f7f3e7d9534416d/_sass/_includes/_toc.scss) which included the following:
 
 ```css
 #table-of-contents {
