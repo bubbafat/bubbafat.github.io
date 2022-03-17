@@ -2,7 +2,7 @@
 title: 'Dynamically Creating a Table of Contents Using AnchorJS Elements'
 subtitle: 'Creating a table of contents from h2 and h3 headers'
 description: 'Integrating AnchorJS and dynamic table of content creation into my Jekyll blog hosted on GitHub pages'
-date: 2022-03-21
+date: 2022-03-17
 featured_image: '/images/post/tableofcontents.webp'
 categories: 
   - "Programming#Web"
