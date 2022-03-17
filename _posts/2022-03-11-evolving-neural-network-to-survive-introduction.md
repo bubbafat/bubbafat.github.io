@@ -10,6 +10,8 @@ categories:
 
 _This is the first in a short series of posts heavily inspired by the YouTube video [I programmed some creatures. They Evolved.](https://www.youtube.com/watch?v=N3tRFayqVtk) by [davidrandallmiller](https://www.youtube.com/channel/UCfqPst3x4TrBUsYAF83uOBg)._
 
+{% include toc.html %}
+
 <h2>The Big Idea</h2>
 
 We start with a 128x128 grid populated with 1000 [nodes](https://github.com/bubbafat/evolve/blob/master/evolve/Node.cs).  Each node has a randomly generated neural network comprised of [sensors](https://github.com/bubbafat/evolve/blob/master/evolve/Sensor.cs) like "distance from eastern wall" and "local population", [inner neurons](https://github.com/bubbafat/evolve/blob/master/evolve/InnerNeuron.cs), and [actions](https://github.com/bubbafat/evolve/blob/master/evolve/Action.cs) such as "move north", "move random", or "kill node in the way".  

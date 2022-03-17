@@ -1,0 +1,35 @@
+#table-of-contents {
+    float: right;
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    margin: 20px 1em 1em 1em;
+    padding: 10px;
+    width: auto;
+    max-width: 35%;
+}
+
+#toc-header {
+    font-weight: 900;
+    font-size: 125%;
+}
+
+#table-of-contents li, #table-of-contents ul, #table-of-contents ul li{
+    list-style: outside none none !important;
+}
+
+li.toc-li-H2 {
+    margin-left: 1em;    
+}
+
+li.toc-li-H3 {
+    margin-left: 2em;
+    font-size: 85%;
+    filter: brightness(2.50);
+}
+
+li.toc-li-H4 {
+    margin-left: 3em;
+    font-size: 75%;
+    filter: brightness(2.50);
+}

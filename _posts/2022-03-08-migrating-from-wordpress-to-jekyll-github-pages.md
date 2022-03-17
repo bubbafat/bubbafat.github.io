@@ -8,6 +8,10 @@ description: 'An overview of the steps I took to migrate from self-hosted Wordpr
 featured_image: '/images/unsplash/c-dustin-91AQt9p4Mo8-unsplash.webp'
 ---
 
+{% include toc.html %}
+
+<h2>The Migration</h2>
+
 After hosting for WordPress on Digital Ocean for years, I've decided to move to Jekyll on Github Pages.  The decision came down a few key points:
 
 1. My content is infrequently updated and static - Wordpress was overkill
@@ -16,21 +20,6 @@ After hosting for WordPress on Digital Ocean for years, I've decided to move to 
 4. Anyone who finds a mistake is welcome to [submit a PR](https://github.com/bubbafat/bubbafat.github.io)
 
 The migration was pretty straight-forward once I understood what to do.
-
-My process was:
-
-- Export WordPress to XML
-- Create github.io repo
-- Install Ruby 2.7 (that specific version)
-- Install Jekyll
-- Convert WordPress XML to Jekyll-compatible markdown
-- Pick a Jekyll theme
-- Update DNS
-- Generate and install certificate
-- Defaulting to the blog instead of projects
-- Wiring up Google Analytics
-- Make changes and keep on pushing
-- Setting up Auto-Publishing Future Posts
 
 <h3>Export WordPress to XML</h3>
 
@@ -70,7 +59,7 @@ Take note of the name - we'll call it roberthorvick-export.xml for now.
 
 <h3>Install Ruby 2.7</h3>
 
-I use [Homebrew](https://brew.sh/) on MacOS so I typed:
+I use [Homebrew](https://brew.sh/) on MacOS so I ran:
 
 ```zsh
 brew install ruby@2.7
@@ -163,6 +152,10 @@ Eventually it just started working.
 
 I followed the instructions on [Michael Lee's blog](https://michaelsoolee.com/google-analytics-jekyll/).
 
+<hr/>
+
+<h2>Fixing the Look and Feel</h2>
+
 <h3>Defaulting to the blog instead of projects</h3>
 
 The template I choose defaulted the root URL to projects, not blog posts.  I wanted the opposite.  So I basically did:
@@ -215,11 +208,11 @@ Then I modified the suggested page source (from the linked article) to be this:
     <div id="#{{ subcategory | slugize }}"></div>
     <p></p>
 
-    <h3 class="category-head">{{ subcategory }}</h3>
+    <h3 class="category-head">{{ subcategory }}</h2>
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a> ({{post.date | split: " " | slice: 0}})</h4>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a> ({{post.date | split: " " | slice: 0}})</h3>
     </article>
     {% endfor %}
   </div>

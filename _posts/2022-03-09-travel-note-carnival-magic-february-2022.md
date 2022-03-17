@@ -8,13 +8,15 @@ categories:
   - "Travel#Report"
 ---
 
+{% include toc.html %}
+
 This February, my wife and I took an 8-night Eastern Caribbean cruise. This is our 5th or 6th cruise but our first during Covid. This was post peak-Omicron but still definitely in the midst of it. Since health protocols is probably the part people have the most questions about, I'll start with that information and then dig into the stats around the trip (and photos).
 
-<h3>Covid Health Protocols</h3>
+<h2>Covid Health Protocols</h2>
 
 _As Carnival's health protocols are constantly evolving, you need to check their [Covid-19 Guest Protocols](https://www.carnival.com/legal/covid-19-legal-notices/covid-19-guest-protocols) page where they explain the current processes._
 
-<h4>Booking</h4>
+<h3>Booking</h3>
 
 The only changes in the booking processes were that we had to sign more acknowledgements of the following:
 
@@ -22,13 +24,13 @@ The only changes in the booking processes were that we had to sign more acknowle
 - We understood the vaccination and testing requirements
 - We were required to purchase "Vacation Protection" (trip insurance) which was roughly 10% of the overall cruise cost (before port taxes and port fees).
 
-<h4>Vaccination</h4>
+<h3>Vaccination</h3>
 
 It was required that everyone boarding be fully vaccinated using a [Carnival-approved vaccination](https://www.carnival.com/Legal/covid-19-legal-notices/return-to-service-faqs).  Boosters were not required.  There is an exception process cruisers could go through but what we were hearing on the cruise Facebook page was that they were scrutinizing the requests.
 
 We had to fill out an attestation a month or two ahead of time acknowledging that we were vaccinated (or to begin the exception approval process) and they validated again during the boarding process.
 
-<h4>Testing</h4>
+<h3>Testing</h3>
 
 Everyone boarding needed to have a negative test from an accepted vendor no more than 3 days before the cruise.  Since we were embarking on Saturday, my wife and I tested on Thursday (we were flying on Friday).
 
@@ -44,14 +46,14 @@ Our experience was that we did the following:
 
 Testing is also available at some ports the day of travel however you must make reservations ahead of time and there is a cost.
 
-<h4>VeriFLY</h4>
+<h3>VeriFLY</h3>
 
 Since we had our testing and vaccination paperwork completed we decided to try the new VeriFLY process Carnival accepts.  Basically you install the VeriFLY app and upload your proof of identity, vaccination, and negative test, and after validating it they provide you a clearance that you can show at the port.  Whole process only took a few minutes and they were liberal in what they would accept (photos, screenshots, etc).
 
 _If you decide to try this, bring acceptable paper backups of everything._
 
 
-<h4>Boarding</h4>
+<h3>Boarding</h3>
 
 _Our embarkation was at [Port Canaveral Terminal 6](https://www.google.com/maps/@28.4168539,-80.6290006,3a,60y,217.37h,85.69t/data=!3m6!1e1!3m4!1sOXmeTa2X1Ezb72MfFy6yIQ!2e0!7i13312!8i6656)._
 
@@ -69,7 +71,7 @@ Once through the line we were able to get our boarding pass (not room keys) and 
 
 At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sealed envelope at your door.  When you arrive you can ensure it has not been tampered with and then securely enter your room.  Luggage will show up in the next 2-5 hours (in the hallway outside your door).
 
-<h3>Cruise and Ship</h3>
+<h2>Cruise and Ship</h2>
 
 | Feature | Note |
 ----------|------|
@@ -80,7 +82,7 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 | Dining  | Late (8:15) |
 
 
-<h3>Itinerary</h3>
+<h2>Itinerary</h2>
 
 | DAY | PORT OF CALL | ARRIVE | DEPART |
 |-----|--------------|--------|--------|
@@ -94,7 +96,7 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 | Sat | Fun Day At Sea | - | - | 
 | Sun | Port Canaveral (Orlando), FL | 8:00 AM | - | 
 
-<h3>Things We Learned (Ports of Call)</h3>
+<h2>Things We Learned (Ports of Call)</h2>
 
 - St. Maarten's two sides each have a distinct vibe. I would suggest focusing on one or the other but not trying to do both in one afternoon. We were not looking for a beach day so we went to a French cooking class on the French side and had a great time.
 - San Juan is definitely a new favorite location. I anticipate we'll come here for a proper multiday vacation soon.
@@ -106,7 +108,7 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 	+ Don't pre-pay for a chair or umbrella as there will be hundreds for rent on the beach.
 	+ If you walk down the beach (to the left as you leave the ship) you will eventually end up at [Jack's Shack](https://www.jacksshack.tc/) (5-10 minute walk). Very friendly staff, good drinks, and surprisingly good food. Get the conch.
 	
-<h3>Things We Learned (Ship and Sea Days)</h3>
+<h2>Things We Learned (Ship and Sea Days)</h2>
 
 - Deck 5 on the Magic is a promenade deck. It sticks out further than the decks above it so if you are on deck 6 (like we were) with a balcony, you will be looking right over hot tubs and sunbathers. We like to sit and watch the flying fish jump through the ways from our balcony but that was not as easy with this setup.  Going a few decks up or down would have helped.
 - On this ship the Alchemy Bar is right next to the stage where bands play throughout the day and evening. It's not as quiet as on other ship layouts.
@@ -120,7 +122,7 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 - We did not use ship wifi but many people we talked to were and there were some complaints about reliability and performance. If you are planning to work on the ship be prepared for that.
 - Our T-Mobile plan provided us at least 2G connectivity at each port. This was enough to check in but not enough to upload photos.  I'm not sure it mattered but I disabled all services that automatically uploaded photos and turned off background data for most applications.
 
-<h3>Things to Pack</h3>
+<h2>Things to Pack</h2>
 
 - [Cruise-safe (no surge protector) power strip with USB](https://www.amazon.com/gp/product/B07BHVKPC3/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1). Be aware that the stateroom has one US-style and one European-style outlet under the mirror. The US-style is "upside down" so getting this to plug in was a very tight fit but we were able to get it to work.  A small (inches) cord could have fixed the problem.
 - [Magnetic Hooks](https://www.amazon.com/gp/product/B0787Q54M1/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1) to hang clothing on the wall. The stateroom walls (but not the bathroom) are all steel so these work great to hold hats, damp swimsuits, etc.
@@ -128,7 +130,7 @@ At 1:30 the rooms were opened for access. Your key will be in a tamper-proof sea
 - [Towel bands](https://www.amazon.com/Function-Lightweight-Windproof-Colorful-Accessories/dp/B08V1RL89F/ref=sr_1_7?crid=GYK32HWJ43PW&keywords=towel+bands&qid=1646836206&sprefix=towel+bands%2Caps%2C51&sr=8-7) to hold your towel to your chair. This will ensure that when you put your towel on a chair at 7am, and then walk away for 12 hours, that no one else will ever be able to use it.
 
 
-<h3>Pictures</h3>
+<h2>Pictures</h2>
 
 <div class="gallery" data-columns="2">
 	<img src="/images/cruise2022magic/82270189-A5A9-4790-AA34-0C5ED2207D4B.webp"/>

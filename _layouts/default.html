@@ -85,8 +85,6 @@ layout: compress
 	{{ site.data.settings.advanced_settings.header_js }}
 	{% endif %}
 
-	<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
-
 	{% if jekyll.environment == 'production' %}
 	  {% include analytics.html %}
 	{% endif %}
@@ -123,18 +121,14 @@ layout: compress
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="{{ '/js/plugins-min.js' | relative_url }}"></script>
 	<script src="{{ '/js/personal-min.js' | relative_url }}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+	<script src="{{ '/js/anchorjs-toc.js' | relative_url }}"></script>
+
 
 	{% if site.data.settings.advanced_settings.footer_js %}
 	<!-- Extra Footer JS Code -->
 	{{ site.data.settings.advanced_settings.footer_js }}
 	{% endif %}
-
-
-	<script>
-	  anchors.options.visible = 'always';
-	  anchors.add();
-	</script>
-
 </body>
 
 </html>

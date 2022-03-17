@@ -8,6 +8,8 @@ categories:
   - "Programming#Web"
 ---
 
+{% include toc.html %}
+
 I'm not overly concerned with SEO or my blog's performance but there is no need to make someone download a 350k image when a 17k one will do. To make that happen I have converted all my images from their previous png and jpg formats, and using Google's WebP format.  I've been doing this using the [cwebp](https://developers.google.com/speed/webp/docs/cwebp) command line tool.
 
 My goals were to:

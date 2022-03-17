@@ -8,6 +8,8 @@ categories:
   - "Programming#Web"
 ---
 
+{% include toc.html %}
+
 As part of a personal project I've been toying with I wanted to be able to generate images using a naming convention where the image name would describe the frame order.  For example: `frame-1.png`, `frame-2.png`, ... `frame-100.png`. 
 
 The directory the frame images were stored in were, themselves, named according to an ordered convention as well.  The entire structure would look like:
@@ -29,7 +31,7 @@ This structure would serve as the input to a tool that will create 3 videos: gen
 
 I'm not the command line guru so this is the approach I took to figure this out:
 
-<h3>Generate a Video From a Directory of Images</h3>
+<h2>Generate a Video From a Directory of Images</h2>
 
 I started by trying to find a [command](https://ffmpeg.org/ffmpeg.html), using [ffmpeg](https://ffmpeg.org/), that would create a video for the directory gen-1 with the following properties:
 
@@ -54,7 +56,7 @@ ffmpeg -framerate 30 -f image2 -s 1280x1280 -i gen-1/frame-%d.png -vcodec libx26
 | -y | _none_ | Overwrites output files |
 | gen-1.mp4 | _none_ | The name of the output file |
 
-<h3>List all the Directories</h3>
+<h2>List all the Directories</h2>
 
 ```zsh
 find gen-* -type d
@@ -68,7 +70,7 @@ gen-1
 gen-50
 gen-100
 ```
-<h3>Tie Them Together</h3>
+<h2>Tie Them Together</h2>
 
 Now that I can produce the video - but need the directory names - and I can produce a list of directory names, I want to tie them together.
 

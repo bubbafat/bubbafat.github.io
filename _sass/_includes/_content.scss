@@ -94,6 +94,7 @@
 	table {
 		margin: 20px auto;
 		width: 100%;
+		clear: both;
 
 		@include mq(tabletp) {
 			margin: 30px auto;
