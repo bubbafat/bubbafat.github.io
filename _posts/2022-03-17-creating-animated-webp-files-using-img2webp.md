@@ -8,9 +8,15 @@ categories:
   - "Programming#Web"
 ---
 
+
+
+<h3>The Big Picture</h3>
+
 I frequently find myself needing to create videos from a series of rendered frames. I have been using ffmpeg to generated mp4's but it would be nice to be able to create GIF's - or in this case animated WebP files.  The biggest benefits of this are that I don't need to rely on an external hosting service for the video and that they can be used anywhere an image is used.
 
 To do this I'll be using [img2webp](https://developers.google.com/speed/webp/docs/img2webp) from the Google WebP image format tools.
+
+<h3>Creating the Animated WebP File</h3>
 
 Say I have a collection of images named in a sortable manner - for example:
 
@@ -44,4 +50,10 @@ img2webp -d 33 -loop 0 frame-* -o gen100.webp
 And the output is an animated WebP image file shown here:
 
 {% include image.html url="/images/post/gen100.webp" description="An example animated WebP file" %}
+
+<h3>Warning: Performance on iOS is Terrible</h3>
+
+The following video shows the above animated webp playing on an iPhone XR (iOS 15.4) in Brave with the same experience in Safari.  Notice that the performance isn't just linearly bad - it seems to actually get worse as the image plays.
+
+<iframe src="https://player.vimeo.com/video/689260744?h=9c70f93fab&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="296" height="640" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="animated-webp-ios-slowness"></iframe>
 
