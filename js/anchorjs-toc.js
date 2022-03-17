@@ -1,5 +1,5 @@
 anchors.options.visible = 'always';
-anchors.add('h2');
+anchors.add('h2, h3');
 generateTableOfContents(anchors.elements);
 
 // External code for generating a simple dynamic Table of Contents
@@ -13,14 +13,15 @@ function generateTableOfContents(els) {
 	for (var i = 0; i < els.length; i++) {
   	anchoredElText = els[i].textContent;
 		anchoredElHref = els[i].querySelector('.anchorjs-link').getAttribute('href');
-  	addNavItem(ul, anchoredElHref, anchoredElText);
+  	addNavItem(ul, anchoredElHref, anchoredElText, 'toc-li-'.concat(els[i].tagName));
   }
 }
 
-function addNavItem(ul, href, text) {
+function addNavItem(ul, href, text, listClass) {
   var listItem = document.createElement('LI'),
 		  anchorItem = document.createElement('A'),
   	  textNode = document.createTextNode(text);
+      listItem.className = listClass;
   
   anchorItem.href = href;
   ul.appendChild(listItem);
