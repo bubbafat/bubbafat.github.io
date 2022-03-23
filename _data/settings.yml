@@ -156,6 +156,7 @@ font_settings:
 
 advanced_settings:
   ajax_loading: false
+  loading_spinner: false
   analytics_code: ""
   custom_styles: ""
   header_js: ""

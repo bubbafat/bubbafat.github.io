@@ -57,6 +57,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   jekyll (= 3.8.5)
@@ -65,4 +66,4 @@ DEPENDENCIES
   rexml (~> 3.2)
 
 BUNDLED WITH
-   2.3.8
+   2.3.9

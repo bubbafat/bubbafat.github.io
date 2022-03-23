@@ -92,7 +92,7 @@ layout: compress
 </head>
 
 
-<body class="loading{% if site.data.settings.advanced_settings.ajax_loading == true %} ajax-loading{% endif %}" data-site-url="{{ site.url }}" data-page-url="{{ page.url | replace: 'index.html', '' }}">
+<body class="{% if site.data.settings.advanced_settings.loading_spinner == true %} loading {% endif %} {% if site.data.settings.advanced_settings.ajax_loading == true %} ajax-loading{% endif %}" data-site-url="{{ site.url }}" data-page-url="{{ page.url | replace: 'index.html', '' }}">
 
 
 	{% include header.html %}
