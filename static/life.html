@@ -1,0 +1,200 @@
+<html>
+<head>
+	<script
+	  src="https://code.jquery.com/jquery-3.6.0.min.js"
+	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	  crossorigin="anonymous"></script>
+
+
+	  <style>
+		#wrapper {
+			width: 95vmin;
+			height: 95vim;
+			margin: auto;
+		}
+
+	  	#board {
+		    display: grid;
+		}
+
+		.cell {
+			  background-color: rgba(255, 255, 255, 0.8);
+			  border: 1px solid;
+			  width: 1fr;
+		}
+
+		.cell:after {
+			content:  "";
+			display:  block;
+			padding-bottom: 100%;
+		}
+
+		.cell.live {
+			background-color: darkred;
+		}
+	  </style>
+</head>
+<body>
+
+	<div id="wrapper">
+		<div>
+			<button id="toggle">Start</button>
+			<span id="step"></span>
+		</div>
+
+		<div id="board">
+
+		</div>
+	</div>
+
+<script>
+var initialFillPercent = 0.25;
+var fps = 10;
+var size = 100
+
+var running = false;   // toggled by the start/pause button
+var intervalId = null; // set and cleared by start/pause
+var stepCount = 0;     // just used to display the step
+
+// the cells will be in an array where the cell at (row = r, column = c)
+// can be found at items[r * size + c]
+var items = [];
+var toKill = [];
+var toBirth = [];
+
+$(document).ready(function () {
+
+	createEmptyGrid();
+
+    populateRandom();
+
+    $("#toggle").click(function() {
+    	if(!running) {
+    		start();
+	    } else {
+	    	pause();
+	    }
+    });
+});
+
+function start() {
+	intervalId = setInterval(function() { step(); }, 1000 / fps);
+	running = true;
+	$("#toggle").html("Pause");
+}
+
+function pause() {
+	clearInterval(intervalId);
+	running = false;
+	$("#toggle").html("Continue");	
+}
+
+function createEmptyGrid() {
+	for(var i = 0; i < size * size; i++) {
+		var $cell = $("<div />", { class: 'cell'});
+		items.push($cell);
+		markDead($cell);
+		$("#board").append($cell);
+	}
+
+    // sets the css to ensure make our grid a square
+    $("#board").css("grid-template-columns", "repeat(" + size + ", 1fr)");
+}
+
+function populateRandom() {
+	for(var i = 0; i < (size * size) * initialFillPercent; i++) {
+		markAlive(randomCell());
+	}
+}
+
+function randomInt(max) {
+	return Math.floor(Math.random() * max);
+}
+
+function cellAt(row, column) {
+	return items[row * size + column];
+}
+
+function randomCell() {
+	return cellAt(randomInt(size), randomInt(size));
+}
+
+function isAlive($cell) {
+	return $cell.alive == 1;
+}
+
+function markAlive($cell) {
+	$cell.addClass('live');
+	$cell.alive = 1;
+}
+
+function markDead($cell) {
+	$cell.removeClass('live');
+	$cell.alive = 0;	
+}
+
+function livingNeighbors(row, column) {
+	var count = 0;
+
+	for(var r = row-1; r <= row+1; r++) {
+		for(var c = column - 1; c <= column+1; c++) {
+
+			// skip self
+			if(r == row && c == column) continue;
+
+			// stay inbounds
+			if(r < 0 || c < 0 || r >= size || c >= size) continue;
+
+			var $cell = cellAt(r, c);
+
+			if(isAlive($cell)) count++;
+		}
+	}
+
+	return count;
+}
+
+function processChanges() {
+
+	toBirth.forEach(function($cell) { markAlive($cell); });
+	toKill.forEach(function($cell) { markDead($cell); });
+
+	toKill = [];
+	toBirth = [];
+}
+
+function applyRules() {
+	// We need to figure out what cells live, die, or are born
+	// but we don't want to change their state during this loop
+	// as that will impact their neighbors
+	// Add the cell to an array of items to birth and kill
+	// and process them after this (processChanges)
+	for(var r = 0; r < size; r++) {
+		for(var c = 0; c < size; c++) {
+			var $cell = cellAt(r, c);
+			var neighbors = livingNeighbors(r, c);
+
+			if(isAlive($cell)) {
+				if(neighbors < 2 || neighbors > 3) {
+					toKill.push($cell);
+				} 
+			} else {
+				if(neighbors == 3) {
+					toBirth.push($cell);
+				}
+			}
+		}
+	}	
+}
+
+function step() {
+	applyRules();
+
+	processChanges();
+
+	$("#step").html(stepCount++);
+}
+</script>
+
+</body>
+</html>
