@@ -27,21 +27,23 @@ My goals were:
 - Under 200 lines of code (it's exactly 200 including comments)
 - Have something working in under 2 hours
 
+I ultimately met each but backed away from retaining minimal state as part of improving performance.
+
 <h2>My Thought Process</h2>
 
-I believed the followed were true:
+I believed the following were true:
 
 1. I could draw a grid dynamically using javascript and CSS
 2. I could use some state of the cell to track if it was alive or not
 3. I could access the grid in a (row,column) fashion to check neighbor state
-4. There must be some mechanism to run events on a timer
-5. I could improve performance as needed
+4. There must be some mechanism to run events (steps) on a timer
+5. I could improve performance as needed (it was needed)
 
 I didn't know how to do those things so let's get to it.
 
 <h2>The Globals</h2>
 
-Heck yeah I used globals.
+Heck yeah I used globals. I didn't know I'd use these all upfront but it's easier to show them up front since they are sprinkled through the remainder of the code samples.
 
 ```js
 var initialFillPercent = 0.25;
