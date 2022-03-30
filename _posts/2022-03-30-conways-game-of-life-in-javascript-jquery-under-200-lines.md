@@ -121,32 +121,32 @@ The board's display mode is grid.
 The cells are 1fr in size (see the note about grid-template-columns) and have some coloring applied and the cell:after is used to ensure they are squares.  I learned this trick from [Bobby Kilpatrick's](https://www.linkedin.com/in/bkilpat/) post [How to Create a Responsive Square with CSS](https://spin.atomicobject.com/2015/07/14/css-responsive-square/). And I decided that when cells are "live" they would have the .live class and be dark red.  Overall, pretty straight forward
 
 ```css
-    #wrapper {
-      width: 95vmin;
-      height: 95vim;
-      margin: auto;
-    }
+#wrapper {
+  width: 95vmin;
+  height: 95vim;
+  margin: auto;
+}
 
-      #board {
-        display: grid;
-        grid-template-columns: repeat(100, 1fr); /* added dynamically */
-    }
+  #board {
+    display: grid;
+    grid-template-columns: repeat(100, 1fr); /* added dynamically */
+}
 
-    .cell {
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid;
-        width: 1fr;
-    }
+.cell {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid;
+    width: 1fr;
+}
 
-    .cell:after {
-      content:  "";
-      display:  block;
-      padding-bottom: 100%;
-    }
+.cell:after {
+  content:  "";
+  display:  block;
+  padding-bottom: 100%;
+}
 
-    .cell.live {
-      background-color: darkred;
-    }
+.cell.live {
+  background-color: darkred;
+}
 ```
 
 <h3>Generating the Table (Javascript)</h3>
