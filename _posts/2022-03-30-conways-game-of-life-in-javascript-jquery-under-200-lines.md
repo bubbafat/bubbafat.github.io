@@ -209,7 +209,7 @@ Then I went to this:
 </div>
 ```
 
-And this was good but still relied on using jQuery selectors.
+And this was good but still relied on using jQuery selectors. This was part of me trying to retain minimal state but it came at the cost of performance. When I profiled it running for a few seconds it spent almost all of it's time in hasClass - so I figured it was worth replacing that with something a little more primitive.
 
 Ultimately I created an array of cells named `items` (see below) which I populated when I created the cells.  The first cell (row 0, column 0) was in index 0, the last (e.g., row 100, column 100) was the last index. And any cell could be found like:
 
@@ -450,3 +450,4 @@ Now you just need to load the page, click start, and watch the show.
 ![30 second loop of Conway's Game of Life](/images/post/2022-03-30/conways-life.webp)
 
 And you can try it for yourself [here](/static/life.html){:target="_blank"}.
+
