@@ -8,12 +8,14 @@ categories:
   - "Programming#Web"
 ---
 
+{% include toc.html %}
+
 This began yesterday morning when I started reading [Understanding the 4 Rules of Simple Design](https://leanpub.com/4rulesofsimpledesign/) by [Corey Haines](https://twitter.com/coreyhaines). On page 9 there is the suggestion to stop and write out your own implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) so I paused and did that.
 
-{% include tip.html content="If you just want to see the final output - you can <a href='/static/life.html' target='_blank'>try it here</a>" %}
+{% include tip.html content="If you just want to see the final output - you can <a href='/static/life.html' target='_blank'>try it here</a> or <a href='https://github.com/bubbafat/bubbafat.github.io/blob/main/static/life.html'>view the source</a>" %}
 
 
-<h3>My Objective</h3>
+<h2>My Objective</h2>
 
 I have done very little UI-focused work. My only experience with Javascript is working on Node (and that was limited). I have never worked with jQuery. I know next to nothing about CSS. So I thought I'd start working in that realm.
 
@@ -25,7 +27,7 @@ My goals were:
 - Under 200 lines of code (it's exactly 200 including comments)
 - Have something working in under 2 hours
 
-<h3>My Thought Process</h3>
+<h2>My Thought Process</h2>
 
 I believed the followed were true:
 
@@ -37,7 +39,7 @@ I believed the followed were true:
 
 I didn't know how to do those things so let's get to it.
 
-<h3>Drawing the Grid</h3>
+<h2>Drawing the Grid</h2>
 
 My goal here was to figure out how to draw a grid that would fit into the viewable portion of the browser window and resize dynamically.
 
@@ -67,7 +69,7 @@ Then I played around with it.
 
 I'm going to skip over a lot of steps and show you where I ended up.  There are three pieces to it.
 
-<h4>Grid HTML</h4>
+<h3>Grid HTML</h3>
 
 I added a wrapper so that I could use it to constrain the overall size of the grid to ensure it stayed within the visible space of the browser window. The animation isn't fun to look at if you can only see half of it.
 
@@ -86,7 +88,7 @@ I also added a button that can be clicked to start/pause/continue the game and a
   </div>
 ```
 
-<h4>Grid CSS</h4>
+<h3>Grid CSS</h3>
 
 The wrapper uses a width of 95vmin (95% of viewport minimum) to ensure that the entire grid will be visible (leaving room for button/step prompt). I learned this technique from a [StackOverflow post](https://stackoverflow.com/questions/60391447/css-fit-a-div-inside-viewport-while-keeping-aspect-ratio).  There is one piece of css (grid-template-columns) which will be set dynamically but I've shown it here so that it makes sense. The 100 is because there will be 100 columns per row and each cell will be 1fr (fractional unit) in width.
 
@@ -123,7 +125,7 @@ The cells are 1fr in size (see the note about grid-template-columns) and have so
     }
 ```
 
-<h4>Generating the Table (Javascript)</h4>
+<h3>Generating the Table (Javascript)</h3>
 
 This is my fourth iteration of this approach.
 
@@ -229,11 +231,11 @@ With that done - we know have a 100x100 grid (the size can be changed via the `s
 
 ![100x100 empty grid](/images/post/2022-03-30/empty-board.webp)
 
-<h3>The Game Loop</h3>
+<h2>The Game Loop</h2>
 
 With the board working it was time to build the game.
 
-<h4>Step 1: Initial Population</h4>
+<h3>Step 1: Initial Population</h3>
 
 To populate the board I determine the initial fill percentage (e.g., 25% of the cells should be marked alive) and then for each cell that should be alive I pick a random cell and mark it as alive (set the 'live' class and set the alive property to 1).
 
@@ -261,7 +263,7 @@ This method is called from the document.ready callback and gives us an initial b
 
 ![Randomly populated board](/images/post/2022-03-30/populated-board.webp)
 
-<h4>Step 2: Starting the Game (Clicking Start)</h4>
+<h3>Step 2: Starting the Game (Clicking Start)</h3>
 
 To get this finally going I needed to add a button handler to the document.ready method so that when the Start button is clicked the game starts.  It now looks like:
 
@@ -302,7 +304,7 @@ Start creates an interval that runs on a timer (1000 ms / fps = how often to run
 
 Pause clears the interval, sets running to false, and changes the button text to "Continue".
 
-<h4>Step 3: Running a Step</h4>
+<h3>Step 3: Running a Step</h3>
 
 The step function is called everytime the interval fires - so let's look there next:
 
@@ -320,7 +322,7 @@ Step is a two-step process and it needs to be this way to function correctly.
 
 The rules of Conway's Game of Life require the current cell to live, die, or birth based on the state of neighboring cells so to run you first need to look at each cell and decide if it's state will change and only once those decisions are made do you apply the changes.  If you applied them while looking a the cell, then that change would affect any future cell you checked.
 
-<h4>Step 4: Applying the Rules</h4>
+<h3>Step 4: Applying the Rules</h3>
 
 The rules are pretty simple - look at every cell, figure out how many living neighbors it has, and then decide what to do.  The cell is alive 2 or 3 living neighbors, it lives (otherwise it dies).  If a cell is dead and has exactly 3 neighbors, it will come to life.
 
@@ -398,7 +400,7 @@ function livingNeighbors(row, column) {
 }
 ```
 
-<h4>Step 5: Process Changes</h4>
+<h3>Step 5: Process Changes</h3>
 
 Now that we've queued up the kill and birth queues, we just need to process them.
 
@@ -417,7 +419,7 @@ Mark them all appropriately and empty the arrays.
 
 Now you just need to load the page, click start, and watch the show.
 
-<h3>The Show</h3>
+<h2>The Show</h2>
 
 ![30 second loop of Conway's Game of Life](/images/post/2022-03-30/conways-life.webp)
 
