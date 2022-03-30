@@ -88,7 +88,18 @@ layout: compress
 	{% if jekyll.environment == 'production' %}
 	  {% include analytics.html %}
 	{% endif %}
+
+    {% assign dcurl = page.url | downcase %}
+	{% if dcurl contains "/blog/" %}
+	  {% include breadcrumbs.html section='blog' title=page.title %}
+	{% endif %}
+
+	{% if dcurl contains "/project/" %}
+	  {% include breadcrumbs.html section='project' title=page.title %}
+	{% endif %}
+
 	
+	<style>foo: {{ page.url }} **</style>
 </head>
 
 
@@ -105,7 +116,7 @@ layout: compress
 	
 	<div class="page">
 
-		<div class="page__content" data-page-title="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}">
+		<div class="page__content" data-page-title="{% if page.url == '/' %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}">
 
 			{{ content }}
 
