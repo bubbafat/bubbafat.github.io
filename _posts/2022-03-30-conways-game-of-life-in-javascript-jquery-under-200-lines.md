@@ -39,6 +39,28 @@ I believed the followed were true:
 
 I didn't know how to do those things so let's get to it.
 
+<h2>The Globals</h2>
+
+Heck yeah I used globals.
+
+```js
+var initialFillPercent = 0.25;
+var fps = 10;
+var size = 100
+
+var running = false;   // toggled by the start/pause button
+var intervalId = null; // set and cleared by start/pause
+var stepCount = 0;     // just used to display the step
+
+// the cells will be in an array where the cell at (row = r, column = c)
+// can be found at items[r * size + c]
+var items = [];
+var toKill = [];
+var toBirth = [];
+```
+
+They will be explained below.
+
 <h2>Drawing the Grid</h2>
 
 My goal here was to figure out how to draw a grid that would fit into the viewable portion of the browser window and resize dynamically.
@@ -90,7 +112,9 @@ I also added a button that can be clicked to start/pause/continue the game and a
 
 <h3>Grid CSS</h3>
 
-The wrapper uses a width of 95vmin (95% of viewport minimum) to ensure that the entire grid will be visible (leaving room for button/step prompt). I learned this technique from a [StackOverflow post](https://stackoverflow.com/questions/60391447/css-fit-a-div-inside-viewport-while-keeping-aspect-ratio).  There is one piece of css (grid-template-columns) which will be set dynamically but I've shown it here so that it makes sense. The 100 is because there will be 100 columns per row and each cell will be 1fr (fractional unit) in width.
+The wrapper uses a width and height of 95vmin (95% of viewport minimum) to ensure that the entire grid will be visible (leaving room for button/step prompt). I learned this technique from a [StackOverflow post](https://stackoverflow.com/questions/60391447/css-fit-a-div-inside-viewport-while-keeping-aspect-ratio). 
+
+There is one bit of styling (grid-template-columns) which will be set dynamically but I've shown it here so that it makes sense. The 100 is because there will be 100 columns per row and each cell will be 1fr (fractional unit) in width. It is the size (100) that is set dynamically based on the size of the grid.
 
 The board's display mode is grid.  
 
