@@ -99,10 +99,18 @@ These two changes ensure that the list items for the table of content include di
 Knowing I would want a repeatable ToC, I next added `_includes/toc.html` which contains the following:
 
 ```html
+<noscript>
+  <style type="text/css">
+    #table-of-contents { display:none; }
+  </style>
+</noscript>
+
 <div id="table-of-contents">
   <div id="toc-header">On this page:</div>
 </div>
 ```
+
+{% include tip.html content="The noscript section hides the ToC div when javascript is disabled - I try to have a reasonable no-js experience."%}
 
 And this can be included on [any page](https://github.com/bubbafat/bubbafat.github.io/blob/126832a92b787a757979edbed90804c4ab944417/_posts/2022-03-17-creating-animated-webp-files-using-img2webp.md?plain=1#L11) like so:
 
