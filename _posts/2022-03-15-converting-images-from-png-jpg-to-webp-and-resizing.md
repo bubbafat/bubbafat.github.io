@@ -57,7 +57,7 @@ for x in ./**;do cwebp --resize 800 0 "${x}" -o "${x/png/webp}";done
 
 Basically the pipeline is this:
 
-1. Find all the files in the current directory and it's children
+1. Find all the files in the current directory and it's children using `find` (bash) or builtin (zsh)
 2. Loop through the files, running `cwebp` on each
 3. Use bash parameter expansion to format the output filename for each file
 
