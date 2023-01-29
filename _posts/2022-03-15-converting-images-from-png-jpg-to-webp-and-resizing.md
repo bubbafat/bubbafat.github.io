@@ -59,7 +59,7 @@ Basically the pipeline is this:
 
 1. Find all the files in the current directory and it's children using `find` (bash) or builtin (zsh)
 2. Loop through the files, running `cwebp` on each
-3. Use bash parameter expansion to format the output filename for each file
+3. Use shell parameter expansion to format the output filename for each file
 
 This seems super hacky but it works and that's all I really cared about.  If you can improve on this then please feel free to [submit a PR to this blog post](https://github.com/bubbafat/bubbafat.github.io/blob/main/_posts/2022-03-15-converting-images-from-png-jpg-to-webp-and-resizing.md) to help (really, please do!)
 
