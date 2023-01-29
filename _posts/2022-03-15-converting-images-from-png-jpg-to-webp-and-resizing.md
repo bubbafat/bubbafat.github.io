@@ -45,7 +45,7 @@ cwebp -resize 800 0 infile.png -o outfile.webp
 Now that we can convert a single file, I used a combination of find, grep, sed, and xargs to do what I needed for the directory.  This example converts and resizes all the png files in a directory structure:
 
 ```zsh
-find . * | grep -E "(png)" | sed 'p;s/\.png/\.webp/' | xargs -n2 bash -c 'cwebp -resize 800 0 $0 -o $1'
+for x in $(find . -iname '*.png');do cwebp -resize 800 0 ${x} -o ${x%%png}webp;done
 ```
 
 Basically the pipeline is this:
