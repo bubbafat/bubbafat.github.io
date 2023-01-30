@@ -52,7 +52,7 @@ for x in $(find . -iname '*.png');do cwebp -resize 800 0 "${x}" -o "${x%%png}"we
 Using Z shell:
 
 ```zsh
-unsetopt CASE_GLOB && for x in ./**/*png;do builtin echo cwebp 800 0 "${x}" -o "${x/(png|PNG)/webp}";done; setopt CASE_GLOB 
+unsetopt CASE_GLOB && for x in ./**/*png;do cwebp -resize 800 0 "${x}" -o "${x/(png|PNG)/webp}";done; setopt CASE_GLOB 
 ```
 
 Basically the pipeline is this:
