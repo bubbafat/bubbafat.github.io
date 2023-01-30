@@ -52,7 +52,7 @@ for x in $(find . -iname '*.png');do cwebp -resize 800 0 "${x}" -o "${x%%png}"we
 Using Z shell:
 
 ```zsh
-for x in ./**/*png;do cwebp --resize 800 0 "${x}" -o "${x/png/webp}";done
+for x in ./**/*png;do cwebp -resize 800 0 "${x}" -o "${x/png/webp}";done
 ```
 
 Basically the pipeline is this:
