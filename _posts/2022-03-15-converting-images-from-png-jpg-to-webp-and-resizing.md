@@ -82,3 +82,6 @@ And here is the WebP compressed and resized version
 
 The original file was 338712 bytes and the webp version is 16544 bytes - roughly 95% savings with very little change in the overall visual experience (as needed for a personal blog).
 
+---
+
+Thanks to [noksookhao](https://github.com/noksookhao) for [improving the shell commands](https://github.com/bubbafat/bubbafat.github.io/pull/2)!
