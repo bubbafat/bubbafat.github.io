@@ -42,7 +42,7 @@ cwebp -resize 800 0 infile.png -o outfile.webp
 
 <h2>Batch Converting a Directory</h2>
 
-Now that we can convert a single file, I used a combination of find, grep, sed, and xargs to do what I needed for the directory.  This example converts and resizes all the png files in a directory structure:
+Now that we can convert a single file, I used a combination of either `find` and `bash`, or just `zsh`, to do what I needed for the directory.  This example converts and resizes all the png files in a directory structure to webp, and resizes them to 800px wide while maintaining the original aspect ratio:
 
 Using bash shell:
 
