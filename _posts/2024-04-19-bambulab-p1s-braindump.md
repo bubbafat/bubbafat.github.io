@@ -1,7 +1,7 @@
 ---
 title: 'Bambulab P1S Braindump'
 subtitle: 'A running history of issues and how I addressed them'
-description: 'Notes I've taken for myself that others might find helpful as well'
+description: 'Notes I took for myself that others might find helpful as well'
 date: 2024-04-19
 featured_image: '/images/post/bambulab-p1s-with-ams.webp'
 categories: 

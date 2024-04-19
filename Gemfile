@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '3.8.5'
+gem 'jekyll', '4.3.3'
 
 group :jekyll_plugins do
   gem 'jekyll-paginate'
@@ -8,3 +8,8 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
 end
 gem "rexml", "~> 3.2"
+
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+
