@@ -109,3 +109,9 @@ That set the new value to 433.3 and then saved it.
 
 I re-ran the extrusion test by marking the filament at 120mm and then extruding 100mm and this time when I meausured, it was right at 20mm remaining - so I asked for 100 and I got 100.
 
+<h2>FYI - Updating the firmware resets Z-axis and e-steps</h2>
+
+I updated the firmware from 1.2.8 to 1.3.3 and noticed immediately that z axis was reset to 0 but it took a little more poking to realize that e-steps were also reset from 433 to 390 causing significant under extrusion.
+
+Just something to keep in mind when you update.
+
