@@ -9,4 +9,6 @@ categories:
 published: false
 ---
 
-<h3>Draft Template</h3>
+{% include toc.html %}
+
+<h2>Draft Template</h2>
