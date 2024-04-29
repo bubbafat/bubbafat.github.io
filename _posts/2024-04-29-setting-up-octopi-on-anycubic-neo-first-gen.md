@@ -1,7 +1,7 @@
 ---
-title: 'Setting up OctoPi on the Anycubic Kobra Neo (First Generation)'
+title: 'Setting up OctoPi with Your Printer (I am using an Anycubic Neo)'
 subtitle: 'What you will need and how to do it'
-description: 'A brief, but relatively complete, guide for buying what you will need, installing and configuring software, and getting your first successful print on your Anycubic Kobra Neo (First Generation) with OctoPi on a Raspberry Pi.'
+description: 'A brief, but relatively complete, guide for buying what you will need, installing and configuring software, and getting your first successful print on your Anycubic Kobra Neo with OctoPi on a Raspberry Pi.'
 date: 2024-04-29
 featured_image: '/images/post/octopi/octopi-device.webp'
 categories: 
@@ -10,6 +10,8 @@ published: true
 ---
 
 {% include toc.html %}
+
+{% include tip.html content="This entire setup process will work for many 3D printers however I am writing this in the context of an Anycubic Kobra Neo (First Gen). The main thing you need to know is that the printer setup, including print area dimensions, may differ for your printer. Additionally, your printer might have a different USB connection or capabilities. The raspberry pi and OctoPi installation will be the same for any printer" %}
 
 <h2>Why You Want This</h2>
 
@@ -26,7 +28,7 @@ This is probably 3/10 on the difficulty scale. All you need is the hardware (des
 There are a lot of options but if you want a specific recomendations, this is what I am using:
 
 - [Raspberry Pi 4 Model B (2GB)](https://www.adafruit.com/product/4292)
-- [USB-c Power Supply (5v)](https://www.adafruit.com/product/4298) (you cannot power the pi off the printer)
+- [USB-c Power Supply (5v)](https://www.adafruit.com/product/4298) (you cannot power the pi off the Neo's USB port as that is needed for the data connection)
 - [USB Type A to Type C cable](https://www.adafruit.com/product/4474). This cable must support data transfer and not just charging as this will connect the pi to the printer.
 - [32GB microSDHC Card (DOS format)](https://www.amazon.com/PNY-Elite-microSDHC-Memory-P-SDU32GU185GW-GE/dp/B07R8GVGN9/)
 - MicroSD Reader - [USB-A adaptor](https://www.adafruit.com/product/939), [USB-C adaptor](https://www.adafruit.com/product/5212). The Neo came with one so you might not need this.
@@ -88,7 +90,7 @@ At this point the micro SD is being prepared, written to, and verified. This wil
 
 You've waited a few minutes and can now visit your OctoPi service on your network. While on the same wifi network you configured the device to use, visit the machine name on your network. Since I named mine "neo" the URL I will visit is http://neo.local
 
-{% include tip.html content="Notice that I used &ldquo;http&rdquo; and not &ldquo;https&rdquo;. If you want to use https, you need to add the self-signed cert to your trusted root store" %}
+{% include tip.html content="Notice that I used &ldquo;http&rdquo; and not &ldquo;https&rdquo;. If you want to use https, you need to <a href='https://www.pico.net/kb/how-do-you-get-chrome-to-accept-a-self-signed-certificate/'>add the self-signed cert to your trusted root store</a>" %}
 
 <h2>Setting up OctoPi</h2>
 
@@ -156,7 +158,7 @@ I would suggest the following plugins to get started:
 
 <h2>Connecting Your Phone</h2>
 
-If you have an iPhone, cnce you've installed OctoEverywhere and OctoPod you can then install the OctoPod app on your [iPhone](https://apps.apple.com/us/app/octopod-for-octoprint/id1412557625). On an Android you could use [OctoEverywhere](https://play.google.com/store/apps/details?id=com.qlabs.octoeverywhere.twa&hl=en_US&gl=US&pli=1).
+If you have an iPhone, once you've installed OctoEverywhere and OctoPod you can then install the OctoPod app on your [iPhone](https://apps.apple.com/us/app/octopod-for-octoprint/id1412557625). On an Android you could use [OctoEverywhere](https://play.google.com/store/apps/details?id=com.qlabs.octoeverywhere.twa&hl=en_US&gl=US&pli=1).
 
 This will allow you to view the web camera remotely (without opening a port on your router), manage your print jobs remotely, and control your printer without having to use the front control panel for many operations.
 
