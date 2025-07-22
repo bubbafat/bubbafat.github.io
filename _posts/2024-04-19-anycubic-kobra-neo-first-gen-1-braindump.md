@@ -13,11 +13,7 @@ published: true
 
 <h2>Missing All Hardware</h2>
 
-I bought the Anycubic Kobra Neo from a seller on eBay who resells Anycubic returns as-is with no warrenty. These are not refurbished and I was warned they would be in an unknown condition (i.e., they do not inspect their returns).
-
-It arrived and looked promising. The packing foam looked intact and every place that looked like it should have a thing had a thing.
-
-But in the end it was missing all the hardware (screws and washers), half of the tools (hex key and wrench), a calibration tool, the IEC power cord, all paperwork, and the SD card.
+When I picked up this printer it was missing all the hardware (screws and washers), half of the tools (hex key and wrench), a calibration tool, the IEC power cord, all paperwork, and the SD card.
 
 The biggest problem was the hardware.
 
