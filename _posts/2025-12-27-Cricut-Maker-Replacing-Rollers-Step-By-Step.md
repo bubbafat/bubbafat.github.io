@@ -105,11 +105,11 @@ First we need to get that motor out of the way.
 
 ![Left side fully assembled](/images/post/cricutrollers/left-side.webp)
 
-1. Remove the two silver screws
-2. Remove the two black screws
-3. Lift the motor bracket out of the way
-4. Lift the motor out of the way
-5. Try not to touch the sticky mess over and over
+- Remove the two silver screws
+- Remove the two black screws
+- Lift the motor bracket out of the way
+- Lift the motor out of the way
+- Try not to touch the sticky mess over and over
 
 Now with the motor removed you can see a large white gear and the spring (there is more than one on this side - make sure you remove the right one).
 
@@ -117,12 +117,12 @@ Now with the motor removed you can see a large white gear and the spring (there 
 
 You should notice that the same spring and bracket configuration are on this side - but that dang gear is in front of them.
 
-6) Remove the spring
-7. Notice the gear can slide in and out a little but cannot be removed because there is a part blocking it.
+- Remove the spring
+- Notice the gear can slide in and out a little but cannot be removed because there is a part blocking it.
 
 {% include tip.html content="If you want to waste a bunch of time you can try and remove the thing blocking the gear but it's easier if you just work around it." %}
 
-8) Remove the e-clip. You'll need to go slow and don't put much pressure on the gear. It will slide out far enough to allow you to get a needle nose in there. You'll get it. Be super careful not to drop it or it might get lost in the body. But if you do ... just buy a 3/16 e-clip and move on (make sure it's not in the gear, though, it would ruin that).
+- Remove the e-clip. You'll need to go slow and don't put much pressure on the gear. It will slide out far enough to allow you to get a needle nose in there. You'll get it. Be super careful not to drop it or it might get lost in the body. But if you do ... just buy a 3/16 e-clip and move on (make sure it's not in the gear, though, it would ruin that).
 
 That was the hardest part of the whole repair.
 
@@ -155,7 +155,7 @@ We're replacing both. I don't care if only one is a problem - we're not doing th
 
 Make sure you leave the white plastic rollers on the bar. They can slide around - you'll adjust them later.
 
-No go to your kitchen and get a cup of water in a measuring cup or coffee mug - whatever. Put it in the microwave until it just starts bubbling. You don't want it boiling - 170f (77c) is fine.
+Now go to your kitchen and get a cup of water in a measuring cup or coffee mug - whatever. Put it in the microwave until it just starts bubbling. You don't want it boiling - 170f (77c) is fine.
 
 Once the water is hot put the new rollers in and let them sit for a minute or two. 
 
