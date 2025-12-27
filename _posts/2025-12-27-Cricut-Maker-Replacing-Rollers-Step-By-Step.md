@@ -117,12 +117,12 @@ Now with the motor removed you can see a large white gear and the spring (there 
 
 You should notice that the same spring and bracket configuration are on this side - but that dang gear is in front of them.
 
-6. Remove the spring
+6) Remove the spring
 7. Notice the gear can slide in and out a little but cannot be removed because there is a part blocking it.
 
 {% include tip.html content="If you want to waste a bunch of time you can try and remove the thing blocking the gear but it's easier if you just work around it." %}
 
-8. Remove the e-clip. You'll need to go slow and don't put much pressure on the gear. It will slide out far enough to allow you to get a needle nose in there. You'll get it. Be super careful not to drop it or it might get lost in the body. But if you do ... just buy a 3/16 e-clip and move on (make sure it's not in the gear, though, it would ruin that).
+8) Remove the e-clip. You'll need to go slow and don't put much pressure on the gear. It will slide out far enough to allow you to get a needle nose in there. You'll get it. Be super careful not to drop it or it might get lost in the body. But if you do ... just buy a 3/16 e-clip and move on (make sure it's not in the gear, though, it would ruin that).
 
 That was the hardest part of the whole repair.
 
