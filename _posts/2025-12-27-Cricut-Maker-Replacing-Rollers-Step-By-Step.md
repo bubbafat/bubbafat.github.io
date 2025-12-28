@@ -11,7 +11,7 @@ published: true
 
 {% include toc.html %}
 
-{% include tip.html content="This is a moderately technical repair that will void the warrenty of your Cricut." %}
+{% include tip.html content="This is a moderately technical repair that will void the warranty of your Cricut." %}
 
 <h2>What You'll Need</h2>
 
