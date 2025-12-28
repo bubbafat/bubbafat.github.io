@@ -30,7 +30,7 @@ _Note: the following links are affiliate links to the products I actually used (
 
 {% include tip.html content="Use screwdrivers with magnetic heads!" %}
 
-Optionally, it will be helpful to have magnetic screw storage so during the disassembly you can stay organized. You might find some glasses (for magnification and safety), some IPA (or another cleaning agent), and something for a headache as well.
+Optionally, it will be helpful to have magnetic screw storage so during the disassembly you can stay organized. You might find some glasses (for magnification and safety), some 90%+ IPA (or another cleaning agent), and something for a headache as well.
 
 ![Optional tools](/images/post/cricutrollers/optional-tools.webp)
 
@@ -41,7 +41,7 @@ Open the lid and using a jimmy tool (or flat-head screwdriver), pry up the plast
 
 ![Image showing the cover to remove on a Cricut Maker](/images/post/cricutrollers/lid-cover.webp) 
 
-I used the jimmy tool to pry this up. It is held in place by tension and some plastic nubs. Go slow, don't muscle it or you might break them off.
+Use the jimmy tool to pry this up. It is held in place by tension and some plastic nubs. Go slow, don't muscle it or you might break them off.
 
 Once you have them off you'll see four screws with a torx head. These are holding the lid onto the body. Remove them.
 
@@ -136,7 +136,7 @@ I'm proud of you!
 
 Now let's get the bar out.  With the e-clip removed you can slide the bar out but it doesn't slide much.
 
-Go back to the right side of the machine and slide the bar out about 3/4 of an inch - as far as it will go. You'll need to give it a little push and I found that there was a sweet spot where you had it lifted a little.
+Go back to the right side of the machine and slide the bar out about 3/4 of an inch - as far as it will go. You'll need to give it a little push and might need to lift it slightly.
 
 ![The bar pushed through the right side](/images/post/cricutrollers/bar-slide-out.webp)
 
@@ -149,19 +149,19 @@ Notice that the bar is not symmetrical. The left side has a single nub and the r
 
 <h2>Replace the Rollers</h2>
 
-I was so excited to be at this spot that I forgot to take pictures - but this is the easiest part.
+_I was so excited to be at this spot that I forgot to take pictures - but this is the easiest part!_
 
 Using the needle-nose pliers, grip one of the black rollers and stretch it a little. Now slide it off the bar.
 
-Do the same on the other side. 
-
-We're replacing both. I don't care if only one is a problem - we're not doing this again in 3 months.
+Do the same on the other side (replace both!)
 
 Make sure you leave the white plastic rollers on the bar. They can slide around - you'll adjust them later.
 
+{% include tip.html content="Now would be a good time to clean the bar with some 90%+ IPA or detergent." %}
+
 Now go to your kitchen and get a cup of water in a measuring cup or coffee mug - whatever. Put it in the microwave until it just starts bubbling. You don't want it boiling - 170°F (77°C) is fine.
 
-Once the water is hot put the new rollers in and let them sit for a minute or two. 
+Once the water is hot put the new rollers in the water and let them sit for a minute or two to heat up.
 
 Carefully remove one with a spoon and slide it onto the bar so it settles in the groove. Repeat for the other side. Don't use any lubrication or stretch them out. If they are heated enough they will slide on with some force.
 
@@ -171,12 +171,21 @@ OK - we're officially halfway done!
 
 Doing it all in reverse is all pretty straightforward but a few pieces of advice.
 
-- When putting the e-clips back on, start on the left side. Like before, you need to work around the gear. Basically you want to slide it onto the bar after the flange - there is a slight groove in it. I find it easiest to get it where I want with my finger and then push on it gently with needle-nose pliers. Go slow and don't drop it.
-- When putting the right-side clip on you might need to push the flange to get enough spacing for the e-clip. It's a tight fit but you didn't come this far to quit now.
+- When putting the e-clips back on, start on the left side. Like before, you need to work around the gear. Basically you want to slide it onto the bar after the flange - there is a slight groove in it. I found it easiest to get it seated with my finger and then push on it gently with needle-nose pliers. Go slow and don't drop it.
+- When putting the right-side clip on you might need to push the flange to get enough spacing for the e-clip.
 - Remember the silver screws go on the left side and the black screws go on the right and hold the motor bracket down.
-- When putting the body back on, pay attention to how everything is lining up. The back of the body has alignment grooves you need to get lined up correctly.
-- When putting the interior screws back in you might need to push against them or they will just push the plastic away.
+- When putting the body back on, pay attention to how everything is lining up. The back of the body has alignment grooves you need to get lined up correctly. Once you get those interior screws in you don't want to realize there is an issue and have to remove them (ask me how I know!)
 - Make sure you don't have any leftover screws.
 - Give the whole thing a wipe down with some IPA and a paper towel - you probably transferred some grease around.
 
 You did it!
+
+<h2>Final Check</h2>
+
+With everything reassembled, now is a good time to do a quick sanity check.
+
+First, feed a cutting mat with some paper on it into the machine. You should be able to load and unload without any issues. The rubber wheels should be staying in place and gripping the mat correctly.
+
+Next, create a simple design in Design Studio and sent it to be cut. Again, watch the rollers for any sign that something is wrong. They should not be "walking" around and should be properly gripping the mat.
+
+If everything looks good - great! If not - start debugging! I'm confident you'll figure it out.
