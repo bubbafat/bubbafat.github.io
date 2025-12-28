@@ -11,16 +11,20 @@ published: true
 
 {% include toc.html %}
 
+{% include tip.html content="This is a moderately technical repair that will void the warrenty of your Cricut." %}
+
 <h2>What You'll Need</h2>
 
 _Note: the following links are affiliate links to the products I actually used (or an inexpensive alternative). You probably already have most of these at your home!_
 
 - [J1 Phillips-head](https://amzn.to/4pcp2dO)
-- [TR9 Hex Bit](https://amzn.to/4pcp2dO)
+- [T9 or TR9 Torx Bit](https://amzn.to/4pcp2dO)
 - [A jimmy tool](https://amzn.to/4pcp2dO)
 - [Needle-nose pliers](https://amzn.to/4jilmG3)
-- [90-degree Phillips-head](https://amzn.to/3MT20eG)
+- [90-degree or stubby Phillips-head](https://amzn.to/3MT20eG)
 - [Replacement rollers](https://amzn.to/3Yyx7yR)
+- A work surface twice the size of the Cricut
+- 2+ hours of time
 
 ![Tools used to perform this repair](/images/post/cricutrollers/tools-used.webp)
 
